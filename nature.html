@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"><!--3/10/18not avail to search engines-->
@@ -51,6 +52,30 @@ Author: Larry & Teddy Page</p>
 <div id="butterfly">
 <title >"Frequent backyard visitor - yellow swallowtail butterfly."</title>
 </div>
+
+<!--Build the form for Assignment 2 9/17/18-->
+<div id="monarchCounter"><!--9/17/18 div for form-->
+<!--9/17/18 track monarchs seen today-->
+	<form>
+		<label for="monarchCounter">
+		<p>Monarchs Seen Today</p>
+		</label><br>
+		
+		<label for="maleMonarchs">
+		<p>Male Monarchs: </p>
+		</label><br>
+		<input type="number" name="maleMonarchs" min="0" max="100" id="maleMonarchs" value="0" />
+			
+		<label for="femaleMonarchs">
+		<p>Female Monarchs: </p>
+		</label>
+			<input type="number" name="femaleMonarchs" min ="0" max="100" id="femaleMonarchs" value="0" /><br>
+			
+		
+		<p id="totalMonarchs"></p> <!--added p tag with only id to take msg from js-->
+</form>
+</div>
+
 </main>
 </body>
 
@@ -60,5 +85,10 @@ Author: Larry & Teddy Page</p>
 	<a href="mailto:HiddenUtility@aol.com">Contact Me</a>
 </footer>
 </div> <!--4/10/18 ends div for wrapper-->
+<script src="mc.js"></script>
 </body>
 </html>
+
+
+
+
