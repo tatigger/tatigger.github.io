@@ -164,6 +164,7 @@ table.table1 th { }
 
 table.table2 { margin: auto;
 	border: 3px solid #333399;
+	border-style: 1;
 	border-spacing: 0;
 	width: 600px; }
 table.table2 td, th { border-style: none;
@@ -174,7 +175,7 @@ caption { font-family: Verdana, sans-serif;
 	font-size: 1.2em;
 	padding-bottom: 0.5em;
 	padding-top: 0.5em; }
-header, nav, main, footer { display: block; } /*5/2/18 backward compat. for older browsers*/
+header, nav, main, footer { dispaly: block; } /*5/2/18 backward compat. for older browsers*/
 
 /*4/29/18 tablet and Smartphone config*/
 /*4/29/18 Tablet Config*/
@@ -215,7 +216,7 @@ header, nav, main, footer { display: block; } /*5/2/18 backward compat. for olde
 		width: auto;
 		padding: 0; }
 	nav li { display: block;
-		/*margin-left, margin-right: 0;*/
+		margin-left, margin-right: 0;
 		margin-top: 1em;
 		padding: 0; }
 	nav ul { margin: 0;
@@ -232,29 +233,5 @@ header, nav, main, footer { display: block; } /*5/2/18 backward compat. for olde
 	footer { margin: 0;
 		padding: 0; }
 }
-/*9/17/18 div for Monarch Counter form*/	
-#monarchCounter { margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	min-width: 300px;
-	max-width: 700px;
-	width: 60%;
-	background-color: #339933; }
-/*9/17/18 form element for Monarch Counter*/
-form { background-color: #339933;
-	font-family: comic sans ms, Verdana, sans serif;
-	padding: 10px;
-	color: #ffffcc }
-label { /*float: left;*/
-	width: 300px;
-	/*clear: left;*/
-	text-align: center;
-	padding-right: 10px;
-	margin-top: 5px; }
-input { margin-top: 10px;
-	display: block; }
-textarea { margin-top: 10px;
-	display: block;
-	background-color: #ffffcc }
-#mysubmit { margin-left: 110; }
+
 
