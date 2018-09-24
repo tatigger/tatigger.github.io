@@ -25,11 +25,11 @@ function monarchCounter(maleMonarchs, femaleMonarchs, totalMonarchs) {
 	var msg	= total + " Total Monarchs";
 	document.getElementById("totalMonarchs").innerHTML = msg;
 	if (total > 0) {
-		var mes2 = "Great job!"
+		var mes2 = "Great job!";
 		document.getElementById("monMess").innerHTML = mes2;
 	
 	} else if (total < 1){
-		var mes3 = "Better luck tomorrow."
+		var mes3 = "Better luck tomorrow.";
 		document.getElementById("monMess").innerHTML = mes3;
 	}
 	
@@ -47,18 +47,16 @@ function resetForm() {
 function createEventListeners() {
 	document.getElementById("maleMonarchs").addEventListener("change", monarchCounter, false);
 	document.getElementById("femaleMonarchs").addEventListener("change", monarchCounter, false);
-	document.getElementById("totalMonarchs").addEventListener("change", monarchCounter, false);
+	
+//	document.getElementById("totalMonarchs").addEventListener("change", monarchCounter, false);
 	//I don't think I need one for the total line.
 }
+
+//window.addEventListener("load", resetForm, false);
 // add backward compatibility for older IE
-if (window.addEventListener) {
-	window.addEventListener("load", resetForm, false);
-} else (window.attachEvent) {
-	window.attachEvent("onload", resetForm);
-}
 
 if (window.addEventListener) {
-	window.addEventListener("change", monarchCounter, false);
-} else (window.attachEvent) {
-	window.attachEvent("onchange", monarchCounter);
+	window.addEventListener("load", resetForm, false);
+} else if (window.attachEvent) {
+    window.attachEvent("onload", resetForm);
 }
