@@ -50,6 +50,15 @@ function createEventListeners() {
 	document.getElementById("totalMonarchs").addEventListener("change", monarchCounter, false);
 	//I don't think I need one for the total line.
 }
+// add backward compatibility for older IE
+if (window.addEventListener) {
+	window.addEventListener("load", resetForm, false);
+} else (window.attachEvent) {
+	window.attachEvent("onload", resetForm);
+}
 
-window.addEventListener("load", resetForm, false);
-	
+if (window.addEventListener) {
+	window.addEventListener("change", monarchCounter, false);
+} else (window.attachEvent) {
+	window.attachEvent("onchange", monarchCounter);
+}
