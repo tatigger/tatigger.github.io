@@ -1,38 +1,54 @@
 /*    JavaScript 6th Edition
- *    Chapter 2
+ *    Chapter 4
  *    Individual Case Project
 
- *    Monarch Counter/Nature Page
+ *    Monarch Counter/Nature Page with try and catch block to validate number entry
  *    Author: Terri Lyman
- *    Date: Sept 19, 2018  
+ *    Date: Sept 29, 2018  
 
  *    Filename: mc.js
  */
-
+//
+/* The debugging methods I used were somewhat effective.  I checked the HTML in the W3C     markup validator.  I opened the JavaScript console in my browser, and also in a second browser.  I checked to make sure all the parenthesis and braces were closed, and all the lines had ";".  I checked for spaces before and after comparisons and checked spellings of the different variables.  I commented out sections of code, and uncommented portions, trying to figure out what was causing problems.  All of these techniques revealed errors that I was able to correct.  These were only partially effective, because I am missing some logic piece to make the try, throw, catch block work as intended. 
+*/
 //  global variables, changed total to global variable
 var maleMonarchs = 0;
 var femaleMonarchs = 0;
 var totalMonarchs = 0;
 var total = 0;
+var males = 0;
+var females = 0;
+var messageElement = document.getElementById("message");
 
-// calculates total number of monarchs counted, added "valueAsNumber" to prevent concatenation instead of addition.
-// added variable msg to hold the total and the message
-// added if/else to display messages when no monarchs or some monarchs are counted
 function monarchCounter(maleMonarchs, femaleMonarchs, totalMonarchs) {
 	var males = document.getElementById("maleMonarchs").valueAsNumber;
 	var females = document.getElementById("femaleMonarchs").valueAsNumber;
+	var validity = true;
+	
+	try { 
+        if (!(maleMonarchs.value < 0)) { //verify entry
+           throw "Please enter a number between 0 and 100."; //error statement to print
+        }	
+    }
+    catch(message) {
+       validity = false;
+       messageText = message;
+       messageElement.innerHTML = messageText; // prints error statement
+       msg = "";
+    }
+   
 	total = males + females;
-	var msg	= total + " Total Monarchs";
+	
+    var msg	= total + " Total Monarchs";
 	document.getElementById("totalMonarchs").innerHTML = msg;
 	if (total > 0) {
 		var mes2 = "Great job!";
 		document.getElementById("monMess").innerHTML = mes2;
 	
-	} else if (total < 1){
+	} else if (total === 0 ){
 		var mes3 = "Better luck tomorrow.";
 		document.getElementById("monMess").innerHTML = mes3;
 	}
-	
 }
 
 //  Resets form when page is reloaded
