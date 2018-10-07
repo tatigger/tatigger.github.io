@@ -20,7 +20,7 @@ h1 { background-color: #6699cc;
 	color: #333399;
 	font-family: Georgia, serif;
 	line-height: 200%;
-	background-image: url(bluegreenswirlrw.jpg);
+	background-image: url(images/bluegreenswirlrw.jpg);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: 25%;
@@ -80,7 +80,7 @@ footer { font-size: 0.7em;/*set background color and left margin*/
 	margin-top: 1em;
 	padding-bottom: 20em;
 	width: 100%;
-	background-image: url(diabtech2rw.jpg);
+	background-image: url(images/diabtech2rw.jpg);
 	background-repeat: no-repeat;
 	background-position: center; }
 /*5/6/17 add image to crafts for consistency*/
@@ -88,7 +88,7 @@ footer { font-size: 0.7em;/*set background color and left margin*/
 	margin-top: 1em;
 	padding-bottom: 20em;
 	width: 100%;
-	background-image: url(fishesrw.jpg);
+	background-image: url(images/fishesrw.jpg);
 	background-repeat: no-repeat;
 	background-position: center; }
 /*5/6/17 add image to nature for consistency*/
@@ -96,7 +96,7 @@ footer { font-size: 0.7em;/*set background color and left margin*/
 	margin-top: 1em;
 	padding-bottom: 20em;
 	width: 100%;
-	background-image: url(irisrw.jpg);
+	background-image: url(images/irisrw.jpg);
 	background-repeat: no-repeat;
 	background-position: center; }
 /*5/6/17 add image to in the kitchen for consistency*/
@@ -105,14 +105,22 @@ footer { font-size: 0.7em;/*set background color and left margin*/
 	margin-top: 1em;
 	padding-bottom: 20em;
 	width: 100%;
-	background-image: url(lettucerw.jpg);
+	background-image: url(images/lettucerw.jpg);
 	background-repeat: no-repeat;
 	background-position: center; }
 	/*5/2/18 add butterfly image to nature page*/
+#chrysalis { margin-right: 1em;
+	margin-top: 1em;
+	padding-bottom: 20em;
+	width: 100%;
+	background-image: url(images/monarchChrysalis.jpg);
+	background-repeat: no-repeat;
+	background-position: center; }
+	/*10/6/18 add chrysalis image to safety webpage*/
 #butterfly { 
 	width: 100%;
 	height: 270px;
-	background-image: url(butterfly2rw.jpg);
+	background-image: url(images/butterfly2rw.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
 	color: #666666;
