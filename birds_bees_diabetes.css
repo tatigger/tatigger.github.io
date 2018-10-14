@@ -16,6 +16,21 @@ main { padding-left: 20px;
 		padding-bottom: 1px;
 	   padding-right: 20px;
 	   display: block; }
+article { background-color: #6699cc;
+	}
+
+label { /*float: left;*/
+	width: 300px;
+	/*clear: left;*/
+	text-align: center;
+	padding-right: 10px;
+	margin-top: 5px; }
+input { margin-top: 10px;
+	display: block; }
+textarea { margin-top: 10px;
+	display: block;
+	background-color: #ffffcc }
+	
 h1 { background-color: #6699cc;
 	color: #333399;
 	font-family: Georgia, serif;
@@ -249,10 +264,18 @@ header, nav, main, footer { display: block; } /*5/2/18 backward compat. for olde
 	width: 60%;
 	background-color: #339933; }
 /*9/17/18 form element for Monarch Counter*/
+form {background-color: #6699cc;
+	font-family: "comic sans ms", Verdana, "sans serif";
+	color: #666666;}
+fieldset {border: 2px solid #339933;
+	padding: 1em;
+	}
+/*
 form { background-color: #339933;
 	font-family: "comic sans ms", Verdana, "sans serif";
 	padding: 10px;
 	color: #ffffcc }
+*/
 label { /*float: left;*/
 	width: 300px;
 	/*clear: left;*/
