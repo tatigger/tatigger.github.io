@@ -26,10 +26,11 @@ label { /*float: left;*/
 	padding-right: 10px;
 	margin-top: 5px; }
 input { margin-top: 10px;
-	display: block; }
+	display: block;
+	background-color: #ffffcc; }
 textarea { margin-top: 10px;
 	display: block;
-	background-color: #ffffcc }
+	background-color: #ffffcc; }
 	
 h1 { background-color: #6699cc;
 	color: #333399;
@@ -270,6 +271,11 @@ form {background-color: #6699cc;
 fieldset {border: 2px solid #339933;
 	padding: 1em;
 	}
+	
+select {
+    background-color: #ffffcc;
+    }
+
 /*
 form { background-color: #339933;
 	font-family: "comic sans ms", Verdana, "sans serif";
@@ -288,4 +294,86 @@ textarea { margin-top: 10px;
 	display: block;
 	background-color: #ffffcc }
 /*#mysubmit { margin-left: 110px; }*/
+
+/* calendar */
+#cal {
+   display: none;
+   position: absolute;
+   left: 20px;
+   top: 950px;
+   background: black;
+   color: white;
+   padding: 10px;
+/*   
+   -moz-border-radius-topleft: 10px;
+   -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+   -moz-border-radius-topright: 10px;
+   -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+*/    
+}
+
+#cal table {
+   clear: both;
+}
+
+#cal table caption {
+   font-weight: bold;
+   font-size: 14pt;
+   font-family: "comic sans ms", Verdana, "sans serif";
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background: rgb(46,49,146);
+}
+
+#cal table th {
+   font-family: "comic sans ms", Verdana, "sans serif";
+   text-align: right;
+}
+
+#cal table th, #cal table td {
+   width: 2em;
+   padding: 4px;
+}
+
+#cal table td {
+   font-family: "comic sans ms", Verdana, "sans serif";
+   color: rgb(178,184,183);
+   text-align: right;
+   cursor: pointer;
+}
+
+#prev {
+   float: left;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#next {
+   float: right;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#cal table td.pastdate {
+   color: white;
+}
+
+#cal table td.pastdate:hover, #prev:hover, #next:hover, #close:hover {
+   background: yellow;
+   color: black;
+}
+
+#close {
+   color: white;
+   float: right;
+   padding: 0 4px;
+   cursor: pointer;
+}
+
+#close span {
+   font-size: 20pt;
+}
+
 
