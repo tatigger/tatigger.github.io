@@ -57,21 +57,16 @@ Author: Larry & Teddy Page</p>
 <div id="monarchCounter"><!--9/17/18 div for form-->
 <!--9/17/18 track monarchs seen today-->
 	<form>
-		<label for="monarchCounter">
-		<p>Monarchs Seen Today</p>
-		</label><br>
-		
-		<label for="maleMonarchs">
-		<p>Male Monarchs: </p>
-		</label><br>
-		<input type="number" name="maleMonarchs" min="0" max="100" id="maleMonarchs" value="0" />
-			
-		<label for="femaleMonarchs">
-		<p>Female Monarchs: </p>
-		</label>
-			<input type="number" name="femaleMonarchs" min ="0" max="100" id="femaleMonarchs" value="0" /><br>
-			
-		<p id="message"></p> <!--place holder for error message-->
+		<label for="monarchCounter">Monarchs Seen Today</label><br>
+			<fieldset>		
+				<label for="maleMonarchs">Male Monarchs:</label>
+				<input type="number" name="maleMonarchs" min="0" max="100" id="maleMonarchs" />
+			</fieldset>
+			<fieldset>
+				<label for="femaleMonarchs">Female Monarchs:</label>
+				<input type="number" name="femaleMonarchs" min ="0" max="100" id="femaleMonarchs" />
+			</fieldset>	
+		<div id="errorMessage"></div>
 		<p id="totalMonarchs">Good luck today!</p> <!--added p tag with only id to take total msg from js-->
 <!--		
 		<p id="monMess">Good luck today!</p> 

@@ -7,49 +7,65 @@
  *    Date: Sept 29, 2018  
 
  *    Filename: mc.js
+ *
+ *
+ * Two things, I added a REGEX to check for "-" and non-numerical data.  That works, BUT 
+ * I still get a NaN error in addition to my request for the desired data.  On THIS
+ * form I cannnot get the error message to go away once the error is fixed.  
  */
-//
-/* The debugging methods I used were somewhat effective.  I checked the HTML in the W3C     markup validator.  I opened the JavaScript console in my browser, and also in a second browser.  I checked to make sure all the parenthesis and braces were closed, and all the lines had ";".  I checked for spaces before and after comparisons and checked spellings of the different variables.  I commented out sections of code, and uncommented portions, trying to figure out what was causing problems.  All of these techniques revealed errors that I was able to correct.  These were only partially effective, because I am missing some logic piece to make the try, throw, catch block work as intended. 
-*/
-//  global variables, changed total to global variable
-var maleMonarchs = 0;
-var femaleMonarchs = 0;
-var totalMonarchs = 0;
-var total = 0;
-var males = 0;
-var females = 0;
-var messageElement = document.getElementById("message");
 
-function monarchCounter(maleMonarchs, femaleMonarchs, totalMonarchs) {
-	var males = document.getElementById("maleMonarchs").valueAsNumber;
-	var females = document.getElementById("femaleMonarchs").valueAsNumber;
-	var validity = true;
-	
-	try { 
-        if (!(maleMonarchs.value < 0)) { //verify entry
-           throw "Please enter a number between 0 and 100."; //error statement to print
-        }	
+function checkInput() {
+    var mMon = document.getElementById("maleMonarchs").value;
+    var fMon = document.getElementById("femaleMonarchs").value;
+    var errorDiv = document.getElementById("errorMessage");
+    
+    try {
+        if (/[\-\D]/.test(mMon.value) === true) {
+            throw "Enter a number between 0 and 100";
+//console.log("less than 0")
+        } else {
+            errorDiv.style.display = "none";
+            errorDiv.innerHTML = "";
+//console.log("0 or more")
+        }  
     }
-    catch(message) {
-       validity = false;
-       messageText = message;
-       messageElement.innerHTML = messageText; // prints error statement
-       msg = "";
+    catch(msg) {
+        errorDiv.style.display = "block";
+        errorDiv.style.color = "red";
+        errorDiv.innerHTML = msg;
     }
-   
-	total = males + females;
-	
-    var msg	= total + " Total Monarchs";
-	document.getElementById("totalMonarchs").innerHTML = msg;
-	if (total > 0) {
-		var mes2 = "Great job!";
-		document.getElementById("monMess").innerHTML = mes2;
-	
-	} else if (total === 0 ){
-		var mes3 = "Better luck tomorrow.";
-		document.getElementById("monMess").innerHTML = mes3;
+    try {
+        if (/[\-\D]/.test(fMon.value) === true) {
+            throw "Enter a number between 0 and 100";
+//console.log("less than 0")
+        } else {
+            errorDiv.style.display = "none";
+            errorDiv.innerHTML = "";
+//console.log("0 or more")
+        }  
+    }
+    catch(msg) {
+        errorDiv.style.display = "block";
+        errorDiv.style.color = "red";
+        errorDiv.innerHTML = msg;
+    }
+}
+
+function monarchCounter() {
+    var mMon = document.getElementById("maleMonarchs").valueAsNumber;
+    var fMon = document.getElementById("femaleMonarchs").valueAsNumber;
+    var totalMessage = document.getElementById("totalMonarchs");
+    var total = 0;
+    total = mMon + fMon;
+//console.log(total);
+    
+    if (total > 0) {
+        totalMessage.innerHTML = total + " Monarchs! Great Job!";
+    } else {
+        totalMessage.innerHTML = total + " Monarchs.  Better luck tomorrow.";
 	}
 }
+
 
 //  Resets form when page is reloaded
 function resetForm() {
@@ -61,18 +77,27 @@ function resetForm() {
 
 //creates event listeners 
 function createEventListeners() {
-	document.getElementById("maleMonarchs").addEventListener("change", monarchCounter, false);
-	document.getElementById("femaleMonarchs").addEventListener("change", monarchCounter, false);
+	var males = document.getElementById("maleMonarchs");
+	if (males.addEventListener) {
+		males.addEventListener("change", checkInput, false);
+	    males.addEventListener("change", monarchCounter, false);
+	} else if (males.attachEvent) {
+		males.attachEvent("onchange", checkInput);
+	    males.attachEvent("onchange", monarchCounter);
+	}
 	
-//	document.getElementById("totalMonarchs").addEventListener("change", monarchCounter, false);
-	//I don't think I need one for the total line.
+	var females = document.getElementById("femaleMonarchs");
+	if (females.addEventListener) {
+		females.addEventListener("change", checkInput, false);
+	    females.addEventListener("change", monarchCounter, false);
+	} else if (females.attachEvent) {
+		females.attachEvent("onchange", checkInput);
+	    females.attachEvent("onchange", monarchCounter);
+	}
 }
 
-//window.addEventListener("load", resetForm, false);
-// add backward compatibility for older IE
-
 if (window.addEventListener) {
-	window.addEventListener("load", resetForm, false);
+    window.addEventListener("load", resetForm, false);
 } else if (window.attachEvent) {
     window.attachEvent("onload", resetForm);
 }

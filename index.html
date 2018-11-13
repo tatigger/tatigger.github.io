@@ -6,7 +6,7 @@
 	<!--
 	Birds Bees and Diabetes
 	Author: Terri Lyman
-	Date: October 31, 2018
+	Date: October 13, 2018
 	Personal website to discuss issues of living well with diabetes.
 	Update with form and enhancements
 	-->
@@ -47,43 +47,140 @@
 You are probably here because diabetes is part of your life (or the life of someone you care about), but you don't want it to be your whole life.  There are many ways to enjoy life and still live well with diabetes.  You will find some of the ways that I try to do that here.  
 </p><!--9/9/18 Update welcome message-->
 <p>
-<strong>Tell me a little bit about yourself</strong> in the survey below. It is probably a good idea to be aware of what we are drinking each day. Do you get too much caffeine? Are you drinking enough water to stay hydrated? Do you drink carbonated or alcoholic containing beverages? There is no right or wrong answer, this is just a quick assessment to make ourselves aware of what we are drinking. Then we have information to use as we consider what tomorrow will be like. <!--10/31/18 Update survey message-->
+<strong>Tell me a little bit about yourself</strong> in the survey below. My ideas about food and what I can eat have changed over my years with diabetes. I have had times when I have been sensitive to meat, dairy, and currently gluten. Now I eat fairly low carb, with only about 25 grams of carbohydrate or 1 1/2 bread exchanges per meal. That is not too hard since I can eat meat and dairy right now, but not foods that contain gluten. (Let me tell you, I miss french bread!!!)
 </p>
-<br>
+<p>
+What are you doing with food right now?
+</p><br>
 <div id="formCh6">
 <article> <!--10/13/18 container for survey-->
    <h1>A Quick Survey</h1>
    <form> <!--10/13/18 form data and validation-->
-        <fieldset class="checks"> <!--10/31/18 add field and section for array ch8-->
-        <legend>Which of the following have you had to drink today?<br>Check all that apply</legend>
-            <input type="checkbox" id="water" value="Water" name="beverages" />
-            <label for="water" id="waterLabel">Water</label>
-            <input type="checkbox" id="coffee" value="Coffee" name="beverages" />
-            <label for="coffee" id="coffeeLabel">Coffee</label>
-            <input type="checkbox" id="tea" value="Tea" name="beverages" />
-            <label for="tea" id="teaLabel">Tea</label>
-            <input type="checkbox" id="rSoda" value="Regular Soda" name="beverages" />
-            <label for="rSoda" id="rSodaLabel">Regular Soda</label>
-            <input type="checkbox" id="dSoda" value="Diet Soda" name="beverages" />
-            <label for="dSoda" id="dSodaLabel">Diet Soda</label>
-            <input type="checkbox" id="juice" value="Juice" name="beverages" />
-            <label for="juice" id="juiceLabel">Juice</label>
-            <input type="checkbox" id="wine" value="Wine" name="beverages" />
-            <label for="wine" id="wineLabel">Wine</label>
-            <input type="checkbox" id="beer" value="Beer" name="beverages" />
-            <label for="beer" id="beerLabel">Beer</label>
+        <fieldset id="ageRange">
+        <label>How old is the person with diabetes?</label>
+          <div>
+            <input type="radio" id="young"
+                   name="age" value="young" />
+            <label for="young">19 years and younger</label>
+          </div>
+          <div>
+            <input type="radio" id="twenties"
+                   name="age" value="twenties" />
+            <label for="twenties">20 to 29 years</label>
+          </div>
+          <div>
+            <input type="radio" id="midAge"
+                   name="age" value="midAge" />
+            <label for="midAge">30 to 59 years</label>
+          </div>
+          <div>
+            <input type="radio" id="senior"
+                   name="age" value="senior" />
+            <label for="senior">60 to 75 years</label>
+          </div>
+          <div>
+            <input type="radio" id="elderly"
+                   name="age" value="elderly" />
+            <label for="elderly">76 years and older</label>
+          </div>
+          <div id="errorMessage3"></div>
         </fieldset>
-        <fieldset> <!--10/31/18 button to convert array to string-->
-            <input type="button" id="finished" value="Finished" />
-            <label>Click "Finished" when you are done.
-        </fieldset>       
-    <section id="answers"> <!--10/31/18 Section for clicked items to appear-->          
-        <div id="bChoices">
-            <ul id="answersBeverages"></ul>
-        </div>
-    </section>
+        <fieldset>
+          <label for="dType">What type of diabetes are you experiencing?</label>
+          <!--10/13/18 select list for diabetes type, required, only one-->
+            <select id="dType" name="Type of Diabetes" required="required">
+               <option value="t1">Type 1</option>
+               <option value="t2">Type 2</option>
+               <option value="lada">LADA</option>
+               <option value="gest">Gestational</option>
+               <option value="idk">I don't know</option>
+            </select>
+          <div id="errorMessage2"></div>
+        </fieldset>
+        <fieldset>
+            <label for="food">What is your strategy for nutrition?</label> 
+            <!--10/13/18 optional-->
+            <textarea id="customText" name="CustomText" cols="75" placeholder="Enter your food strategy here (max 75 characters)"></textarea>
+            <div id="errorMessage4"></div>
+        </fieldset> 
+        <fieldset> <!--10/26/18 calendar fields-->
+           <label for="dDate">Pick the date of diabetes diagnosis.</label>
+           <input type="text" id="dDate" readonly/>
+           <p id="timeSince"></p>
+        </fieldset>
+         <div id="cal">
+         <div id="prev">&lt; previous</div>
+         <div id="next">next &gt;</div>
+         <table>
+            <caption></caption>
+            <tr>
+               <th>Sun</th>
+               <th>Mon</th>
+               <th>Tue</th>
+               <th>Wed</th>
+               <th>Thu</th>
+               <th>Fri</th>
+               <th>Sat</th>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+         </table>
+         <p id="close">close <span>&#9746;</span></p>
+      </div>
     </form>
-</article>   
+    </article>   
 <p>
 Nothing contained within this website or its links is a substitute for the medical advice of your health care provider.  The opinions expressed here are solely my own.
 </p>
@@ -97,9 +194,7 @@ Nothing contained within this website or its links is a substitute for the medic
 	<a href="mailto:HiddenUtility@aol.com">Contact Me</a>
 </footer>
 </div><!--4/13/18 div end for wrapper-->
-			<script src="fc8.js"></script><!-- script Ch8 -->
-<!--<script src="fc.js"></script>
--->
+<script src="fc.js"></script>
 <!--10/26/18 test script with no other functions ch7
 <script src="days.js"></script>
 -->

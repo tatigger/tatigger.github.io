@@ -7,7 +7,14 @@
  *    Date: October 13, 2018, update 10/26/18
 
  *    Filename: fc.js
+ 
+ *11/12/18 Removed the Red outline around the radio buttons, never did figure out why 
+ * they persisted after the error is corrected.
+ * Got error messages to go away on this form once the error is corrected.
+ * Added REGEX for the text box to check for < symbol.  If I put both <>, the error only 
+ * caught when that exact expression is used, so I only look for one of the symbols.
  */
+ 
 "use strict"; //interpret document contents in JS strict mode
  
 //  global variables
@@ -26,18 +33,18 @@ function validateAge() {
     try {
         if (!ageR[0].checked && !ageR[1].checked && !ageR[2].checked && ![3].checked && !ageR[4].checked) {
             for (var i = 0; i < 5; i++) {
-                ageR[i].style.outline = "2px solid red"; 
+ //              ageR[i].style.outline = "2px solid red";  
             }
             fieldsetValidity = false;
         } else {
             for (var i = 0; i < elementCount; i++) {
-                ageR[i].style.outline = "";
+                ageR[i].style.outline = "none";
                 fieldsetValidity = true;
             }
         }
         if (fieldsetValidity === false) {
             //throw appropriate error message
-            throw "Please make a selection.";
+            throw "Please select one.";
         } else {
             errorDiv.style.display = "none";
             errorDiv.innerHTML = "";
@@ -57,7 +64,7 @@ function validateAge() {
 /* validate dType field, one selection required */
 function validateDType() {
     var currentElement = document.getElementById("dType");
-    var errorDiv = document.getElementById("errorMessage2");
+    var error2Div = document.getElementById("errorMessage2");
     var fieldsetValidity = true;
     
     try {
@@ -72,20 +79,47 @@ function validateDType() {
             //throw appropriate error message
             throw "Please make a selection.";
         } else {
-            errorDiv.style.display = "none";
-            errorDiv.innerHTML = "";
+            error2Div.style.display = "none";
+            error2Div.innerHTML = "";
         }
     }
     catch(msg) {
-    errorDiv.style.display = "block";
-    errorDiv.style.color = "red";
-    errorDiv.innerHTML = msg;
+    error2Div.style.display = "block";
+    error2Div.style.color = "red";
+    error2Div.innerHTML = msg;
     formValidity = false;
     }
     finally {
         validateAge(); //to get the validate age function to run even if no selection was made in that fieldset
     }
 }
+
+// test for "<" character
+function validateTextarea() {
+    var foodText = document.getElementById("customText");
+    var errorDiv = document.getElementById("errorMessage4");
+    
+    try {
+        if (/</.test(foodText.value) === true) {
+            var fieldsetValidity = false;
+            throw "Please remove special character (<)";
+        } else {
+            errorDiv.style.display = "none";
+            errorDiv.style.border = "";
+            errorDiv.innerHTML = "";
+            fieldsetValidity = true;
+        }
+    }
+    catch(msg) {
+        errorDiv.style.display = "block";
+        errorDiv.style.border = "2px solid red";
+        errorDiv.innerHTML = msg;
+        fieldsetValidity = false;
+    }
+}
+    
+ 
+
 
 /* remove fallback placeholder text */
 function zeroPlaceholder() {
@@ -123,6 +157,7 @@ function generatePlaceholder() {
         }
     }
 }
+
 
  function displayCalendar(whichMonth) { // 10/26/18 ch7
      var date;
@@ -215,7 +250,7 @@ function selectDate(event) { // 10/26/18 ch7
     hideCalendar();
     timeSince();
     selectedDate = dateObject.toLocaleDateString();
-    document.getElementById("diaDate").innerHTML = selectedDate;
+//    document.getElementById("diaDate").innerHTML = selectedDate;
 }
 
 function hideCalendar() { //10/26/18 ch7
@@ -257,9 +292,17 @@ function createEventListeners() {
     
     if (deType.addEventListener) {
         deType.addEventListener("blur", validateDType, false);
-    } else if (type.attachEvent) {
+    } else if (detype.attachEvent) {
         deType.attachEvent("onblur", validateDType);
     }
+    
+    
+      var foodText = document.getElementById("customText");
+      if (foodText.addEventListener) {
+          foodText.addEventListener("change", validateTextarea, false);
+      } else if (foodText.attachEvent) {
+          foodText.attachEvent("onchange", validateTextarea);
+      }
     
     var dateField = document.getElementById("dDate");
     
@@ -321,3 +364,4 @@ if (window.addEventListener) {
 } else if (window.attachEvent) {
     window.attachEvent("onload", setUpPage);
 }
+
