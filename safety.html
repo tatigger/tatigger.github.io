@@ -8,7 +8,6 @@
 	Author: Terri Lyman
 	Date: October 6, 2018
 	Chapter 5 assignment
-	Updated November 12,2018 to figure out REGEX for textarea
 	-->
 <meta charset="utf-8">
 <meta name=”viewport” content=”width=device-width, initial-scale=1″>
@@ -32,26 +31,51 @@
 <main>
 
 <!--10/6/18 div for chrysalis image for consistency-->
-<div id="chrysalis">
-</div>
-<!--11/12/18 removed safety data and used this page to troubleshoot the REGEX-->
-			<div id="formCh6">
-			<article> <!--10/13/18 container for survey-->
-			<h1>A Quick Survey</h1>
-			<form>
-				<fieldset>
-            		<label for="food">What is your strategy for nutrition?</label> 
-            		<!--10/13/18 optional-->
-            		<textarea id="customText" name="CustomText" cols="75" 		placeholder="Enter your food strategy here (max 75 characters)"></textarea>
-            		<div id="errorMessage4"></div>
-        		</fieldset> 
-        	</form>
-    		</article> 
-    		</div>
-
-
+<!-- <div id="chrysalis"></div>  switch images-->
+<div id="milkweedFluff"></div>
+<p>This is a picture of my Butterfly Weed going to seed at the end of the season. The seeds didn't release until the first night of freezing temperatures. Then the pods popped open, sharing this milkweed variety with the neighborhood.</p>
+<p>
+JavaScript is a useful tool for making websites interactive, interesting and useful.  It has some features that may surprise the typical person who is browsing the internet.   
+</p> 
+<h2 id="safetyList">Properties that JavaScript can Identify</h2>
+    <ul>
+    	<li>Browser Name:</li><script>document.write(navigator.appName);</script><br><br>
+    	<!--10/6/18 get browser name-->
+    	<li>Browser Version:</li><script>document.write(navigator.appVersion);</script><br><br>
+    	<!--10/6/18 get browser version-->
+    	<li>Platform:</li><script>document.write(navigator.platform);</script><br><br>
+    	<!--10/6/18 get platform-->
+    	<li>Network Connection:</li><script>document.write(navigator.onLine);</script><br><br>
+    	 <!--10/6/18 get online status if available-->
+<!--    <li>Location:</li><script>document.write(navigator.geolocation);</script><br><br> -->
+    	<!--10/6/18 get geolocation if available-->
+    	<li>Height and Width of Display:</li><script>document.write(screen.height + "x" + screen.width);</script>
+    	<!--10/6/18 get display size-->
+    </ul><br>
+<h2>Geolocation</h2> <!-- add section for geolocation data Ch10 -->
+<!--    <article id="location">  -->
+         <div id="directions"></div>
+         <div id="currAltitude"></div><br>
+         <h2>Would you like to see a map of this location?<button id="mapbtn" type="button">
+    		View Map
+			</button></h2>
+         <div id="map"></div><br>
+       
+<h2>Some Articles About Web Safety</h2>
+<p>
+<a href="https://securingtomorrow.mcafee.com/consumer/mobile-and-iot-security/internet-safety-month-5-tips-to-better-security/
+"><i>Internet Security Month: 5 Tips to Better Security</i></a><br>
+The article, posted by Mcafee, lists a few simple but important ways to remain safe on the web: use trustworthy apps and wifi sources, turn off the wifi and bluetooth when not in use, and use strong passwords.
+</p>
+<p>
+<a href="https://us.norton.com/internetsecurity-kids-safety-stop-stressing-10-internet-safety-rules-to-help-keep-your-family-safe-online.html"><i>Internet Safety 101: 15 Tips to Keep Your Kids and Family Safe Online</i></a><br>
+Norton/Symantec posted a longer article on the topic, which added privacy awareness, including IoT items, to the list of ways to remain safe.
+</p>
+<p>
+<a href="https://www.veracode.com/security/javascript-security"><i>JavaScript Security</i></a><br>
+This article, actually more of an advertisement to programmers, serves as an introduction to some JS vulnerabilities and an introduction to JS security analyzers, which test for and correct issues with the code.
+</p>
 </main>
-<script src="fc1.js"></script>
 </body>
 <footer>
 	<h3>Birds, Bees and Diabetes</h3>
@@ -59,5 +83,6 @@
 	<a href="mailto:HiddenUtility@aol.com">Contact Me</a>
 </footer>
 </div><!--4/13/18 div end for wrapper-->
+<script src="scriptsafety.js"></script>
 </body>
 </html>
