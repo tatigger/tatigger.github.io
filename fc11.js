@@ -19,9 +19,8 @@ fetch(req)
     .then(function(response) {
            console.log(response.json())
            return response;
-    }) 
-     .then(validateResponse) {
-           return response;
+    
+     then(validateResponse) 
      })
      
 function validateResponse() {
