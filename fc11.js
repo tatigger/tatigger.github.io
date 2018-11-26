@@ -19,23 +19,26 @@ fetch(req)
     .then(function(response) {
            console.log(response.json())
            return response;
-    
-     then(validateResponse) 
-     })
-     
+    })
+//     .then(function (validateResponse){
+ //    })
+/*     
 function validateResponse() {
-    if (!response.ok) {
+    if (!response.json.ok) {
     throw Error(response.statusText);
-  }
-  displayData(response);
-  return response;
+  } else {
+  	displayData(response);
+  	console.log("in validateResponse");
+  	return response;
 }
+}
+*/
 
 function displayData(response) { 
     document.getElementById("credit").innerHTML = 
     "<p>powered by <a href='https://newsapi.org'>NewsAPI.org</a></p>"; 
        var items = response.json;
-       var articleEl = document.getElementsByTagName("article")[0];
+       var articleEl = document.getElementById("news")[0];
        console.log("before for loop");
        for (var i = 0; i < 10; i++) {
          console.log("in for loop");
@@ -58,6 +61,11 @@ function logError(error) {
   console.log('Looks like there was a problem: \n', error);
 }
 
+if (window.addEventListener) {
+	window.addEventListener("load", displayData, false);
+} else if (window.attachEvent) {
+    window.attachEvent("onload", displayData);
+}
 
 /*
 var sinceDate = new Date()
