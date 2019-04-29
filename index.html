@@ -1,203 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"><!--3/10/18not avail to search engines-->
-<title>Birds, Bees and Diabetes</title>
-	<!--
-	Birds Bees and Diabetes
-	Author: Terri Lyman
-	Date: October 13, 2018
-	Personal website to discuss issues of living well with diabetes.
-	Update with form and enhancements
-	-->
-<meta charset="utf-8">
-<meta name=”viewport” content=”width=device-width, initial-scale=1″>
-<link href="birds_bees_diabetes.css" rel="stylesheet">
-<script src="modernizr.custom.65897.js"></script><!--9/9/18 backward compatibility for browsers 10/13/18 update modernizr-->
+
+  <!--  
+  Final Project
+  HiddenUtility
+  
+  Author: Terri Lyman
+  Date: March 24, 2019
+  
+  File name: index.html
+  -->
+  
+  <!-- Requirement - metadata added 3/24/19 -->
+  <meta charset="utf-8">
+  
+  <!-- Requirement - metadata viewport 4/10/19 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Requirement - metadata description 4/10/19 -->
+  <meta name="description" content="HiddenUtility Home Page with Welcome and Links">    
+  
+  <!-- Requirement - metadata keywords 4/10/19 -->
+  <meta name="keywords" content="HiddenUtility, home, welcome, links, cover, cozy">  
+  
+  <!-- Requirement - metadata author 4/10/19 -->
+  <meta name="author" content="Terri Lyman">
+  
+  <!-- title="HiddenUtility Home" -->
+  <title>HiddenUtility Home</title>
+  
+  <!-- space for css file links 3/24/19-->
+  <link href="css/hu_reset.css" rel="stylesheet">
+  <link href="css/hu_base.css" rel="stylesheet">
+  
+  <!-- add link to css/hu_flex.css for responsive web site 4/10/19 -->
+  <link href="css/hu_flex.css" rel="stylesheet">
+  
+  <!-- STANDARD @IMPORT for Google fonts added 3/24/19-->
+  <link href="https://fonts.googleapis.com/css?family=Aleo%7CGlass+Antiqua%7CRaleway" rel="stylesheet">
+  
+  
 </head>
+
+<!-- add body section 3/24/19 -->
 <body>
-<div id="wrapper"><!--div for wrapper-->
-<header> 
-	<h1>Birds Bees and Diabetes</h1> <!--9/9/18 site name-->
+
+<!-- header section to contain company name, logo, horizontal navigation 3/24/19-->
+<header>
+   
+  <!-- add logo 3/24/19 -->
+  <img src="media/huLogo.png" alt="HiddenUtility Logo">
+  
+  <h1>HiddenUtility</h1>
+     
 </header>
+
+ <!-- add nav links to the various pages 3/24/19 Updated 4/10/19-->
 <nav>
-	<ul>
-		<li><a href="safety.html">Ch5 Safety</a></li><!--10/6/18 added for assignment-->
-		<li><a href="index.html">Home</a></li>
-		<li><a href="diabetes.html">Diabetes</a></li> 
-		<li><a href="crafts.html">Crafting</a></li>
-		<li><a href="cooking.html">Cooking</a></li>
-		<li><a href="nature.html">Nature</a></li>
-	</ul>
+   <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hu_currProdGal.html">Current Items</a></li>
+      <li><a href="hu_pastProdGal.html">Past Items</a></li>
+      <li><a href="hu_DIYproduct.html">Custom Item</a></li>
+      <li><a href="hu_aboutMe.html">About Me</a><li>
+   </ul>
 </nav>
-<main>
-
-<!--4/30/18 image map 9/19/18 updated-->
-<div id="nestmap">
-<img src="images/nestapplerw.jpg" alt="Bird Nest in Apple Tree" usemap="#nestmap"/>
-<map name="nestmap">
-	<area shape="circle" coords="250, 210, 50" 
-		href="cooking.html" alt="Cooking" />
-    <area shape="poly" coords="155, 50, 155, 145, 300, 145, 330, 120, 315, 80"
-             href="nature.html" alt="Nature" />
-</map>
-</div>
-<h2>Welcome!</h2>
-<p>
-You are probably here because diabetes is part of your life (or the life of someone you care about), but you don't want it to be your whole life.  There are many ways to enjoy life and still live well with diabetes.  You will find some of the ways that I try to do that here.  
-</p><!--9/9/18 Update welcome message-->
-<p>
-<strong>Tell me a little bit about yourself</strong> in the survey below. My ideas about food and what I can eat have changed over my years with diabetes. I have had times when I have been sensitive to meat, dairy, and currently gluten. Now I eat fairly low carb, with only about 25 grams of carbohydrate or 1 1/2 bread exchanges per meal. That is not too hard since I can eat meat and dairy right now, but not foods that contain gluten. (Let me tell you, I miss french bread!!!)
-</p>
-<p>
-What are you doing with food right now?
-</p><br>
-<div id="formCh6">
-<article> <!--10/13/18 container for survey-->
-   <h1>A Quick Survey</h1>
-   <form> <!--10/13/18 form data and validation-->
-        <fieldset id="ageRange">
-        <label>How old is the person with diabetes?</label>
-          <div>
-            <input type="radio" id="young"
-                   name="age" value="young" />
-            <label for="young">19 years and younger</label>
-          </div>
-          <div>
-            <input type="radio" id="twenties"
-                   name="age" value="twenties" />
-            <label for="twenties">20 to 29 years</label>
-          </div>
-          <div>
-            <input type="radio" id="midAge"
-                   name="age" value="midAge" />
-            <label for="midAge">30 to 59 years</label>
-          </div>
-          <div>
-            <input type="radio" id="senior"
-                   name="age" value="senior" />
-            <label for="senior">60 to 75 years</label>
-          </div>
-          <div>
-            <input type="radio" id="elderly"
-                   name="age" value="elderly" />
-            <label for="elderly">76 years and older</label>
-          </div>
-          <div id="errorMessage3"></div>
-        </fieldset>
-        <fieldset>
-          <label for="dType">What type of diabetes are you experiencing?</label>
-          <!--10/13/18 select list for diabetes type, required, only one-->
-            <select id="dType" name="Type of Diabetes" required="required">
-               <option value="t1">Type 1</option>
-               <option value="t2">Type 2</option>
-               <option value="lada">LADA</option>
-               <option value="gest">Gestational</option>
-               <option value="idk">I don't know</option>
-            </select>
-          <div id="errorMessage2"></div>
-        </fieldset>
-        <fieldset>
-            <label for="food">What is your strategy for nutrition?</label> 
-            <!--10/13/18 optional-->
-            <textarea id="customText" name="CustomText" cols="75" placeholder="Enter your food strategy here (max 75 characters)"></textarea>
-            <div id="errorMessage4"></div>
-        </fieldset> 
-        <fieldset> <!--10/26/18 calendar fields-->
-           <label for="dDate">Pick the date of diabetes diagnosis.</label>
-           <input type="text" id="dDate" readonly/>
-           <p id="timeSince"></p>
-        </fieldset>
-         <div id="cal">
-         <div id="prev">&lt; previous</div>
-         <div id="next">next &gt;</div>
-         <table>
-            <caption></caption>
-            <tr>
-               <th>Sun</th>
-               <th>Mon</th>
-               <th>Tue</th>
-               <th>Wed</th>
-               <th>Thu</th>
-               <th>Fri</th>
-               <th>Sat</th>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-            </tr>
-         </table>
-         <p id="close">close <span>&#9746;</span></p>
-      </div>
-    </form>
-    </article>   
-<p>
-Nothing contained within this website or its links is a substitute for the medical advice of your health care provider.  The opinions expressed here are solely my own.
-</p>
+  
+<!-- add div for content styling 4/15/19 -->
+<div class="content">
+   <!-- add article section 3/24/19 --> 
+   <article>
+  
+     <h2>Welcome!</h2>
+     
+       <p>The covers I make are the solution to a problem: <strong>DUST</strong>. I found a quote that speaks to the dust situation in my house.
+     
+     <!-- Requirement - blockquote 4/25/19 -->
+        <blockquote cite="https://www.goodreads.com/quotes/tag/dust?page=3">
+        
+          <p>It was immediately clear that the book had been undisturbed for a very long time,  perhaps even since it had been laid to rest. The librarian fetched a checked duster, and wiped away the dust, a black, thick, tenacious Victorian dust, a dust composed of smoke and fog particles accumulated before the Clean Air acts.</p>
+     
+            <cite>― A.S. Byatt, Possession</cite>
+     
+        </blockquote>
+        
+     <p>While I do not actually suffer from Victorian dust, it is close enough. I hate to clean a thing off to use it, so I made my first cover to keep my large stand mixer clean enough to use without engaging in Spring Cleaning.</p>
+  
+   </article>
+  
+   <!-- add aside section 3/24/19 -->
+   <aside>
+  
+     <!-- Requirement - Image 1 4/24/19.
+          Add image of cover of kitchen print cover 4/24/19 -->
+     <img class="welcomeImage"  src="media/hu_kitchPrint.png" alt="Professional size mixer cover with black outlined stylized kitchen utensils on black and white check background. Some red accents, and black wood button on top panel.">
+     
+   </aside>
 </div>
 
-</main>
-</body>
+<!-- add footer section 4/9/19 -->
 <footer>
-	<h3>Birds, Bees and Diabetes</h3>
-	Copyright &copy; 2018 Terri Lyman<br>
-	<a href="mailto:HiddenUtility@aol.com">Contact Me</a>
+  
+  <h5>HiddenUtility</h5>
+  
+  <!-- Requirement - address attribute 4/11/19 --> 
+  <address>
+    All items crafted by: <a href="mailto:HiddenUtility@aol.com">Terri Lyman</a>
+  </address>
+  
+  <!-- add logo to footer 4/11/19 -->
+  <img src="media/huLogo.png" id="footLogo" alt="HiddenUtility Logo">
+  
+  <!-- CSS Validation, HTML5 Validation 4/28/19 -->
+  
+  <p>
+     <a href="http://jigsaw.w3.org/css-validator/check/referer">
+       <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+  </p>
+  
 </footer>
-</div><!--4/13/18 div end for wrapper-->
-<script src="jquery-1.11.1.min.js"></script>
-<script src="fc.js"></script>
-<!--10/26/18 test script with no other functions ch7
-<script src="days.js"></script>
--->
 </body>
 </html>
