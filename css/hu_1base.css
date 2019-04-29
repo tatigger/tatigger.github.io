@@ -143,43 +143,8 @@ div.howTo {
 
 article, aside {
   margin: 5px 5px auto;
-  text-align: center; /* to try to center items in flexbox space 4/28/19 */
  /* width: 350px; commented to try to fix flexbox want column in mobile*/
-}
 
-/* use id of aside on DIY page to keep alignment on left 4/28/19 */ 
-#steps {
-  margin: 5px 5px auto;
-  text-align: left;
-}
-
-/* set id #steps h3 element to center alignment for consistency 4/28/19 */
-#steps > h3 {
-  margin: 5px 5px  auto;
-  text-align: center;
-}
-
-/* set table to center in aside element, color: rgb(61, 74, 84),
-  font-size: 1.25rem, font-family 'Aleo', serif 4/29/19 */
-table {
-  margin: auto;
-  color: rgb(61, 74, 84);
-  font-size: 1.25rem;
-  font-family: 'Aleo', serif;
-}
-
-/* set table heading color rgb(61, 74, 84), font-size 1.5rem, font-family 
-   'Aleo',  serif, padding 10px, 5px 4/29/19 */
-th {
-  color: rgb(61, 74, 84);
-  font-size: 1.5rem;
-  font-family: 'Aleo', serif;
-  padding: 10px, 5px;
-}
-
-/* set padding to 3px 4/29/19 */
-td {
-  padding: 3px; 
 }
 
 /* blockquote p element padding 15px, font-family 'Glass Antiqua', cursive
@@ -237,17 +202,6 @@ header img {
 footer > img {
    height: 60px;
    margin: 10px;   
-}
-
-/* set border solid 5px  light blue rgb(53, 157, 237), width 50% 4/29/19 */
-#monarch {
-   border: solid 5px rgb(53, 157, 237);
-   width: 50%;
-}
-
-/* set border solid 5px  light blue rgb(53, 157, 237) 4/29/19 */
-#swirlCP {
-  border: solid 5px rgb(53, 157, 237);
 }
 
 /* font-family stacks for reference
