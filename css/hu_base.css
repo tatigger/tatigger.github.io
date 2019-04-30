@@ -233,6 +233,15 @@ header img {
    margin-bottom: 5px;
 }
 
+.pastItem {  
+   margin-bottom: 5px;
+}
+
+.otherCrafts {
+   margin: 30px;
+
+}
+
 /* initial footer logo size 4/26/19 */
 footer > img {
    height: 60px;
