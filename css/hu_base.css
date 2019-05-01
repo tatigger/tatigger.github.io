@@ -95,7 +95,7 @@ body {
 /* Initial style header with background color and width 100% 4/9/19 */
 header, footer {
   background-color: rgba(195, 127, 112, 0.5);
-  width: 900px;
+  /*width: 900px;   testing footer impact on mobile size 4/30/19*/
   margin: 10px auto;
 }
 

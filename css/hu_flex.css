@@ -21,6 +21,10 @@
      display: none;
    }
    
+   body {
+     margin: 0px;
+   }
+   
    /* display navigation links with no background color or border 4/22/19 */
    nav a:link {
      color: rgb(195, 127, 112);
@@ -28,6 +32,7 @@
      border: none;
      font-size: 1.75rem;
      padding: 0.2rem;
+     margin: 10px;
      font-family: "Raleway", sans-serif;
      list-style: none;
      text-decoration: none; 
@@ -115,16 +120,30 @@
       flex: 1 1 auto;
    }  
    
+   .welcomeImage {
+      width: 75%;
+   }
+    
+   .pastItem {
+      flex-self: center;
+   } 
+   
+   .otherCrafts {
+      margin: 0;
+      flex-self: center;
+   }
    
    footer {
+     width: 50%;
+   
      display: -webkit-flex; /* display .content as flexbox 4/29/19 */
 	 display: flex;
 
 	 -webkit-flex-flow: column wrap; /* orient by columns wrapping as needed 4/29/19 */
 	 flex-flow: column wrap;
 	 
-	 -webkit-flex: 1 1 100%; /* grow/shrink equally, size 100% 4/29/19 */
-      flex: 1 1 100%;
+	 -webkit-flex: 1 1 100%; /* grow/shrink equally, flex basis 100% 4/29/19 */
+     flex: 1 1 100%;
       
      -webkit-align-items: flex-left; /* align items left for mobile 4/29/19 */
      align-items: flex-left;
