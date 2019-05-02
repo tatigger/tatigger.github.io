@@ -233,10 +233,12 @@ header img {
    margin-bottom: 5px;
 }
 
+/* adjust spacing 4/30/19 */
 .pastItem {  
    margin-bottom: 5px;
 }
 
+/* adjust spacing 4/30/19 */
 .otherCrafts {
    margin: 30px;
 
@@ -259,29 +261,47 @@ footer > img {
   border: solid 5px rgb(53, 157, 237);
 }
 
+/* The css styling for the YouTube Iframe was found at 
+   https://coolestguidesontheplanet.com/videodrome/youtube/ 5/1/19 
+   border and padding for separation 5/1/19 */
+  .demoVideo {
+   max-width: 640px;
+   width: 80%;
+   border: solid 2px rgb(61, 186, 175);
+   padding: 5px;
+}
+
+/* The css styling for the YouTube Iframe was found at 
+   https://coolestguidesontheplanet.com/videodrome/youtube/ 5/1/19 */
+   .vidCont {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+/* The css styling for the YouTube Iframe was found at 
+   https://coolestguidesontheplanet.com/videodrome/youtube/ 5/1/19 */
+.vidCont iframe, .vidCont object, .vidCont embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
 /* font-family stacks for reference
 font-family: 'Glass Antiqua', cursive;
 font-family: 'Aleo', serif;
 font-family: 'Raleway', sans-serif;
 */
 
-/* set font size to 1.5rem, font family to Raleway for gallery text 3/24/19 */
 /*
 gallery text {
   color: rgb(195, 127, 112);
   font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
 }
-
-
-nav.horizontal a:visited, nav.horizontal a:link {
-   color: rgb(31, 73, 125);
-}
-
-nav.horizontal a:hover, nav.horizontal a:active {
-   background-color: rgb(31, 73, 125);
-   color: white;
-}
-
 */
 
