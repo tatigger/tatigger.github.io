@@ -32,7 +32,9 @@
   <title>HiddenUtility: Product Detail</title>
   
   <!-- space for css file links 3/24/19-->
+  <link href="css/hu_reset.css" rel="stylesheet">
   <link href="css/hu_base.css" rel="stylesheet">
+  <link href="css/hu_flex.css" rel="stylesheet">
   
   <!-- STANDARD @IMPORT for Google fonts added 3/24/19-->
   <link href="https://fonts.googleapis.com/css?family=Aleo%7CGlass+Antiqua%7CRaleway" rel="stylesheet">
@@ -48,7 +50,13 @@
 
   <h1>HiddenUtility</h1>
   
-  <!-- add nav links to the various pages 3/24/19 Updated 4/10/19-->
+  <!-- add logo 3/24/19 -->
+  <img src="media/huLogo.png" alt="HiddenUtility Logo">
+
+</header>
+
+  <!-- add nav links to the various pages 3/24/19 Updated 4/10/19
+       move nav below header 5/2/19-->
 <nav>
    <ul>
       <li><a href="index.html">Home</a></li>
@@ -58,34 +66,45 @@
       <li><a href="hu_aboutMe.html">About Me</a><li>
    </ul>
 </nav>
-  
-  <!-- add logo 3/24/19 -->
-  <img src="media/huLogo.png" alt="HiddenUtility Logo">
 
-</header>
+<!-- add div for content styling 4/15/19 
+     added to product detail 5/2/19-->
+<div class="content">  
+  
+<!-- add article section Product Gallery 4/10/19 
+     added to product detail 5/2/19--> 
+<section class="gallery">
   
 <!-- add article section Product Detail 4/10/19 --> 
-<article>
+<article class="itemDetail">
   
-  <h2>Item Name, Product/Appliance Name</h2>
-  <img class="ProductDetail" src="" alt="">
-  <p>Description</p>
-  <p>Price</p>
+  <h2>Red Snowflake Cover</h2>
+  <img class="productDetail" src="media/hu_redSF.png" alt="Red and white holiday cover for Kitchenaid Artisan Stand Mixer, with red snowflake button on top and red flannel lining.">
+  <h4>$27.00</h4>
+  <p><a href="mailto:HiddenUtility@aol.com">email for order information</a></p>
   
 </article>
-  
-<!-- add aside section Shipping Information 4/10/19 -->
-<aside>
-    
-  <h3>Shipping Information</h3>
-  
-</aside>
 
 <!-- add aside section Order Details or Form 4/10/19 -->
 <aside>
-   <h3>Order Details/Form</h3>
+   <h3>Item Details</h3>
+   
+   <p>Dimensions: </p>
+   <p>Add holiday pizzazz to your kitchen! This holiday cover features reindeer and snowflakes in round red and white circles on a red background. The red plastic button on top is decorated with a white snowflake. A solid red flannel lining completes the cover, and makes the item reversible.</p>
+   <p>This item was designed with the Kitchenaid Artisan Series stand mixer as a model, and fits items of those approximate dimensions best.</p>
+   <p>in stock</p>
 </aside>
 
+<!-- add aside section Shipping Information 4/10/19 -->
+<aside class="shipping">
+    
+   <h3>Shipping Information</h3>
+  
+               <p>There is no charge for US Priority Mail. If other shipping carriers or faster shipping times are needed, we will finalize those details and fee if applicable prior to order placement. I want you to know your price and be comfortable with the arrangements before we start!</p>
+  
+</aside>
+
+</div>
 
 <!-- add footer section 4/9/19 -->
 <footer>

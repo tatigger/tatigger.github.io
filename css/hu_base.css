@@ -243,6 +243,23 @@ header img {
    margin: 30px;
 
 }
+section.gallery > h2 {
+   width: 100%;
+   margin: auto;
+}
+
+article.itemDetail > h4 {
+  color: rgb(237, 59, 53);
+  border: solid 3px rgb(53, 157, 237);
+}
+
+aside.shipping {
+  padding: 10px; 
+}
+
+aside.shipping > p {
+  font-size: 1.5rem;
+}
 
 /* initial footer logo size 4/26/19 */
 footer > img {
