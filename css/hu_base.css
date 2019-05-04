@@ -243,20 +243,25 @@ header img {
    margin: 30px;
 
 }
+
+/* fix spacing of flexboxes when paragraph removed 5/3/19 */
 section.gallery > h2 {
    width: 100%;
    margin: auto;
 }
 
+/* set color and border around h4 for price 5/2/19 */
 article.itemDetail > h4 {
   color: rgb(237, 59, 53);
   border: solid 3px rgb(53, 157, 237);
 }
 
+/* adjust spacing for shipping div 5/2/19 */
 aside.shipping {
   padding: 10px; 
 }
 
+/* enlarge paragraph fontsize for shipping div 5/2/19 */
 aside.shipping > p {
   font-size: 1.5rem;
 }
