@@ -84,10 +84,12 @@
       flex: 1 1 auto;   
    }
    
-   /* set background color for article and aside element to terracotta 
+   /* Requirement - Background Color 4/19/19
+      set background color for article and aside element to terracotta 
       rgba(195, 127, 112, 0.5) 4/19/19 */
    article, aside {
       background-color: rgba(195, 127, 112, 0.5);
+      padding: 5px;
       -webkit-flex-flow: column wrap; /* orient by columns wrapping as needed 4/20/19 */
       flex-flow: column wrap; 
       /* shrink and grow at same rate, item size based on content 4/26/19 */
@@ -133,13 +135,13 @@
     
    /* center items, eliminate overflow 4/30/19 */
    .pastItem {
-      flex-self: center;
+      align-self: center;
    } 
    
    /* center items, eliminate overflow 4/30/19 */
    .otherCrafts {
       margin: 0;
-      flex-self: center;
+      align-self: center;
    }
    
    /* smaller font size 1rem for mobile 5/1/19 */
@@ -160,17 +162,17 @@
 	 -webkit-flex: 1 1 100%; /* grow/shrink equally, flex basis 100% 4/29/19 */
      flex: 1 1 100%;
       
-     -webkit-align-items: flex-left; /* align items left for mobile 4/29/19 */
-     align-items: flex-left;
+     -webkit-align-items: flex-start; /* align items left for mobile 4/29/19 */
+     align-items: flex-start;
      
      background: none; /* remove background color for mobile 4/29/19 */
    }
    
     /* prevent logo image from stretching to infinity, lol 4/29/19 */
     #footLogo {
-      align-self: flex-left;
+      align-self: flex-start;
       width: 60px;
-      } 
+    } 
 }
 
 /* Requirement - Use of media queries for tablet styles and 3 selectors 4/19/19*/
