@@ -102,7 +102,7 @@ header, footer {
 /* Requirement - pseudo-element a:link 4/9/19
    set initial font and color terracotta rgb(195, 127, 112) for nav elements 4/9/19 */
 nav a:link {
-  color: rgb(195, 127, 112);
+  color: rgb(61, 74, 84);
   background: rgba(195, 127, 112, 0.5);
   border: solid 1px;
   border-color: rgb(195, 127, 112);
@@ -114,13 +114,8 @@ nav a:link {
 }
 
 /* set nav hover color lt blue rgb(53, 157, 237) 4/9/19 */
-nav a:hover {
+nav li a:hover {
    color: rgb(53, 157, 237);
-}
-
-/* set nav visited color dk blue rgb(61, 74, 84) 4/9/19 */
-nav a:visited {
-   color: rgb(61, 74, 84);
 }
 
 /* Requirement - Border 4/15/19 
