@@ -1,0 +1,449 @@
+/*
+   Survey Forms Style Sheet Example
+   Author: Terri Lyman
+   Date:  March 25, 2019 
+
+   Filename:  hu_flex.css
+
+*/
+
+/* Requirement - Use of media queries for mobile styles and 3 selectors 4/19/19*/
+
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+@media only screen and (max-width: 480px) {
+
+ 
+   /* No header display 4/20/19 */
+   header {
+     display: none;
+   }
+   
+   body {
+     margin: 0px;
+   }
+   
+   /* display navigation links with no background color or border 4/22/19 */
+   nav a:link {
+     color: rgb(195, 127, 112);
+     background: none;
+     border: none;
+     font-size: 1.75rem;
+     padding: 0.2rem;
+     margin: 10px;
+     font-family: "Raleway", sans-serif;
+     list-style: none;
+     text-decoration: none; 
+   }
+  
+   nav ul {
+     display: -webkit-flex; /* display navigation list as flexbox 4/19/19 */
+     display: flex;
+  
+     -webkit-flex-flow: column nowrap;/* orient by rows no wrap 4/19/19 */
+     flex-flow: column nowrap;
+   }
+  
+   nav li { /* item sizes based on content, shrink and grow at same rate
+                      4/19/19 */
+     -webkit-flex: 1 1 auto;
+     flex: 1 1 auto;
+   }
+   
+   div.content {
+	 display: -webkit-flex; /* display .content as flexbox 4/20/19 */
+	 display: flex;
+
+	 -webkit-flex-flow: column wrap; /* orient by columns wrapping as needed 4/20/19 */
+	 flex-flow: column wrap; 
+ 
+     /* shrink and grow at same rate, item size based on content 4/20/19 */
+	 -webkit-flex: 1 1 auto; 
+	 flex: 1 1 auto;
+	 
+	 /* justify content vertical alignment 4/26/19 */
+	 -webkit-justify-content: space-between;
+	 justify-content: space-between;
+	 
+	 /* align items horizontal alignment 4/26/19 */
+	 -webkit-align-items: center;
+	 align-items: center;
+ 
+     /* remove border and box-shadow from mobile 4/20/19 */
+	 border: none;
+	 box-shadow: none;
+   }
+   
+   div.howTo {
+     -webkit-flex-flow: column wrap; /* orient by columns wrapping as needed 4/20/19 */
+      flex-flow: column wrap; 
+     
+      -webkit-flex: 1 1 auto; /* grow/shrink equally, size based on content 4/20/19 */
+      flex: 1 1 auto;   
+   }
+   
+   /* Requirement - Background Color 4/19/19
+      set background color for article and aside element to terracotta 
+      rgba(195, 127, 112, 0.5) 4/19/19 */
+   article, aside {
+      background-color: rgba(195, 127, 112, 0.5);
+      padding: 5px;
+      -webkit-flex-flow: column wrap; /* orient by columns wrapping as needed 4/20/19 */
+      flex-flow: column wrap; 
+      /* shrink and grow at same rate, item size based on content 4/26/19 */
+	 -webkit-flex: 1 1 auto; 
+	 flex: 1 1 auto;
+	 
+	 /* align content horizontally 4/26/19 */
+	 -webkit-align-self: center;
+	 align-self: center;	 
+   }
+   
+   /* center div.demoVideo 5/1/19 */
+   .demoVideo {
+     margin: auto;
+      
+   }
+   
+   #diyForm {
+      -webkit-flex-flow: column wrap; /* orient by columns wrapping as needed 4/20/19 */
+      flex-flow: column wrap; 
+     
+      -webkit-flex: 1 1 auto; /* grow/shrink equally, size based on content 4/20/19 */
+      flex: 1 1 auto;
+   }
+   
+   form#diyForm fieldset {
+      -webkit-flex-flow: column wrap; /* orient by columns wrapping as needed 4/20/19 */
+      flex-flow: column wrap;
+   
+      -webkit-flex: 1 1 auto; /* grow/shrink equally, size based on content 4/20/19 */
+	  flex: 1 1 auto;
+   }
+   
+   div.formRow > * {
+      -webkit-flex: 1 1 auto; /* grow/shrink equally, size based on content 4/20/19 */
+      flex: 1 1 auto;
+   }  
+   
+   /* fix spacing in mobile to have no overflow 4/30/19 */
+   .welcomeImage {
+      width: 75%;
+   }
+    
+   /* center items, eliminate overflow 4/30/19 */
+   .pastItem {
+      align-self: center;
+   } 
+   
+   /* center items, eliminate overflow 4/30/19 */
+   .otherCrafts {
+      margin: 0;
+      align-self: center;
+   }
+   
+   /* smaller font size 1rem for mobile 5/1/19 */
+   address {
+     font-size: 1rem;
+   }
+   
+    /* fix spacing in mobile to have no overflow 4/30/19 */
+   footer {
+     width: 50%;
+   
+     display: -webkit-flex; /* display .content as flexbox 4/29/19 */
+	 display: flex;
+
+	 -webkit-flex-flow: column wrap; /* orient by columns wrapping as needed 4/29/19 */
+	 flex-flow: column wrap;
+	 
+	 -webkit-flex: 1 1 100%; /* grow/shrink equally, flex basis 100% 4/29/19 */
+     flex: 1 1 100%;
+      
+     -webkit-align-items: flex-start; /* align items left for mobile 4/29/19 */
+     align-items: flex-start;
+     
+     background: none; /* remove background color for mobile 4/29/19 */
+   }
+   
+    /* prevent logo image from stretching to infinity, lol 4/29/19 */
+    #footLogo {
+      align-self: flex-start;
+      width: 60px;
+    } 
+}
+
+/* Requirement - Use of media queries for tablet styles and 3 selectors 4/19/19*/
+
+/* ============================================
+   Tablet Styles: 481px to 860px 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+    header {
+       display: -webkit-flex; /* display navigation list as flexbox 4/19/19 */
+	   display: flex;
+
+		-webkit-flex-flow: row wrap; /* orient by rows no wrap 4/19/19 */
+	   flex-flow: row wrap;
+	   width: 100%;
+	   
+	   -webkit-justify-content: flex-start; /* align to start of flexbox 4/19/19 */
+	   justify-content: flex-start;
+	   
+	   -webkit-align-items: center; /* align items in center of header 4/19/19 */
+	   align-items: center;
+    
+       background: rgba(195, 127, 112, 0.5); /* background color 4/19/19 */ 
+    }
+    
+    
+
+    /* nav link elements color, background-color, border, border color, font-family,
+      list-style, text decoration same as base css except font size 1.5rem 4/22/19 */
+    nav a:link {
+	   color: rgb(195, 127, 112);
+	   background: rgba(195, 127, 112, 0.5);
+	   border: solid 1px;
+	   border-color: rgb(195, 127, 112);
+	   font-size: 1.5rem;
+	   padding: 0.2rem;
+	   font-family: "Raleway", sans-serif;
+	   list-style: none;
+	   text-decoration: none; 
+    }
+    /* margin set to 18 px to prevent overlap 4/22/19 */
+    nav ul, li {
+       margin: 18px; 
+    }
+
+	div.content {
+	   display: -webkit-flex; /* display .content as flexbox 4/20/19 */
+	   display: flex;
+
+	   -webkit-flex-flow: row wrap; /* orient by columns wrapping as needed 4/20/19 */
+	   flex-flow: row wrap; 
+
+	   /* shrink and grow at same rate, item size based on content 4/20/19 */
+	   -webkit-flex: 1 1 auto; 
+	   flex: 1 1 auto; 
+
+/*	   -webkit-justify-content: flex-end;
+	   justify-content: flex-end; */
+
+/*	   -webkit-align-items: flex-end;
+	   align-items: flex-end; */
+   }
+	
+    div.howTo {
+	   display: -webkit-flex; /* display .howTo as flexbox 4/24/19*/
+	   display: flex;
+  
+	   -webkit-flex-flow: row wrap; /* orient by rows wrapping 4/24/19 */
+	   flex-flow: row wrap; 
+	   
+	 
+	   /* should position items in div.howTo spaced evenly. works above for 
+	      div.content but not here 4/24/19 */
+	   -webkit-justify-content: space-evenly;
+	   justify-content: space-evenly;  
+	}
+	
+	/* center div.demoVideo */
+	div.demoVideo {
+	   margin: auto;
+	}
+	
+	article, aside {
+	   /* item flex basis auto, shrink and grow at same rate, center 4/26/19 */
+	   -webkit-flex: 1 1 auto;
+	   flex: 1 1 auto;
+	   
+	  -webkit-align-self: center;
+	   align-self: center; 
+	}
+    
+    footer {
+       display: -webkit-flex; /* display navigation list as flexbox 4/19/19 */
+	   display: flex;
+
+	   -webkit-flex-flow: row wrap; /* orient by rows no wrap 4/19/19 */
+	   flex-flow: row wrap;
+	   
+	   -webkit-justify-content: space-around; /* space around items 4/19/19 */
+	   justify-content: space-around;
+	   
+	   -webkit-align-items: center;  /* align content center 4/19/19 */
+	   align-items: center;
+	   
+	   width: 100%; /* span avail width, background color 4/19/19 */
+	   background: rgba(195, 127, 112, 0.5);
+    }
+   
+    /* display #diyForm as flexbox, rows with wrapping 4/20/19 */
+	form#diyForm {
+	   display: -webkit-flex;
+	   display: flex;
+   
+	   -webkit-flex-flow: row wrap;
+	   flex-flow: row wrap;
+	   
+	}
+    
+    /* set fieldset background color light blue rgba(53, 157, 237, 0.35) font-size
+       1.25rem color dark blue rgb(61, 74, 84) border light blue solid 1px 
+       rgb(53, 157, 237) padding 10px margin 10px flex grow/shrink 1 1 basis 50%
+       4/20/19 */
+	form#diyForm > fieldset {
+	   background-color: rgba(53, 157, 237, 0.35);
+	   -webkit-flex: 1 1 50%;
+	   flex: 1 1 50%;
+	   font-size: 1.25rem;
+	   color: rgb(61, 74, 84);
+	   border: 1px solid rgb(53, 157, 237);
+	   padding: 10px;
+	   margin: 10px;   
+	}
+	
+	/* article, aside width 50%  4/22/19 */
+	article, aside {
+	   width: 50%; 
+	}
+}
+
+/* Requirement - Use of media queries for desktop styles and 3 selectors 4/19/19*/
+
+/* ============================================
+   Desktop Styles: 861 and up 
+   ============================================
+*/
+@media only screen and (min-width: 861px) {
+    /* added first flex styles 4/9/18 moved to Desktop Styles 4/22/19*/
+	/* span width of page, background color 4/10/19 */
+	header {
+	   display: -webkit-flex; /* display navigation list as flexbox 4/19/19 */
+	   display: flex;
+
+		-webkit-flex-flow: row wrap; /* orient by rows no wrap 4/19/19 */
+	   flex-flow: row wrap;
+	   
+	   -webkit-justify-content: flex-start;
+	   justify-content: flex-start;
+	   
+	   -webkit-align-items: center;
+	   align-items: center;
+	   
+	   width: 100%;
+	   background: rgba(195, 127, 112, 0.5);
+	}
+    
+	nav, ul, li {
+		display: -webkit-flex; /* display navigation list as flexbox 4/19/19 */
+		display: flex;
+
+		-webkit-flex-flow: row wrap; /* orient by rows wrap 4/19/19 */
+		flex-flow: row wrap;
+		
+		-webkit-justify-content: space-evenly;
+		justify-content: space-evenly;
+		
+		/* set list-style-type none(gets rid of dots), padding 5px 4/19/19 */
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+	}
+
+    /* item sizes based on content, shrink and grow at same rate 4/19/19 */
+	nav ul { 
+	    display: -webkit-flex; /* display navigation list as flexbox 4/19/19 */
+		display: flex;
+
+		-webkit-flex-flow: row wrap; /* orient by rows wrap 4/19/19 */
+		flex-flow: row wrap;
+		
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+		padding: 0px; /* remove padding 4/19/19 */		
+	}
+    	
+	footer {
+	   display: -webkit-flex; /* display navigation list as flexbox 4/19/19 */
+	   display: flex;
+
+	   -webkit-flex-flow: row wrap; /* orient by rows  wrap 4/19/19 */
+	   flex-flow: row wrap;
+	   
+	   -webkit-justify-content: space-around; /* space around items 4/19/19 */
+	   justify-content: space-around;
+	   
+	   -webkit-align-items: center; /* align content center 4/19/19 */
+	   align-items: center;
+	   
+	   width: 100%; /* width to fit space, background color 4/19/19 */
+	   background: rgba(195, 127, 112, 0.5);
+	}
+
+	div.content {
+	   display: -webkit-flex; /* display div.content as flexbox 4/19/19*/
+	   display: flex;
+
+	   -webkit-flex-flow: row wrap; /* orient by rows wrapping as needed 4/19/19*/
+	   flex-flow: row wrap; 
+
+	   -webkit-flex: 1 1; /* items shrink and grow at same rate 4/19/19 */
+	   flex: 1 1;
+       
+       /* positions fieldsets spaced evenly 4/22/19 */
+	   -webkit-justify-content: space-evenly; 
+	   justify-content: space-evenly;
+
+	}
+	
+	div.howTo {
+	   display: -webkit-flex; /* display .howTo as flexbox 4/21/19*/
+	   display: flex;
+  
+	   -webkit-flex-flow: row nowrap; /* orient by rows nowrapping 4/21/19 */
+	   flex-flow: row nowrap; 
+	   
+	   /* should position items in div.howTo spaced evenly. works above for 
+	      div.content but not here 4/22/19 */
+	   -webkit-justify-content: space-evenly;
+	   justify-content: space-evenly;
+	}
+
+	article { 
+	   width: 50%; /* Mrs. C */
+	   /* item flex basis 100px, shrink and grow at same rate 4/22/19 */
+	   -webkit-flex: 1 1 100px;
+	   flex: 1 1 100px;
+	}
+
+	aside {
+	   width: 50%; /*  Mrs. C */
+	   /* item flex basis 100px, shrink and grow at same rate 4/19/19 */
+	   -webkit-flex: 1 1 100px;
+	   flex: 1 1 100px;	   
+	}
+	
+	section.gallery {
+	   display: -webkit-flex; /* display div.content as flexbox 4/19/19*/
+	   display: flex;
+
+	   -webkit-flex-flow: row wrap; /* orient by rows wrapping as needed 4/19/19*/
+	   flex-flow: row wrap; 
+
+	   -webkit-flex: 1 1 100px; /* items shrink and grow at same rate 4/19/19 */
+	   flex: 1 1 100px;
+       
+       /* positions fieldsets spaced evenly 4/22/19 */
+	   -webkit-justify-content: space-evenly; 
+	   justify-content: space-evenly;
+	   
+	   margin: 5px; /* fine-tune spacing 4/30/19 */
+	}	
+}

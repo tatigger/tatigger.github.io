@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  
+  Final Project
+  HiddenUtility
+  
+  Author: Terri Lyman
+  Date: March 24, 2019
+  
+  File name: hu_DIYproduct.html
+  changed to test Rail Around 12/22/19
+  -->
+  
+  <!-- Requirement - metadata added 3/24/19 -->
+  <meta charset="utf-8">
+  
+  <!-- Requirement - metadata viewport 4/10/19 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Requirement - metadata description 4/10/19 -->
+  <meta name="description" content="The HiddenUtility form to customize individual items that are not already available.">    
+  
+  <!-- Requirement - metadata keywords 4/10/19 -->
+  <meta name="keywords" content="HiddenUtility, DIY, Special Order, cover, cozy, gift, custom, matched">  
+  
+  <!-- Requirement - metadata author 4/10/19 -->
+  <meta name="author" content="Terri Lyman">
+  
+  <!-- title="HiddenUtility DIY Product Form" 4/19/19-->
+  <title>HiddenUtility: DIY Product Form</title>
+  
+  <!-- space for css file links 3/24/19-->
+  <link href="css/hu_reset.css" rel="stylesheet">
+  <link href="css/hu_base.css" rel="stylesheet">
+  <link href="css/hu_flex.css" rel="stylesheet">
+  <link href="css/hu_forms.css" rel="stylesheet">
+  
+  <!-- STANDARD @IMPORT for Google fonts added 3/24/19-->
+  <link href="https://fonts.googleapis.com/css?family=Aleo%7CGlass+Antiqua%7CRaleway" rel="stylesheet">
+  
+  
+</head>
+
+<!-- add body section 3/24/19 -->
+<body>
+
+<!-- header section to contain company name, logo 3/24/19-->
+<header>
+  
+  <!-- add logo 3/24/19 -->
+  <img src="media/huLogo.png" alt="HiddenUtility Logo">
+  
+   <!-- Requirement h1, header 3/24/19 -->
+   <h1>HiddenUtility: Design It Yourself Product Form</h1>
+
+</header>
+
+<!-- add nav links to the various pages 3/24/19 Updated 4/10/19 updated 4/24/19
+	 updated to indexHU to test Rail Around 12/22/19 -->
+<nav>
+   <ul>
+      <li><a href="indexHU.html">Home</a></li>
+      <li><a href="hu_currProdGal.html">Current Items</a></li>
+      <li><a href="hu_pastProdGal.html">Past Items</a></li>
+      <li><a href="hu_DIYproduct.html">Custom Item</a></li>
+      <li><a href="hu_aboutMe.html">About Me</a><li>
+   </ul>
+</nav>
+   <!-- add div.content for container consistent to all pages 4/19/19 -->
+   <div class="content">
+          <!-- add div.howTo for consistent formating 4/20/19 -->
+         <div class="howTo">
+         
+            <!-- add article section 3/24/19 --> 
+            <article>
+  
+               <!--Requirement - h2 heading for article 3/24/19 -->
+               <h2>How To DIY a Product</h2>
+               <p><a href="#diyForm">Skip to the form below.</a></p>
+               <p>Designing a product especially for your decor or item is easy. I will be in touch with you throughout the process. Read through the steps below. Fill out the form. Send the form in. I will contact you by email within 48 hours (typically 24 hours) to answer questions, send examples, or make suggestions.</p> 
+               
+               <!--Requirement - h4 heading for Shipping Details 4/25/19 -->
+               <h4>Shipping</h4>
+               <p>There is no extra charge for US Priority Mail. If other shipping carriers or faster shipping times are needed, we will finalize those details and fee if applicable prior to order placement. I want you to know your price and be comfortable with the arrangements before we start!</p>
+ 
+            </article>
+
+            <!-- add aside section 3/24/19 -->
+            
+            <!-- Requirement - h3 heading for aside 3/24/19 -->
+            <aside id="steps">  
+               <h3>DIY Steps</h3>
+               <p>Step 1 - Select the item you want to cover. </p>
+  <p>Step 2 - Measure the item carefully. I need the item's actual measurements. Height, width and depth. If the product is irregularly shaped, see Step 3 below.</p>
+  <!-- add text link for email contact 4/28/19 -->
+  <p>Step 3 - Irregular shapes can pose special problems. Send me <a href="mailto:HiddenUtility@aol.com">an email</a> and I will walk you through measuring this type of item. </p>
+  <p>Step 4 - Choose a fabric or color scheme and extras. Do you want pockets? Would it look great with fringe? Do you prefer to up-cycle denim? If you are stuck, send a picture of the room where the item lives, and I will send you a few samples to choose from.</p>
+  <p>Step 5 - Armed with your measurements and ideas, fill out the form below. Required information is marked with an asterisk.</p>
+  
+            </aside>
+         
+</div> <!-- class=howTo -->
+  
+<!-- Requirement - Form for DIY Products id="diyForm" 4/10/19 -->
+<form id="diyForm" action="" method="post">
+   
+   <!-- Requirement - Add the fieldset for customer information, id="custInfo" 4/16/19 --> 
+  <fieldset id="custInfo">
+     <!-- Requirement - Legend 4/16/19 -->
+     <legend>Your Information</legend>
+     
+     <!-- Requirement - input control with label="Full Name", for/id=name, type text, 
+          name=custName, placeholder=first and last name, required, div id="formRow"
+          4/16/19 -->
+     <div class="formRow">
+     <label for="name">Full Name*</label>
+     <input name="custName" id="name" type="text" placeholder="first and last name" 	
+     	    required>
+     </div>
+    
+     <!-- div id="formRow", label="Steet Address" for/id=street1, type=text, 
+          name=custStreet1 4/16/19 -->
+     <div class="formRow">
+     <label for="street1">Street Address</label>
+     <input name="custStreet1" id="street1" type="text">
+     </div>
+    
+     <!-- div id="formRow", label="Street Address 2" for/id=street2, type=text,  
+          name=custStreet2 4/16/19 -->
+     <div class="formRow">
+     <label for="street2">Street Address 2</label>
+     <input name="custStreet2" id="street2" type="text">
+     </div>
+    
+     <!-- div id="formRow", label="City", for/id=city, type=text,  name=custCity,
+          4/16/19 -->
+     <div class="formRow">
+     <label for="city">City</label>
+     <input name="custCity" id="city" type="text">
+     </div>
+    
+     <!-- div id="formRow", label="State", for/id=state, type=text,  name=custState, 
+          size=2, 4/16/19 -->
+     <div class="formRow">
+     <label for="state">State</label>
+     <input name="custState" id="state" size="2" type="text">
+     </div>
+    
+     <!-- Requirement - Form control with placeholder "nnnnn (-nnnn)", 
+          pattern="^\d{5}(-\d{4})?$", regex and placeholder from "New Perspectives 
+          on HTML5 and CSS3" 7th Edition by Patrick Carey 4/16/19 
+          div id="formRow", label="Zip Code", for/id=zip, type=text, name=custCity,
+          4/16/19 -->
+     <div class="formRow">    
+     <label for="zip">Zip Code</label>
+     <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" 
+            pattern="^\d{5}(-\d{4})?$">
+     </div>
+     
+     <!-- Requirement - Form control with placeholder "(nnn) nnn-nnnn",pattern and
+          type = tel 4/16/19,
+          form control with placeholder, pattern="^\d{5}(-\d{4})?$", regex and 
+          placeholder from "New Perspectives on HTML5 and CSS3" 7th Edition by 
+          Patrick Carey 4/16/19, 
+          div id="formRow", label="Phone Number", for/id=phone, type=tel, 
+          name=custPhone, 4/16/19 -->
+     <div class="formRow">
+     <label for="phone">Phone Number</label>
+     <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+     </div>
+     
+     <!-- Requirement - input type = email, required field 4/16/19
+          div id="formRow", label="E-mail*", for/id=mail, type=email,  
+          name=custEmail, required 4/16/19 -->
+     <div class="formRow">
+     <label for="mail">E-mail*</label>
+     <input name="custEmail" id="mail" type="email" required>
+     </div>
+     
+     <div class="formRow">
+     <p><a href="#steps">Return to the instructions above.</a></p>
+     </div>
+  
+  </fieldset>
+  
+  <!-- Requirement - Add fieldset for item details id="itemDetails" 4/16/19-->
+  <fieldset id="itemDetails">
+      
+      <!-- Requirement - Legend 4/16/19 -->
+     <legend>Item Details</legend>
+     
+     <!-- Requirement - maxlength="50", field label, input box 4/20/19
+          div id="formRow" label="Item Name" for/id=itemName name=item type=text
+          size/maxlength="50" placehoder="mixer, tv, etc" -->
+     <div class="formRow">
+     <label for="itemName">Item Name</label>
+     <input name="item" id="itemName" size="50" type="text" maxlength="50"
+            placeholder="mixer, tv, etc">
+     </div>
+     
+     <!-- div id="formRow" label="Item Make and Model" for/id=itemModel name=model
+          type=text size="50" 4/16/19 -->
+     <div class="formRow">
+       <label for="itemModel">Item Make and Model</label>
+       <input name="model" id="itemModel" size="50" type="text">
+     </div>
+    
+     <!-- Requirement - 2nd type of input box, maxlength, placeholdertext 4/16/19
+          div id="formRow" label="Item Dimensions" for/id=itemDimen name=dimensions
+          type=textarea maxlength="150" col="100" rows="3" 4/16/19 -->
+     <div class="formRow">
+       <label for="itemDimen">Item Dimensions</label>
+       <textarea name="dimensions" id="itemDimen" cols="100" rows="3" 
+                 maxlength="150" 
+                 placeholder="enter dimensions of item here"></textarea>
+     </div>
+     
+     <!-- div id="formRow" label="Finishing Touches" for/id=itemFinish name=finish
+          type=textarea columns="100" rows="3" maxlength="250" placeholder="extra
+          finishing touches are added here" 4/16/19 -->
+     <div class="formRow">
+       <label for="itemFinish">Finishing Touches</label>
+       <textarea name="finish" id="itemFinish" cols="100" rows="3" 
+                 maxlength="250" 
+                 placeholder="extra finishing touches are added here"></textarea> 
+     </div>
+     
+  </fieldset>
+  
+  <!-- Requirement - div id="buttons" 4/19/19 -->
+  <div id="buttons">
+     
+    <!-- Requirement - submit button 4/19/19
+         type=submit value="Submit" 4/19/19 -->    
+    <input type="submit" value="Submit">
+        
+    <!-- Requirement - reset button 4/19/19
+         type=submit value="Submit" 4/19/19 -->    
+    <input type="reset" value="Cancel">
+        
+  </div>      
+    
+</form>
+      
+   </div> <!-- id=content -->
+   
+<!-- add footer section 4/9/19 -->
+<footer>
+
+    <!-- Requirement - h5 footer heading 4/11/19 -->
+    <h5>HiddenUtility</h5>
+  
+  <!-- Requirement - address attribute 4/11/19 --> 
+  <address>
+    All items crafted by: <a href="mailto:HiddenUtility@aol.com">Terri Lyman</a>
+  </address>
+  
+ 
+  <!-- add logo to footer 4/11/19 -->
+  <img src="media/huLogo.png" id="footLogo" alt="HiddenUtility Logo">
+   
+</footer>
+
+ <!-- CSS Validation, HTML5 Validation 4/28/19--> 
+  
+  <p>
+     <a href="http://jigsaw.w3.org/css-validator/check/referer">
+       <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+  </p>
+
+</body>
+</html>
