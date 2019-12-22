@@ -203,6 +203,13 @@ a#navicon {
 	width: 100%;
 }
 
+/* style and center the contact email link on ContactUs page 12/21/19 */
+.contactUsEMail {
+	text-decoration: none;
+	font-size: 3.5vh;
+	text-align: center;
+}
+
 /* REQUIRED media query large screen added 10/29/19 */
 /* ============================================
    Desktop Styles: 861 and up 
@@ -314,12 +321,13 @@ a#navicon {
 	/* font-size 3.5vh, background-color green #2B805B, color lightblue #BAFFCC 
 	   padding .25vh 1vh 11/24/19 */
 	/*  changed to color green #2B805B inherited background color 11/29/19 */
+	/* shortened color transition to 2s 12/21/19 */
 	.horizontalNav a {
 		font-size: 3.5vh;
 		color: #2b805b;
 	/*	background-color: #BAFFCC; */
 		padding: .25vh 1vh; 
-		transition: background-color 3s, color 1s;
+		transition: background-color 2s, color 1s;
 	}
 	
 	/* hover background-color green #2B805B, color light blue  #BAFFCC 11/29/19  */	
@@ -480,17 +488,18 @@ a#navicon {
 	/* font-size 3.5vh, text-align center, margin 2vh .5vh, padding .5vh
 	   border-top and bottom .5vh solid #802D1F (border dark burgundy) 11/15/19 */
 	h2 {
-		font-size: 3.5vh; 
+		font-size: 4vh; 
 		text-align: center;
-		margin: 2vh .5vh;
-		padding: .5vh;
+		margin: 3vh .5vh;
+		padding: 2vh .5vh;
 		border-top: .5vh solid #802D1F;
 		border-bottom: .5vh solid #802D1F;
 	}
 	
-	/* font size 3vh, margin 2vh 1vh 11/24/19 */
+	/* font size 3vh, margin 2vh 1vh 11/24/19
+		font size 3.5vh 12/21/19 */
 	h3 {
-		font-size: 3vh;
+		font-size: 3.5vh;
 		margin: 2vh 1vh;
 	}
 	
@@ -704,21 +713,23 @@ a#navicon {
 	/*____________________________________________________________*/
 	/* About Us Page Styles 11/29/19 */
 	
-	/* REQUIRED animation added 12/1/19 */
+	/* REQUIRED animation added 12/1/19
+		Removed 12/21/19 */
 	
 	/* overflow hidden 12/1/19 */
-	.aboutUs {
+/*	.aboutUs {
 		overflow: hidden;
 	}
+*/
 	/* duration 5s, name "movein" count 3 12/1/19 */
-	.originsA {
+/*	.originsA {
 		animation-duration: 5s;
   		animation-name: movein;
   		animation-iteration-count: 3;
 	}
-	
+*/	
 	/* moves text in from right margin to position at left margin 12/1/19 */
-	@keyframes movein {
+/*	@keyframes movein {
   		from {
     		margin-left: 100%;
     		width: 300%; 
@@ -729,18 +740,22 @@ a#navicon {
     		width: 100%;
   		}
 	}
+*/
 	
 	/* REQUIRED text effect added 12/1/19 
 	   class "tname" text effect "retro shadow" from
 	   https://codepen.io/juanbrujo/pen/yGpAK with
-	   variations 12/1/19 */
+	   variations 12/1/19 
+	   Removed 12/21/19*/
 	.tname {
 		font-family: Muli, sans-serif;
 		font-weight: bold;
-    	letter-spacing: 1vh;
-    	text-shadow: 
+    	font-size: 3.5vh;
+    	text-align: center;
+    	margin: 3vh auto;
+    	/*text-shadow: 
       	4px 4px 0px #d5d5d5, 
-      	7px 7px 0px rgba(0, 0, 0, 0.2);
+      	7px 7px 0px rgba(0, 0, 0, 0.2);*/
   	}
 	
 	/* Card Flip */
