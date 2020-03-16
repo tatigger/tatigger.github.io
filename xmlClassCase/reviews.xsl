@@ -38,7 +38,7 @@
          <tr>
             <th>Review Date:</th>
             <td>
-               <xsl:value-of select="r:reviewDate" />
+               <xsl:apply-templates select="r:reviewDate" />
             </td>
          </tr>
       </table>

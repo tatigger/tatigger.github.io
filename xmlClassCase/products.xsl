@@ -17,6 +17,7 @@
      xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
      xmlns:r="http://example.com/reviews">
    
+   <xsl:include href="hglibrary.xsl"/>
    <xsl:include href="reviews.xsl"/>
    
    <xsl:variable name="productID" select="'vg10551'"/>
@@ -94,7 +95,7 @@
             <tr>
                <th>Release Date: </th>
                <td>
-                  <xsl:value-of select="releaseDate" />
+                  <xsl:apply-templates select="releaseDate" />
                </td>
             </tr>
          </table>
