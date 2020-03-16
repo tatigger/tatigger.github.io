@@ -48,6 +48,11 @@
                   <h1>Customer Reviews</h1>
                   
                   <p>
+                     <xsl:variable name="avgRating" select="sum($reviewList/r:rating) div count($reviewList/r:rating)" />
+                     
+                     <xsl:value-of select="$avgRating" />
+                     out of 5 stars
+                     
                      (<xsl:value-of select="count($reviewList)"/> reviews)
                   </p>
                   
