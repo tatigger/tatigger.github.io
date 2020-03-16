@@ -28,7 +28,7 @@
             <xsl:with-param name="imgCount" select="r:rating"/>          
          </xsl:call-template>
          <xsl:call-template name="drawImages">
-            <xsl:with-param name="imgFile" select="emptystar.png"/>
+            <xsl:with-param name="imgFile" select="'emptystar.png'"/>
             <xsl:with-param name="imgCount" select="5 - r:rating"/>
          </xsl:call-template>
          <xsl:text> </xsl:text>
