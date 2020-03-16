@@ -79,6 +79,11 @@
             <xsl:value-of select="format-number($candidateVotes, '###,##0')"/>
             (<xsl:value-of select="format-number($candidatePercent, '#0.0%')"/>)
          </th>
+         <td>
+            <xsl:call-template name="drawCells">
+               <xsl:with-param name="cellCount" select="format-number(100*$candidatePercent, '#0')"/>
+            </xsl:call-template>
+         </td>
       </tr>
    </xsl:template>
 
