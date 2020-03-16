@@ -82,6 +82,7 @@
          <td>
             <xsl:call-template name="drawCells">
                <xsl:with-param name="cellCount" select="format-number(100*$candidatePercent, '#0')"/>
+               <xsl:with-param name="party" select="$candidateParty"/>
             </xsl:call-template>
          </td>
       </tr>
