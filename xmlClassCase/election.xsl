@@ -73,7 +73,7 @@
       <xsl:variable name="candidateParty" select="$candidateInfo[@candidateID=current()/@candidateID]/party"/>
       <tr>
          <th>
-            candidateName (candidateParty)
+            <xsl:value-of select="$candidateName"/> (<xsl:value-of select="$candidateParty"/>
          </th>
          <th>
             
