@@ -68,15 +68,16 @@
    <xsl:template match="candidate">
       <xsl:variable name="candidateVotes" select="sum(votes)"/>
       <xsl:variable name="totalVotes" select="sum(..//votes)"/>
-      <xsl:variable name="candidatesPercent" select="$candidateVotes div $totalVotes"/>
+      <xsl:variable name="candidatePercent" select="$candidateVotes div $totalVotes"/>
       <xsl:variable name="candidateName" select="$candidateInfo[@candidateID=current()/@candidateID]/name"/>
       <xsl:variable name="candidateParty" select="$candidateInfo[@candidateID=current()/@candidateID]/party"/>
       <tr>
          <th>
-            <xsl:value-of select="$candidateName"/> (<xsl:value-of select="$candidateParty"/>
+            <xsl:value-of select="$candidateName"/> (<xsl:value-of select="$candidateParty"/>)
          </th>
          <th>
-            
+            <xsl:value-of select="format-number($candidateVotes, '###,##0')"/>
+            (<xsl:value-of select="format-number($candidatePercent, '#0.0%')"/>)
          </th>
       </tr>
    </xsl:template>
