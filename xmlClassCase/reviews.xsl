@@ -23,6 +23,11 @@
 
    <xsl:template match="r:review">
       <h2>
+         <xsl:call-template name="drawImages">
+            <xsl:with-param name="imgFile" select="'solidstar.png'"/>
+            <xsl:with-param name="imgCount" select="r:rating"/>          
+         </xsl:call-template>
+         
          <xsl:value-of select="r:title" />
       </h2>
       <table id="reviewTable">

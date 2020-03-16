@@ -41,5 +41,19 @@
    number($dayValue), ', ', $yearValue)" />
 
  </xsl:template>
+  
+ <xsl:template name="drawImages">
+   <xsl:param name="imgFile" />
+   <xsl:param name="imgCount" />
+   
+   <xsl:if test="$imgCount > 0">
+     <img src="{$imgFile}" alt="" />
+     <xsl:call-template name="drawImages">
+       <xsl:with-param name="imgFile" select="$imgFile" />
+       <xsl:with-param name="imgCount" select="$imgCount - 1"></xsl:with-param>
+     </xsl:call-template>
+   </xsl:if>
+   
+ </xsl:template>
 
 </xsl:stylesheet>
