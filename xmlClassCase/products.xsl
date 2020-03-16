@@ -51,7 +51,7 @@
                      (<xsl:value-of select="count($reviewList)"/> reviews)
                   </p>
                   
-                  <xsl:apply-templates select="$reviewList" />
+                  <xsl:apply-templates select="$reviewList[position() &lt;= 5]" />
                </section>
 
             </div>
