@@ -15,7 +15,10 @@
 
 <xsl:stylesheet version="1.0"
      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-     xmlns:r="http://example.com/reviews">
+     xmlns:r="http://example.com/reviews"
+     xmlns:c="http://example.com/customers">
+   
+   <xsl:variable name="customerList" select="document('custmoers.xml')/c:customers/c:customer"/>
 
 
    <xsl:template match="r:review">
@@ -23,6 +26,15 @@
          <xsl:value-of select="r:title" />
       </h2>
       <table id="reviewTable">
+         <tr>
+            <th>By:</th>
+            <td>
+               <xsl:variable name="customerID" select="current()/@cid"/>
+               <xsl:value-of select="$customerList[@cid=$customerID]/c:nickname"/>
+               <xsl:value-of select="$customerList[@cid=$customerID]/c:city"/>
+               <xsl:value-of select="$customerList[@cid=$customerID]/c:state"/>
+            </td>
+         </tr>
          <tr>
             <th>Review Date:</th>
             <td>
