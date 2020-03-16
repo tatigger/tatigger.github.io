@@ -20,7 +20,7 @@
    <xsl:include href="hglibrary.xsl"/>
    <xsl:include href="reviews.xsl"/>
    
-   <xsl:variable name="productID" select="'vg10551'"/>
+   <xsl:param name="productID" select="'vg10551'" />
    <xsl:variable name="reviewList" select="document('reviews.xml')/r:reviews/r:review[@pid=$productID]"/>
 
    <xsl:output method="html"
@@ -50,6 +50,16 @@
                   
                   <p>
                      <xsl:variable name="avgRating" select="sum($reviewList/r:rating) div count($reviewList/r:rating)" />
+                     
+                     <xsl:call-template name="drawImages">
+                        <xsl:with-param name="imgFile" select="'solidstar.png'"/>
+                        <xsl:with-param name="imgCount" select="round($avgRating)"/>
+                     </xsl:call-template>
+                     <xsl:call-template name="drawImages">
+                        <xsl:with-param name="imgFile" select="'emptystar.png'"/>
+                        <xsl:with-param name="imgCount" select="5 - round($avgRating)"/>
+                     </xsl:call-template>
+                     <br />
                      
                      <xsl:value-of select="format-number($avgRating, '0.00')" />
                      out of 5 stars
