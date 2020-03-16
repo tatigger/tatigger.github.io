@@ -132,7 +132,7 @@
                <xsl:value-of select="$stars"/> star (<xsl:value-of select="$dataCount"/>)
             </th>
             <td>
-               <xsl:variable name="percent" select="100*(dataCount div count($reviewList))"/>
+               <xsl:variable name="percent" select="100*($dataCount div count($reviewList))"/>
                <img src="solidbar.png" alt="" height="18px" width="{concat($percent, 'px')}"/>
             </td>
          </tr>
