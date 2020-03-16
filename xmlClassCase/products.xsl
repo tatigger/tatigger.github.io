@@ -65,6 +65,9 @@
                      out of 5 stars
                      
                      (<xsl:value-of select="count($reviewList)"/> reviews)
+                     
+                     <xsl:call-template name="makeBarChart">
+                     </xsl:call-template>
                   </p>
                   
                   <xsl:apply-templates select="$reviewList[position() &lt;= 5]" />
@@ -110,6 +113,34 @@
             </tr>
          </table>
          <xsl:copy-of select="summary" />
+   </xsl:template>
+   
+   <xsl:template name="makeBarChart">
+      <table id="barChart">
+         <xsl:call-template name="drawBars">
+            <xsl:with-param name="stars" select="5"/>
+         </xsl:call-template>
+      </table>
+   </xsl:template>
+   
+   <xsl:template name="drawBars">
+      <xsl:param name="stars"/>
+      <xsl:if test="$stars > 0">
+         <xsl:variable name="dataCount" select="count($reviewList[r:rating=$stars])"/>
+         <tr>
+            <th>
+               <xsl:value-of select="$stars"/> star (<xsl:value-of select="$dataCount"/>)
+            </th>
+            <td>
+               <xsl:variable name="percent" select="100*(dataCount div count($reviewList))"/>
+               <img src="solidbar.png" alt="" height="18px" width="{concat($percent, 'px')}"/>
+            </td>
+         </tr>
+         
+         <xsl:call-template name="drawBars">
+            <xsl:with-param name="stars" select="$stars - 1"/>
+         </xsl:call-template>
+      </xsl:if>
    </xsl:template>
 
 </xsl:stylesheet>
