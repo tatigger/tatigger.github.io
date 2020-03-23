@@ -15,6 +15,8 @@
 
 <xsl:stylesheet version="1.0"
      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+   
+   <xsl:key name="cityNames" match="property" use="city"/>
 
    <xsl:output method="html"
       doctype-system="about:legacy-compat"
@@ -96,7 +98,8 @@
    </xsl:template>
    
    <xsl:template match="property" mode="cityList">
-      <xsl:value-of select="city"/> |
+      <xsl:value-of select="city"/>
+      (<xsl:value-of select="count(key('cityNames', city))"/>) |
    </xsl:template>
 
 
