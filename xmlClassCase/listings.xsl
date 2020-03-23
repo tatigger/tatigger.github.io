@@ -52,7 +52,15 @@
                  </xsl:apply-templates>
                </section>
                
-               <xsl:apply-templates select="listings/property" />
+               <xsl:for-each select="//proberty[generate-id()=generate-id(key('citynames', city)[1])]">
+                  <xsl:sort select="city"/>
+                  <h2><xsl:value-of select="city"/></h2>
+                  
+                  <xsl:apply-templates select="key('cityNames', city)">
+                     <xsl:sort select="price" order="descending" />
+                  </xsl:apply-templates>
+                  
+               </xsl:for-each>
 
              </div>
          </body>
