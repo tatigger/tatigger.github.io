@@ -16,7 +16,12 @@
 <xsl:stylesheet version="1.0"
      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
    
+   <xsl:variable name="agentsDoc" select="document('agents.xml')"/>
+   <xsl:variable name="firmsDoc" select="document('firms.xml')"/>
+   
    <xsl:key name="cityNames" match="property" use="city"/>
+   <xsl:key name="aKey" match="agent" use="@id"/>
+   <xsl:key name="fKey" match="firm" use="@id"/>
 
    <xsl:output method="html"
       doctype-system="about:legacy-compat"
@@ -92,6 +97,23 @@
          <tr>
             <td class="description" colspan="4">
                <xsl:value-of select="description" />
+            </td>
+         </tr>
+         <tr>
+            <th colspan="2">Real Estate Agency</th>
+         </tr>
+         <tr>
+            <td colspan="2">
+              <xsl:variable name="fID" select="@firm"/>
+               <xsl:for-each select="$firmsDoc">
+                  <xsl:value-of select="key('fKey', $fID)/name" /> <br/>
+                  <xsl:value-of select="key('fKey', $fID)/street" /> <br/>
+                  <xsl:value-of select="key('fKey', $fID)/city" /> <br/>
+                  <xsl:value-of select="key('fKey', $fID)/state" /> &#160;
+                  <xsl:value-of select="key('fKey', $fID)/zip" /> <br/>
+                  <xsl:value-of select="key('fKey', $fID)/phone" /> <br/>
+                  <xsl:value-of select="key('fKey', $fID)/web" /> 
+               </xsl:for-each>
             </td>
          </tr>
       </table>
