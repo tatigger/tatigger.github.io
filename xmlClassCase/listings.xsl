@@ -101,6 +101,7 @@
          </tr>
          <tr>
             <th colspan="2">Real Estate Agency</th>
+            <th colspan="2">Agent</th>
          </tr>
          <tr>
             <td colspan="2">
@@ -113,6 +114,14 @@
                   <xsl:value-of select="key('fKey', $fID)/zip" /> <br/>
                   <xsl:value-of select="key('fKey', $fID)/phone" /> <br/>
                   <xsl:value-of select="key('fKey', $fID)/web" /> 
+               </xsl:for-each>
+            </td> 
+            <td colspan="2">
+               <xsl:variable name="aID" select="@agent"/>
+               <xsl:for-each select="$agentsDoc">
+                  <xsl:value-of select="key('aKey', $aID)/name"/> <br/>
+                  <xsl:value-of select="key('aKey', $aID)/phone"/> <br/>
+                  <xsl:value-of select="key('aKey', $aID)/email"/>
                </xsl:for-each>
             </td>
          </tr>
