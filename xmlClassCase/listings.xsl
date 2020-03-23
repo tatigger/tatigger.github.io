@@ -39,7 +39,8 @@
                
                <section id="city_list">
                   |
-                 <xsl:apply-templates select="listings/property[not(city=preceding::property/city)]">
+                 <xsl:apply-templates select="listings/property[not(city=preceding::property/city)]"
+                    mode="cityList">
                   <xsl:sort select="city"/>
                  </xsl:apply-templates>
                </section>
@@ -94,7 +95,7 @@
       </table>
    </xsl:template>
    
-   <xsl:template match="property">
+   <xsl:template match="property" mode="cityList">
       <xsl:value-of select="city"/> |
    </xsl:template>
 
