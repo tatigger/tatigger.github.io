@@ -52,7 +52,7 @@
                  </xsl:apply-templates>
                </section>
                
-               <xsl:for-each select="//property[generate-id()=generate-id(key('citynames', city)[1])]">
+               <xsl:for-each select="//property[generate-id()=generate-id(key('cityNames', city)[1])]">
                   <xsl:sort select="city"/>
                   <h2><xsl:value-of select="city"/></h2>
                   
