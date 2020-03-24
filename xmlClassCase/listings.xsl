@@ -54,7 +54,7 @@
                
                <xsl:for-each select="//property[generate-id()=generate-id(key('cityNames', city)[1])]">
                   <xsl:sort select="city"/>
-                  <h2><xsl:value-of select="city"/></h2>
+                  <h2 id="{generate-id()}"><xsl:value-of select="city"/></h2>
                   
                   <xsl:apply-templates select="key('cityNames', city)">
                      <xsl:sort select="price" order="descending" />
@@ -137,7 +137,9 @@
    </xsl:template>
    
    <xsl:template match="property" mode="cityList">
+      <a href="#{generate-id()}"
       <xsl:value-of select="city"/>
+      </a>
       (<xsl:value-of select="count(key('cityNames', city))"/>) |
    </xsl:template>
 
