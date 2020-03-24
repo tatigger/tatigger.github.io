@@ -18,7 +18,8 @@
    
    <xsl:key name="CustomerList" match="Order" use="CustomerID"/>
    
-   <xsl:output version="1.0" 
+   <xsl:output version="1.0"
+               method="xml"
                encoding="UTF-8" 
                indent="yes"/>
    
