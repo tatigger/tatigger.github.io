@@ -55,7 +55,7 @@
                            <th>Work Status</th>
                         </tr>
                      </thead>  
-                                 
+                  </table>             
                   <xsl:apply-templates select="key('departments', department)">
                      <xsl:sort select="salary" order="descending" />
                   </xsl:apply-templates>
