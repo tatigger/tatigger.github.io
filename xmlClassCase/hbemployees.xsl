@@ -69,7 +69,7 @@
    </xsl:template>
    
    <xsl:template match="employee">
-      
+      <table>
          <tbody>
             <tr>
                <td><xsl:value-of select="name"/></td>
@@ -81,6 +81,7 @@
                <td><xsl:value-of select="workStatus"/></td>
             </tr>           
          </tbody>
+      </table>
    </xsl:template>
 
 </xsl:stylesheet>
