@@ -26,16 +26,22 @@
    
 
 <xsl:template match="/">
-   <xsl:element name="Customers">
+   <Customers>
       
       <xsl:for-each select="//Order[generate-id()=generate-id(key('CustomerList', CustomerID)[1])]">
          <xsl:sort select="CustomerID"/>
-         
+       
+         <Customer CustomerID="ID">
+            <Summary>
+               <TotalOrders><xsl:value-of select="count(count($Order)/></TotalOrders>
+               <TotalCharges><xsl:value-of select="sum($Order)"/></TotalCharges>
+            </Summary>
+         </Customer>
          
        
       </xsl:for-each>
       
-   </xsl:element>
+   </Customers>
 
 </xsl:template>
 
