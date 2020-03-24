@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   New Perspectives on XML, 3rd Edition
+   Tutorial 7
+   Case Problem 1
+
+   Employee List
+   Author: Terri Lyman
+   Date:   March 23, 2010
+
+   Filename:         hbemployees.xml
+   Supporting Files: hbemployees.xsl
+
+-->
+
+
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <employee empID="4">
+      <name>Heffner, Marian</name>
+      <position>Chief Operating Officer</position>
+      <phone>x10962</phone>
+      <email>mheffner50@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>262000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="192">
+      <name>Murff, Nicolle</name>
+      <position>Mgr Software Client Supp</position>
+      <phone>x32524</phone>
+      <email>nmurff63@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>137000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="295">
+      <name>Vecchio, Art</name>
+      <position>Line Worker</position>
+      <phone>x12125</phone>
+      <email>avecchio55@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>83000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="294">
+      <name>Lewis, Richard</name>
+      <position>Met Read/Coll</position>
+      <phone>x22131</phone>
+      <email>rlewis19@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>74500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="293">
+      <name>White, William</name>
+      <position>Env Asst</position>
+      <phone>x03194</phone>
+      <email>wwhite61@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>53500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="292">
+      <name>Williams, John</name>
+      <position>Line Wrker A</position>
+      <phone>x06056</phone>
+      <email>jwilliams31@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>70500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="291">
+      <name>Clark, David</name>
+      <position>Sr Engineer</position>
+      <phone>x03551</phone>
+      <email>dclark16@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>81000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="290">
+      <name>Sand, Robyn</name>
+      <position>Dsl Sys Rep</position>
+      <phone>x12823</phone>
+      <email>rsand25@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>89000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="191">
+      <name>Michell, Eloise</name>
+      <position>Mgr Cap Rptg Dist</position>
+      <phone>x19826</phone>
+      <email>emichell34@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>188000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="289">
+      <name>Blackshear, Homer</name>
+      <position>Line Wrker A</position>
+      <phone>x14845</phone>
+      <email>hblackshear74@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>83000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="288">
+      <name>Trumbull, Monroe</name>
+      <position>Prog/Analyst</position>
+      <phone>x27132</phone>
+      <email>mtrumbull49@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>51500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="287">
+      <name>Bush, Virginia</name>
+      <position>Mech Mt A HD Repair</position>
+      <phone>x06843</phone>
+      <email>vbush24@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>82000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="286">
+      <name>Fernandez, Sarah</name>
+      <position>Chf Aircraft Maint Eng</position>
+      <phone>x11265</phone>
+      <email>sfernandez47@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>61500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="285">
+      <name>Smith, James</name>
+      <position>Technol-I C</position>
+      <phone>x12104</phone>
+      <email>jsmith14@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>65500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="284">
+      <name>Binion, Johnnie</name>
+      <position>Mtce Plng Clk</position>
+      <phone>x29795</phone>
+      <email>jbinion98@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>76500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="283">
+      <name>Branch, Bruce</name>
+      <position>Off Serv Ck</position>
+      <phone>x10933</phone>
+      <email>bbranch15@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>76000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="282">
+      <name>Cross, Walter</name>
+      <position>Specialist Eng</position>
+      <phone>x28499</phone>
+      <email>wcross22@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>65500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="281">
+      <name>Clark, David</name>
+      <position>IS T Sec Off</position>
+      <phone>x09718</phone>
+      <email>dclark70@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>62000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="280">
+      <name>Vuong, Delbert</name>
+      <position>System Admin</position>
+      <phone>x18659</phone>
+      <email>dvuong22@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>63000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="279">
+      <name>Brooks, Maria</name>
+      <position>Garage Sv</position>
+      <phone>x20252</phone>
+      <email>mbrooks96@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>79500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="278">
+      <name>Rowland, Aaron</name>
+      <position>Computer Opr</position>
+      <phone>x13318</phone>
+      <email>arowland38@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>93000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="277">
+      <name>Pina, Alfred</name>
+      <position>Pur Admin Sv</position>
+      <phone>x17880</phone>
+      <email>apina93@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>129500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="276">
+      <name>Mitchell, Christopher</name>
+      <position>Civil Eng</position>
+      <phone>x02571</phone>
+      <email>cmitchell69@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>119000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="190">
+      <name>Pierce, Jeffrey</name>
+      <position>Mgr Fin Rpts Budgets</position>
+      <phone>x27519</phone>
+      <email>jpierce17@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>111000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="275">
+      <name>Liriano, Trent</name>
+      <position>Electrician</position>
+      <phone>x28177</phone>
+      <email>tliriano15@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>70500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="274">
+      <name>Deason, Harriet</name>
+      <position>Prod Supv</position>
+      <phone>x15409</phone>
+      <email>hdeason78@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>62000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="273">
+      <name>Brooks, Maria</name>
+      <position>Office Clerk</position>
+      <phone>x18438</phone>
+      <email>mbrooks60@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>80000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="272">
+      <name>Johnson, James</name>
+      <position>Technol-Telecontrol</position>
+      <phone>x01882</phone>
+      <email>jjohnson71@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>64500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="271">
+      <name>Langdon, Mattie</name>
+      <position>Treasury Assistant</position>
+      <phone>x21239</phone>
+      <email>mlangdon76@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>65000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="270">
+      <name>Hollister, Gayle</name>
+      <position>Security Guard</position>
+      <phone>x21572</phone>
+      <email>ghollister75@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>52000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="269">
+      <name>Curry, Pamela</name>
+      <position>Exec Asst</position>
+      <phone>x31732</phone>
+      <email>pcurry53@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>83000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="268">
+      <name>Higgins, Peter</name>
+      <position>Fire Sec Off</position>
+      <phone>x12112</phone>
+      <email>phiggins24@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>49500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="267">
+      <name>Lott, Eugene</name>
+      <position>Exec Asst</position>
+      <phone>x30593</phone>
+      <email>elott37@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>52000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="266">
+      <name>Romero, Jessica</name>
+      <position>Asset Spec-Dist</position>
+      <phone>x12126</phone>
+      <email>jromero83@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>90500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="189">
+      <name>Williams, John</name>
+      <position>Mgr Tech Plng IntIS T</position>
+      <phone>x30358</phone>
+      <email>jwilliams68@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>121000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="265">
+      <name>Hicks, Helen</name>
+      <position>Asset Spec Lines Stns</position>
+      <phone>x22873</phone>
+      <email>hhicks86@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>54500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="264">
+      <name>Kimbrough, Alexander</name>
+      <position>Dsl Sys Rep</position>
+      <phone>x17370</phone>
+      <email>akimbrough52@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>56500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="263">
+      <name>Keith, Keith</name>
+      <position>Line Wrker A</position>
+      <phone>x21746</phone>
+      <email>kkeith54@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>61000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="188">
+      <name>Ratliff, Julia</name>
+      <position>Mgr Syst P P</position>
+      <phone>x04145</phone>
+      <email>jratliff86@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>135000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="262">
+      <name>Miller, Mary</name>
+      <position>Line Wrker A</position>
+      <phone>x12796</phone>
+      <email>mmiller45@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>79500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="261">
+      <name>Calvillo, Blanca</name>
+      <position>Stn Opr</position>
+      <phone>x01941</phone>
+      <email>bcalvillo41@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>95000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="260">
+      <name>Knapp, Jane</name>
+      <position>Fire Sec Off</position>
+      <phone>x13382</phone>
+      <email>jknapp32@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>89000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="259">
+      <name>Anderson, Michael</name>
+      <position>Purch Clk</position>
+      <phone>x30117</phone>
+      <email>manderson97@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>90000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="258">
+      <name>Rice, Gary</name>
+      <position>Mobile Eq Opr</position>
+      <phone>x03557</phone>
+      <email>grice95@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>67500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="257">
+      <name>Miller, Mary</name>
+      <position>Met Read/Coll</position>
+      <phone>x21093</phone>
+      <email>mmiller66@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>79000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="187">
+      <name>Molina, Albert</name>
+      <position>Mgr Proj Del</position>
+      <phone>x18621</phone>
+      <email>amolina96@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>175000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="256">
+      <name>Dick, Dale</name>
+      <position>Line Wrker A</position>
+      <phone>x30269</phone>
+      <email>ddick27@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>85000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="255">
+      <name>Johnson, James</name>
+      <position>Th Pl Opr</position>
+      <phone>x00856</phone>
+      <email>jjohnson20@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>65500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="254">
+      <name>Allen, Charles</name>
+      <position>Equip Engineer</position>
+      <phone>x03392</phone>
+      <email>callen48@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>76000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="253">
+      <name>Tomlinson, Tony</name>
+      <position>Driver Clerk</position>
+      <phone>x01074</phone>
+      <email>ttomlinson38@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>70500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="252">
+      <name>Lindeman, Julius</name>
+      <position>Gen Maint B</position>
+      <phone>x06108</phone>
+      <email>jlindeman16@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>69500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="251">
+      <name>Haggerty, Vernon</name>
+      <position>Elec Maint A</position>
+      <phone>x05826</phone>
+      <email>vhaggerty61@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>52500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="250">
+      <name>Strawbridge, Boris</name>
+      <position>Dir Labour Rel</position>
+      <phone>x31803</phone>
+      <email>bstrawbridge34@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>77500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="249">
+      <name>Cotto, Monique</name>
+      <position>Hvy Equip Oper</position>
+      <phone>x06491</phone>
+      <email>mcotto98@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>85000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="248">
+      <name>Durgan, Adrianna</name>
+      <position>Line Wrker A</position>
+      <phone>x31358</phone>
+      <email>adurgan86@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>56000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="247">
+      <name>Grant, Sandra</name>
+      <position>IS T Maint Supv-Western</position>
+      <phone>x06684</phone>
+      <email>sgrant67@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>97000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="246">
+      <name>Morrell, Jeanette</name>
+      <position>Storekeeper</position>
+      <phone>x09164</phone>
+      <email>jmorrell22@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>95500</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="245">
+      <name>Mills, Sandra</name>
+      <position>Warehouse Wk</position>
+      <phone>x13897</phone>
+      <email>smills44@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>61000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="186">
+      <name>Spaulding, Marjorie</name>
+      <position>Mgr Site Services</position>
+      <phone>x31758</phone>
+      <email>mspaulding35@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>186000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="244">
+      <name>Wright, Joseph</name>
+      <position>Supp Serv Spec-HV</position>
+      <phone>x19256</phone>
+      <email>jwright99@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>67500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="243">
+      <name>Merrick, Hector</name>
+      <position>Technologist</position>
+      <phone>x20137</phone>
+      <email>hmerrick80@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>93500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="242">
+      <name>Allen, Charles</name>
+      <position>Mech Mt A Millwright</position>
+      <phone>x16608</phone>
+      <email>callen86@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>73500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="241">
+      <name>Hunt, Timothy</name>
+      <position>Term Mtce A</position>
+      <phone>x07839</phone>
+      <email>thunt97@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>60500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="240">
+      <name>West, Anthony</name>
+      <position>Security Guard</position>
+      <phone>x22191</phone>
+      <email>awest42@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>79500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="239">
+      <name>Arrington, Rita</name>
+      <position>Line Wrker A</position>
+      <phone>x19508</phone>
+      <email>rarrington55@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>92000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="238">
+      <name>Benton, Irene</name>
+      <position>Sr Proj Mgr Eng</position>
+      <phone>x32257</phone>
+      <email>ibenton41@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>81000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="237">
+      <name>Bartlett, Theresa</name>
+      <position>Line Wrker A</position>
+      <phone>x24723</phone>
+      <email>tbartlett66@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>85000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="236">
+      <name>Pasquale, Guillermo</name>
+      <position>Dsl Sys Rep</position>
+      <phone>x06426</phone>
+      <email>gpasquale15@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>79500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="235">
+      <name>Nichols, Sandra</name>
+      <position>Technol-Chemical</position>
+      <phone>x07915</phone>
+      <email>snichols32@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>67000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="234">
+      <name>Rose, Jose</name>
+      <position>Mech Mt A HD Repair</position>
+      <phone>x19498</phone>
+      <email>jrose54@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>61000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="233">
+      <name>Ross, Susan</name>
+      <position>Recr Attendant</position>
+      <phone>x16691</phone>
+      <email>sross56@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>88500</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="232">
+      <name>Simpson, Betty</name>
+      <position>Technol-I C</position>
+      <phone>x22660</phone>
+      <email>bsimpson22@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>80500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="185">
+      <name>Sosa, Ruby</name>
+      <position>Mgr Proj Del</position>
+      <phone>x29930</phone>
+      <email>rsosa92@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>162000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="231">
+      <name>Hawkins, Jose</name>
+      <position>Computer Opr</position>
+      <phone>x31813</phone>
+      <email>jhawkins72@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>86000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="230">
+      <name>Hogan, Evelyn</name>
+      <position>Line Wrker A</position>
+      <phone>x29039</phone>
+      <email>ehogan65@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>96500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="229">
+      <name>Johnston, Michelle</name>
+      <position>Mech Mt A HD Repair</position>
+      <phone>x19806</phone>
+      <email>mjohnston46@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>54500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="228">
+      <name>Leatherwood, Kayla</name>
+      <position>Hydro Pl Opr</position>
+      <phone>x20739</phone>
+      <email>kleatherwood18@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>57000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="227">
+      <name>Clark, David</name>
+      <position>Syst P P Eng</position>
+      <phone>x03365</phone>
+      <email>dclark63@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>91500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="226">
+      <name>Grant, Sandra</name>
+      <position>Driver Grwkr</position>
+      <phone>x04934</phone>
+      <email>sgrant81@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>68000</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="225">
+      <name>Simpkins, Holly</name>
+      <position>Mech Mt A Millwright</position>
+      <phone>x09483</phone>
+      <email>hsimpkins38@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>57500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="224">
+      <name>Matthews, Jeffrey</name>
+      <position>Sys Admin-Comp Oprs</position>
+      <phone>x28866</phone>
+      <email>jmatthews61@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>92500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="223">
+      <name>Shreve, Kristy</name>
+      <position>Proj Sv Coordinator</position>
+      <phone>x22638</phone>
+      <email>kshreve38@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>56000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="222">
+      <name>Burns, Matthew</name>
+      <position>Dir Mat Mgmt Admin</position>
+      <phone>x13292</phone>
+      <email>mburns19@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>74000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="184">
+      <name>Harrison, Kevin</name>
+      <position>Mgr Tech Plng IntIS T</position>
+      <phone>x06913</phone>
+      <email>kharrison51@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>195000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="221">
+      <name>Rodriguez, David</name>
+      <position>Chf Pilot-FW</position>
+      <phone>x06542</phone>
+      <email>drodriguez56@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>74500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="220">
+      <name>Kauffman, Alfred</name>
+      <position>Water Saf Inst</position>
+      <phone>x20515</phone>
+      <email>akauffman13@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>88500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="219">
+      <name>Granville, Shelby</name>
+      <position>Term Stn Gen Supt-Nor Reg-TRO</position>
+      <phone>x20657</phone>
+      <email>sgranville87@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>54500</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="218">
+      <name>Mouser, Vicente</name>
+      <position>Secretary</position>
+      <phone>x03387</phone>
+      <email>vmouser76@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>71000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="217">
+      <name>Benoit, Lee</name>
+      <position>Line Wrker A</position>
+      <phone>x00805</phone>
+      <email>lbenoit36@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>97500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="216">
+      <name>Dixon, Matthew</name>
+      <position>Accountant</position>
+      <phone>x32019</phone>
+      <email>mdixon93@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>91000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="215">
+      <name>Pua, Karri</name>
+      <position>Secretary</position>
+      <phone>x07236</phone>
+      <email>kpua24@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>55000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="214">
+      <name>Murphy, Mark</name>
+      <position>Elec Maint A</position>
+      <phone>x31594</phone>
+      <email>mmurphy63@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>80000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="213">
+      <name>Perez, Christopher</name>
+      <position>Technol-P C</position>
+      <phone>x28359</phone>
+      <email>cperez16@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>73000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="212">
+      <name>Cook, Elizabeth</name>
+      <position>Office Clerk</position>
+      <phone>x10452</phone>
+      <email>ecook65@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>72500</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="211">
+      <name>Barnard, Leonard</name>
+      <position>Dsl Sys Rep</position>
+      <phone>x32655</phone>
+      <email>lbarnard82@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>84500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="210">
+      <name>Richmond, Harry</name>
+      <position>Treasurer</position>
+      <phone>x07885</phone>
+      <email>hrichmond14@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>75000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="209">
+      <name>Mcdowell, Janice</name>
+      <position>Term Mtce A</position>
+      <phone>x13827</phone>
+      <email>jmcdowell51@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>79500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="208">
+      <name>Vogt, Valerie</name>
+      <position>Technol-I C</position>
+      <phone>x31038</phone>
+      <email>vvogt45@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>91500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="207">
+      <name>Williams, John</name>
+      <position>Stores Worker</position>
+      <phone>x23510</phone>
+      <email>jwilliams83@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>90000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="183">
+      <name>Davis, Robert</name>
+      <position>Mgr Ther Gen</position>
+      <phone>x18451</phone>
+      <email>rdavis94@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>196000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="206">
+      <name>Allen, Charles</name>
+      <position>Sr Tech-P C</position>
+      <phone>x14406</phone>
+      <email>callen82@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>60000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="205">
+      <name>Paradis, Wilma</name>
+      <position>Off Sv/St Ck</position>
+      <phone>x31638</phone>
+      <email>wparadis72@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>73000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="204">
+      <name>Smith, James</name>
+      <position>Office Clerk</position>
+      <phone>x15168</phone>
+      <email>jsmith66@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>80000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="203">
+      <name>Nichols, Sandra</name>
+      <position>Exec Asst</position>
+      <phone>x04764</phone>
+      <email>snichols78@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>74500</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="202">
+      <name>Gunter, Antonio</name>
+      <position>Supv Eng (Ntwk Serv)</position>
+      <phone>x10991</phone>
+      <email>agunter45@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>73000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="201">
+      <name>Paul, Henry</name>
+      <position>Mech Mt A Welder</position>
+      <phone>x27285</phone>
+      <email>hpaul13@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>94000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="200">
+      <name>Foley, Theresa</name>
+      <position>Met Read/Coll</position>
+      <phone>x10897</phone>
+      <email>tfoley97@example.com/harrisbarnes</email>
+      <department>Marketing</department>
+      <salary>77000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="199">
+      <name>Nims, Harris</name>
+      <position>Envir Perf Mgr-Th</position>
+      <phone>x13984</phone>
+      <email>hnims42@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>67000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="198">
+      <name>Lock, Clayton</name>
+      <position>Stores Worker</position>
+      <phone>x19378</phone>
+      <email>clock43@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>82500</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="197">
+      <name>Bang, Emil</name>
+      <position>Senior Civil Engineer</position>
+      <phone>x01979</phone>
+      <email>ebang16@example.com/harrisbarnes</email>
+      <department>Production</department>
+      <salary>86000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="196">
+      <name>Medina, Shirley</name>
+      <position>Exec Asst</position>
+      <phone>x15138</phone>
+      <email>smedina79@example.com/harrisbarnes</email>
+      <department>Management</department>
+      <salary>84500</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Contract</workStatus>
+   </employee>
+   <employee empID="182">
+      <name>Gutierrez, Stephen</name>
+      <position>Mgr Site Services</position>
+      <phone>x14279</phone>
+      <email>sgutierrez41@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>119000</salary>
+      <gender>male</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Part Time</workStatus>
+   </employee>
+   <employee empID="195">
+      <name>Belew, Irving</name>
+      <position>Stores Worker</position>
+      <phone>x08410</phone>
+      <email>ibelew67@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>99000</salary>
+      <gender>male</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="194">
+      <name>Carter, Linda</name>
+      <position>Dsl Sys Rep</position>
+      <phone>x16613</phone>
+      <email>lcarter45@example.com/harrisbarnes</email>
+      <department>Research</department>
+      <salary>89500</salary>
+      <gender>female</gender>
+      <maritalStatus>single</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+   <employee empID="193">
+      <name>Fleming, Angela</name>
+      <position>Inventory Ck</position>
+      <phone>x31751</phone>
+      <email>afleming30@example.com/harrisbarnes</email>
+      <department>Sales</department>
+      <salary>99000</salary>
+      <gender>female</gender>
+      <maritalStatus>married</maritalStatus>
+      <workStatus>Full Time</workStatus>
+   </employee>
+</employees>
