@@ -69,7 +69,7 @@
    </xsl:template>
    
    <xsl:template match="employee">
-      <table>
+      <table class="employeeList">
          <tbody>
             <tr>
                <td><xsl:value-of select="name"/></td>
