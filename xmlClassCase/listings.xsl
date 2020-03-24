@@ -137,7 +137,7 @@
    </xsl:template>
    
    <xsl:template match="property" mode="cityList">
-      <a href="#{generate-id()}"
+      <a href="#{generate-id()}">
       <xsl:value-of select="city"/>
       </a>
       (<xsl:value-of select="count(key('cityNames', city))"/>) |
