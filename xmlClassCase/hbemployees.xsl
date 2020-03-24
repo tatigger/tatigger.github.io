@@ -59,7 +59,7 @@
                   <tbody>
                      
                      <xsl:apply-templates select="key('departments', department)">
-                        <xsl:sort select="salary" order="descending"/>
+                        <xsl:sort select="salary" order="descending"/>     
                      </xsl:apply-templates>
                                      
                   </tbody>
@@ -72,16 +72,17 @@
    </xsl:template>
    
    <xsl:template match="employee">
-       
-      <tr>
-         <td><xsl:value-of select="name"/></td>
-         <td><xsl:value-of select="position"/></td>
-         <td><xsl:value-of select="format-number(salary, '$#,##0.00')"/></td>
-         <td><xsl:value-of select="phone"/></td>
-         <td><xsl:value-of select="gender"/></td>
-         <td><xsl:value-of select="maritalStatus"/></td>
-         <td><xsl:value-of select="workStatus"/></td>
+      <xsl:for-each select="employee">
+         <tr>
+            <td><xsl:value-of select="name"/></td>
+            <td><xsl:value-of select="position"/></td>
+            <td><xsl:value-of select="format-number(salary, '$#,##0.00')"/></td>
+            <td><xsl:value-of select="phone"/></td>
+            <td><xsl:value-of select="gender"/></td>
+            <td><xsl:value-of select="maritalStatus"/></td>
+            <td><xsl:value-of select="workStatus"/></td>
       </tr>
+      </xsl:for-each> 
    </xsl:template>
 
 </xsl:stylesheet>
