@@ -40,6 +40,11 @@
                <h1>Employee Report</h1>
                <xsl:for-each select="//employee[generate-id()=generate-id(key('departments', department)[1])]">
                   <xsl:sort select="department"/>
+                  
+                  <xsl:apply-templates select="key('departments', department)">
+                     <xsl:sort select="salary" order="descending"/>
+                  </xsl:apply-templates> 
+                  
                </xsl:for-each>
                
                <table class="employeeList">
@@ -56,9 +61,7 @@
                      </tr>
                   </thead>
                   <tbody>
-                     <xsl:apply-templates select="key('departments', department)">
-                        <xsl:sort select="salary" order="descending"/>
-                     </xsl:apply-templates>                  
+                                     
                   </tbody>
                </table>
                
