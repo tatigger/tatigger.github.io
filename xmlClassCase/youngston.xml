@@ -1,0 +1,4414 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   New Perspectives on XML, 3rd Edition
+   Tutorial 7
+   Case Problem 2
+
+   Youngston Office Supply Orders
+   Author: Terri Lyman
+   Date:   March 24, 2020
+
+   Filename:         youngston.xml
+   Supporting Files: youngston.xsl
+
+-->
+<?xml-stylesheet type="text/xsl" href="youngston.xsl"?>
+
+<Orders>
+	<Order OrderID="order53102">
+		<OrderDate>2/6/2017</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>2/8/2017</ShippedDate>
+		<OrderCharge>39.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53103">
+		<OrderDate>2/6/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>2/8/2017</ShippedDate>
+		<OrderCharge>30.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53104">
+		<OrderDate>2/8/2017</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>2/13/2017</ShippedDate>
+		<OrderCharge>138.2</OrderCharge>
+	</Order>
+	<Order OrderID="order53105">
+		<OrderDate>2/8/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>2/10/2017</ShippedDate>
+		<OrderCharge>147.39</OrderCharge>
+	</Order>
+	<Order OrderID="order53106">
+		<OrderDate>2/9/2017</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>2/13/2017</ShippedDate>
+		<OrderCharge>111.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53107">
+		<OrderDate>2/9/2017</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>2/14/2017</ShippedDate>
+		<OrderCharge>82.8</OrderCharge>
+	</Order>
+	<Order OrderID="order53108">
+		<OrderDate>2/9/2017</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>2/13/2017</ShippedDate>
+		<OrderCharge>43.23</OrderCharge>
+	</Order>
+	<Order OrderID="order53109">
+		<OrderDate>2/9/2017</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>2/14/2017</ShippedDate>
+		<OrderCharge>48.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53110">
+		<OrderDate>2/9/2017</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>2/10/2017</ShippedDate>
+		<OrderCharge>125.35</OrderCharge>
+	</Order>
+	<Order OrderID="order53111">
+		<OrderDate>2/9/2017</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>2/10/2017</ShippedDate>
+		<OrderCharge>51.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53112">
+		<OrderDate>2/9/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>2/14/2017</ShippedDate>
+		<OrderCharge>114.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53113">
+		<OrderDate>2/10/2017</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>2/13/2017</ShippedDate>
+		<OrderCharge>83.66</OrderCharge>
+	</Order>
+	<Order OrderID="order53114">
+		<OrderDate>2/13/2017</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>2/14/2017</ShippedDate>
+		<OrderCharge>132.43</OrderCharge>
+	</Order>
+	<Order OrderID="order53115">
+		<OrderDate>2/13/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>2/15/2017</ShippedDate>
+		<OrderCharge>126.07</OrderCharge>
+	</Order>
+	<Order OrderID="order53116">
+		<OrderDate>2/13/2017</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>2/15/2017</ShippedDate>
+		<OrderCharge>31.44</OrderCharge>
+	</Order>
+	<Order OrderID="order53117">
+		<OrderDate>2/13/2017</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>2/15/2017</ShippedDate>
+		<OrderCharge>115.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53118">
+		<OrderDate>2/14/2017</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>2/15/2017</ShippedDate>
+		<OrderCharge>72.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53119">
+		<OrderDate>2/16/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>2/20/2017</ShippedDate>
+		<OrderCharge>77.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53120">
+		<OrderDate>2/16/2017</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>2/21/2017</ShippedDate>
+		<OrderCharge>111.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53121">
+		<OrderDate>2/20/2017</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>2/21/2017</ShippedDate>
+		<OrderCharge>71.25</OrderCharge>
+	</Order>
+	<Order OrderID="order53122">
+		<OrderDate>2/20/2017</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>2/23/2017</ShippedDate>
+		<OrderCharge>76.52</OrderCharge>
+	</Order>
+	<Order OrderID="order53123">
+		<OrderDate>2/21/2017</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>2/24/2017</ShippedDate>
+		<OrderCharge>67.4</OrderCharge>
+	</Order>
+	<Order OrderID="order53124">
+		<OrderDate>2/22/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>2/27/2017</ShippedDate>
+		<OrderCharge>36.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53125">
+		<OrderDate>2/23/2017</OrderDate>
+		<CustomerID>cust389-81</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>2/24/2017</ShippedDate>
+		<OrderCharge>95.82</OrderCharge>
+	</Order>
+	<Order OrderID="order53126">
+		<OrderDate>2/27/2017</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>2/28/2017</ShippedDate>
+		<OrderCharge>58.86</OrderCharge>
+	</Order>
+	<Order OrderID="order53127">
+		<OrderDate>3/1/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>3/2/2017</ShippedDate>
+		<OrderCharge>52.2</OrderCharge>
+	</Order>
+	<Order OrderID="order53128">
+		<OrderDate>3/1/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>3/3/2017</ShippedDate>
+		<OrderCharge>137.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53129">
+		<OrderDate>3/3/2017</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>3/6/2017</ShippedDate>
+		<OrderCharge>92.68</OrderCharge>
+	</Order>
+	<Order OrderID="order53130">
+		<OrderDate>3/3/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>3/7/2017</ShippedDate>
+		<OrderCharge>138.46</OrderCharge>
+	</Order>
+	<Order OrderID="order53131">
+		<OrderDate>3/3/2017</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>3/6/2017</ShippedDate>
+		<OrderCharge>108.79</OrderCharge>
+	</Order>
+	<Order OrderID="order53132">
+		<OrderDate>3/3/2017</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>3/8/2017</ShippedDate>
+		<OrderCharge>100.58</OrderCharge>
+	</Order>
+	<Order OrderID="order53133">
+		<OrderDate>3/3/2017</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>3/6/2017</ShippedDate>
+		<OrderCharge>29.18</OrderCharge>
+	</Order>
+	<Order OrderID="order53134">
+		<OrderDate>3/6/2017</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>3/9/2017</ShippedDate>
+		<OrderCharge>143.73</OrderCharge>
+	</Order>
+	<Order OrderID="order53135">
+		<OrderDate>3/7/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>3/8/2017</ShippedDate>
+		<OrderCharge>96.04</OrderCharge>
+	</Order>
+	<Order OrderID="order53136">
+		<OrderDate>3/7/2017</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>3/8/2017</ShippedDate>
+		<OrderCharge>92.33</OrderCharge>
+	</Order>
+	<Order OrderID="order53137">
+		<OrderDate>3/8/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>3/9/2017</ShippedDate>
+		<OrderCharge>86.82</OrderCharge>
+	</Order>
+	<Order OrderID="order53138">
+		<OrderDate>3/9/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>3/10/2017</ShippedDate>
+		<OrderCharge>149.9</OrderCharge>
+	</Order>
+	<Order OrderID="order53139">
+		<OrderDate>3/9/2017</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>3/14/2017</ShippedDate>
+		<OrderCharge>49.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53140">
+		<OrderDate>3/10/2017</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>3/14/2017</ShippedDate>
+		<OrderCharge>48.79</OrderCharge>
+	</Order>
+	<Order OrderID="order53141">
+		<OrderDate>3/10/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>3/13/2017</ShippedDate>
+		<OrderCharge>37.84</OrderCharge>
+	</Order>
+	<Order OrderID="order53142">
+		<OrderDate>3/13/2017</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>3/14/2017</ShippedDate>
+		<OrderCharge>66.68</OrderCharge>
+	</Order>
+	<Order OrderID="order53143">
+		<OrderDate>3/13/2017</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>3/16/2017</ShippedDate>
+		<OrderCharge>78.25</OrderCharge>
+	</Order>
+	<Order OrderID="order53144">
+		<OrderDate>3/13/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>3/14/2017</ShippedDate>
+		<OrderCharge>95.33</OrderCharge>
+	</Order>
+	<Order OrderID="order53145">
+		<OrderDate>3/13/2017</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>3/15/2017</ShippedDate>
+		<OrderCharge>128.19</OrderCharge>
+	</Order>
+	<Order OrderID="order53146">
+		<OrderDate>3/13/2017</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>3/16/2017</ShippedDate>
+		<OrderCharge>37.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53147">
+		<OrderDate>3/14/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>3/17/2017</ShippedDate>
+		<OrderCharge>138.62</OrderCharge>
+	</Order>
+	<Order OrderID="order53148">
+		<OrderDate>3/16/2017</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>3/17/2017</ShippedDate>
+		<OrderCharge>76.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53149">
+		<OrderDate>3/17/2017</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>3/21/2017</ShippedDate>
+		<OrderCharge>38.86</OrderCharge>
+	</Order>
+	<Order OrderID="order53150">
+		<OrderDate>3/17/2017</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>3/21/2017</ShippedDate>
+		<OrderCharge>114.14</OrderCharge>
+	</Order>
+	<Order OrderID="order53151">
+		<OrderDate>3/17/2017</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>3/20/2017</ShippedDate>
+		<OrderCharge>63.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53152">
+		<OrderDate>3/20/2017</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>3/23/2017</ShippedDate>
+		<OrderCharge>125.67</OrderCharge>
+	</Order>
+	<Order OrderID="order53153">
+		<OrderDate>3/21/2017</OrderDate>
+		<CustomerID>cust338-83</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>3/23/2017</ShippedDate>
+		<OrderCharge>91.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53154">
+		<OrderDate>3/22/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>3/27/2017</ShippedDate>
+		<OrderCharge>96.19</OrderCharge>
+	</Order>
+	<Order OrderID="order53155">
+		<OrderDate>3/22/2017</OrderDate>
+		<CustomerID>cust308-31</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>3/27/2017</ShippedDate>
+		<OrderCharge>147.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53156">
+		<OrderDate>3/23/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>3/24/2017</ShippedDate>
+		<OrderCharge>90.64</OrderCharge>
+	</Order>
+	<Order OrderID="order53157">
+		<OrderDate>3/24/2017</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>3/28/2017</ShippedDate>
+		<OrderCharge>111.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53158">
+		<OrderDate>3/27/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>3/30/2017</ShippedDate>
+		<OrderCharge>146.95</OrderCharge>
+	</Order>
+	<Order OrderID="order53159">
+		<OrderDate>3/27/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>3/29/2017</ShippedDate>
+		<OrderCharge>45.88</OrderCharge>
+	</Order>
+	<Order OrderID="order53160">
+		<OrderDate>3/27/2017</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>3/29/2017</ShippedDate>
+		<OrderCharge>149.8</OrderCharge>
+	</Order>
+	<Order OrderID="order53161">
+		<OrderDate>3/28/2017</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>3/31/2017</ShippedDate>
+		<OrderCharge>32.99</OrderCharge>
+	</Order>
+	<Order OrderID="order53162">
+		<OrderDate>3/30/2017</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/3/2017</ShippedDate>
+		<OrderCharge>93.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53163">
+		<OrderDate>3/30/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>3/31/2017</ShippedDate>
+		<OrderCharge>31.44</OrderCharge>
+	</Order>
+	<Order OrderID="order53164">
+		<OrderDate>4/3/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/4/2017</ShippedDate>
+		<OrderCharge>38.12</OrderCharge>
+	</Order>
+	<Order OrderID="order53165">
+		<OrderDate>4/4/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>4/5/2017</ShippedDate>
+		<OrderCharge>92.86</OrderCharge>
+	</Order>
+	<Order OrderID="order53166">
+		<OrderDate>4/4/2017</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>4/5/2017</ShippedDate>
+		<OrderCharge>127</OrderCharge>
+	</Order>
+	<Order OrderID="order53167">
+		<OrderDate>4/5/2017</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/10/2017</ShippedDate>
+		<OrderCharge>127.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53168">
+		<OrderDate>4/6/2017</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>4/11/2017</ShippedDate>
+		<OrderCharge>99.08</OrderCharge>
+	</Order>
+	<Order OrderID="order53169">
+		<OrderDate>4/7/2017</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/11/2017</ShippedDate>
+		<OrderCharge>135.85</OrderCharge>
+	</Order>
+	<Order OrderID="order53170">
+		<OrderDate>4/10/2017</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>4/12/2017</ShippedDate>
+		<OrderCharge>135</OrderCharge>
+	</Order>
+	<Order OrderID="order53171">
+		<OrderDate>4/12/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>4/13/2017</ShippedDate>
+		<OrderCharge>31.11</OrderCharge>
+	</Order>
+	<Order OrderID="order53172">
+		<OrderDate>4/12/2017</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>4/14/2017</ShippedDate>
+		<OrderCharge>121.73</OrderCharge>
+	</Order>
+	<Order OrderID="order53173">
+		<OrderDate>4/14/2017</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>4/19/2017</ShippedDate>
+		<OrderCharge>111.43</OrderCharge>
+	</Order>
+	<Order OrderID="order53174">
+		<OrderDate>4/14/2017</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>4/18/2017</ShippedDate>
+		<OrderCharge>121.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53175">
+		<OrderDate>4/17/2017</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/19/2017</ShippedDate>
+		<OrderCharge>99.45</OrderCharge>
+	</Order>
+	<Order OrderID="order53176">
+		<OrderDate>4/18/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>4/20/2017</ShippedDate>
+		<OrderCharge>113.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53177">
+		<OrderDate>4/18/2017</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>4/21/2017</ShippedDate>
+		<OrderCharge>72.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53178">
+		<OrderDate>4/18/2017</OrderDate>
+		<CustomerID>cust745-89</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>4/19/2017</ShippedDate>
+		<OrderCharge>59.63</OrderCharge>
+	</Order>
+	<Order OrderID="order53179">
+		<OrderDate>4/19/2017</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>4/20/2017</ShippedDate>
+		<OrderCharge>142.54</OrderCharge>
+	</Order>
+	<Order OrderID="order53180">
+		<OrderDate>4/19/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>4/21/2017</ShippedDate>
+		<OrderCharge>142.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53181">
+		<OrderDate>4/20/2017</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>4/24/2017</ShippedDate>
+		<OrderCharge>147.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53182">
+		<OrderDate>4/24/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>4/26/2017</ShippedDate>
+		<OrderCharge>80.45</OrderCharge>
+	</Order>
+	<Order OrderID="order53183">
+		<OrderDate>4/24/2017</OrderDate>
+		<CustomerID>cust389-81</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>4/27/2017</ShippedDate>
+		<OrderCharge>96.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53184">
+		<OrderDate>4/24/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>4/27/2017</ShippedDate>
+		<OrderCharge>58.39</OrderCharge>
+	</Order>
+	<Order OrderID="order53185">
+		<OrderDate>4/25/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>4/26/2017</ShippedDate>
+		<OrderCharge>150.61</OrderCharge>
+	</Order>
+	<Order OrderID="order53186">
+		<OrderDate>4/25/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>4/26/2017</ShippedDate>
+		<OrderCharge>55.96</OrderCharge>
+	</Order>
+	<Order OrderID="order53187">
+		<OrderDate>4/25/2017</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>4/26/2017</ShippedDate>
+		<OrderCharge>95.52</OrderCharge>
+	</Order>
+	<Order OrderID="order53188">
+		<OrderDate>4/26/2017</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>5/1/2017</ShippedDate>
+		<OrderCharge>98.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53189">
+		<OrderDate>4/27/2017</OrderDate>
+		<CustomerID>cust745-89</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>4/28/2017</ShippedDate>
+		<OrderCharge>88.65</OrderCharge>
+	</Order>
+	<Order OrderID="order53190">
+		<OrderDate>4/28/2017</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>5/1/2017</ShippedDate>
+		<OrderCharge>124.72</OrderCharge>
+	</Order>
+	<Order OrderID="order53191">
+		<OrderDate>4/28/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>5/1/2017</ShippedDate>
+		<OrderCharge>119.93</OrderCharge>
+	</Order>
+	<Order OrderID="order53192">
+		<OrderDate>5/1/2017</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>5/4/2017</ShippedDate>
+		<OrderCharge>97.98</OrderCharge>
+	</Order>
+	<Order OrderID="order53193">
+		<OrderDate>5/2/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>5/3/2017</ShippedDate>
+		<OrderCharge>103.03</OrderCharge>
+	</Order>
+	<Order OrderID="order53194">
+		<OrderDate>5/3/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>5/5/2017</ShippedDate>
+		<OrderCharge>124.9</OrderCharge>
+	</Order>
+	<Order OrderID="order53195">
+		<OrderDate>5/3/2017</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>5/4/2017</ShippedDate>
+		<OrderCharge>94.18</OrderCharge>
+	</Order>
+	<Order OrderID="order53196">
+		<OrderDate>5/4/2017</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>5/9/2017</ShippedDate>
+		<OrderCharge>135.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53197">
+		<OrderDate>5/4/2017</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>5/5/2017</ShippedDate>
+		<OrderCharge>148.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53198">
+		<OrderDate>5/5/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>5/9/2017</ShippedDate>
+		<OrderCharge>74.71</OrderCharge>
+	</Order>
+	<Order OrderID="order53199">
+		<OrderDate>5/8/2017</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>5/10/2017</ShippedDate>
+		<OrderCharge>150.79</OrderCharge>
+	</Order>
+	<Order OrderID="order53200">
+		<OrderDate>5/9/2017</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>5/11/2017</ShippedDate>
+		<OrderCharge>60.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53201">
+		<OrderDate>5/10/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>5/15/2017</ShippedDate>
+		<OrderCharge>37.3</OrderCharge>
+	</Order>
+	<Order OrderID="order53202">
+		<OrderDate>5/12/2017</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>5/17/2017</ShippedDate>
+		<OrderCharge>36.99</OrderCharge>
+	</Order>
+	<Order OrderID="order53203">
+		<OrderDate>5/15/2017</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>5/18/2017</ShippedDate>
+		<OrderCharge>123.66</OrderCharge>
+	</Order>
+	<Order OrderID="order53204">
+		<OrderDate>5/15/2017</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>5/17/2017</ShippedDate>
+		<OrderCharge>61.5</OrderCharge>
+	</Order>
+	<Order OrderID="order53205">
+		<OrderDate>5/16/2017</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>5/17/2017</ShippedDate>
+		<OrderCharge>103.67</OrderCharge>
+	</Order>
+	<Order OrderID="order53206">
+		<OrderDate>5/17/2017</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>5/18/2017</ShippedDate>
+		<OrderCharge>115.68</OrderCharge>
+	</Order>
+	<Order OrderID="order53207">
+		<OrderDate>5/17/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>5/19/2017</ShippedDate>
+		<OrderCharge>145.58</OrderCharge>
+	</Order>
+	<Order OrderID="order53208">
+		<OrderDate>5/17/2017</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>5/18/2017</ShippedDate>
+		<OrderCharge>146.52</OrderCharge>
+	</Order>
+	<Order OrderID="order53209">
+		<OrderDate>5/18/2017</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>5/19/2017</ShippedDate>
+		<OrderCharge>77.26</OrderCharge>
+	</Order>
+	<Order OrderID="order53210">
+		<OrderDate>5/22/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>5/24/2017</ShippedDate>
+		<OrderCharge>132.91</OrderCharge>
+	</Order>
+	<Order OrderID="order53211">
+		<OrderDate>5/22/2017</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>5/25/2017</ShippedDate>
+		<OrderCharge>85.45</OrderCharge>
+	</Order>
+	<Order OrderID="order53212">
+		<OrderDate>5/23/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>5/26/2017</ShippedDate>
+		<OrderCharge>115.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53213">
+		<OrderDate>5/23/2017</OrderDate>
+		<CustomerID>cust198-98</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>5/26/2017</ShippedDate>
+		<OrderCharge>88.39</OrderCharge>
+	</Order>
+	<Order OrderID="order53214">
+		<OrderDate>5/24/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>5/30/2017</ShippedDate>
+		<OrderCharge>123.21</OrderCharge>
+	</Order>
+	<Order OrderID="order53215">
+		<OrderDate>5/24/2017</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>5/30/2017</ShippedDate>
+		<OrderCharge>49.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53216">
+		<OrderDate>5/25/2017</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>5/26/2017</ShippedDate>
+		<OrderCharge>147.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53217">
+		<OrderDate>5/25/2017</OrderDate>
+		<CustomerID>cust745-89</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>5/31/2017</ShippedDate>
+		<OrderCharge>34.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53218">
+		<OrderDate>5/25/2017</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>5/31/2017</ShippedDate>
+		<OrderCharge>150.43</OrderCharge>
+	</Order>
+	<Order OrderID="order53219">
+		<OrderDate>5/25/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>5/26/2017</ShippedDate>
+		<OrderCharge>48.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53220">
+		<OrderDate>5/30/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>6/1/2017</ShippedDate>
+		<OrderCharge>101.65</OrderCharge>
+	</Order>
+	<Order OrderID="order53221">
+		<OrderDate>5/31/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>6/5/2017</ShippedDate>
+		<OrderCharge>70.73</OrderCharge>
+	</Order>
+	<Order OrderID="order53222">
+		<OrderDate>6/1/2017</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>6/6/2017</ShippedDate>
+		<OrderCharge>87.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53223">
+		<OrderDate>6/2/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>6/7/2017</ShippedDate>
+		<OrderCharge>84.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53224">
+		<OrderDate>6/5/2017</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>6/7/2017</ShippedDate>
+		<OrderCharge>117.72</OrderCharge>
+	</Order>
+	<Order OrderID="order53225">
+		<OrderDate>6/6/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>6/9/2017</ShippedDate>
+		<OrderCharge>30.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53226">
+		<OrderDate>6/6/2017</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>6/7/2017</ShippedDate>
+		<OrderCharge>79.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53227">
+		<OrderDate>6/7/2017</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>6/12/2017</ShippedDate>
+		<OrderCharge>141.57</OrderCharge>
+	</Order>
+	<Order OrderID="order53228">
+		<OrderDate>6/9/2017</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>6/13/2017</ShippedDate>
+		<OrderCharge>69.46</OrderCharge>
+	</Order>
+	<Order OrderID="order53229">
+		<OrderDate>6/12/2017</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>6/15/2017</ShippedDate>
+		<OrderCharge>133.15</OrderCharge>
+	</Order>
+	<Order OrderID="order53230">
+		<OrderDate>6/12/2017</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>6/13/2017</ShippedDate>
+		<OrderCharge>128.41</OrderCharge>
+	</Order>
+	<Order OrderID="order53231">
+		<OrderDate>6/13/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>6/15/2017</ShippedDate>
+		<OrderCharge>109.64</OrderCharge>
+	</Order>
+	<Order OrderID="order53232">
+		<OrderDate>6/13/2017</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>6/15/2017</ShippedDate>
+		<OrderCharge>78.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53233">
+		<OrderDate>6/13/2017</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>6/14/2017</ShippedDate>
+		<OrderCharge>67.48</OrderCharge>
+	</Order>
+	<Order OrderID="order53234">
+		<OrderDate>6/14/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>6/19/2017</ShippedDate>
+		<OrderCharge>121.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53235">
+		<OrderDate>6/14/2017</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>6/15/2017</ShippedDate>
+		<OrderCharge>87.91</OrderCharge>
+	</Order>
+	<Order OrderID="order53236">
+		<OrderDate>6/15/2017</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>6/20/2017</ShippedDate>
+		<OrderCharge>77.85</OrderCharge>
+	</Order>
+	<Order OrderID="order53237">
+		<OrderDate>6/15/2017</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>6/16/2017</ShippedDate>
+		<OrderCharge>106.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53238">
+		<OrderDate>6/15/2017</OrderDate>
+		<CustomerID>cust666-89</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>6/20/2017</ShippedDate>
+		<OrderCharge>145.69</OrderCharge>
+	</Order>
+	<Order OrderID="order53239">
+		<OrderDate>6/15/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>6/16/2017</ShippedDate>
+		<OrderCharge>125.63</OrderCharge>
+	</Order>
+	<Order OrderID="order53240">
+		<OrderDate>6/16/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>6/21/2017</ShippedDate>
+		<OrderCharge>35.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53241">
+		<OrderDate>6/16/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>6/19/2017</ShippedDate>
+		<OrderCharge>42.12</OrderCharge>
+	</Order>
+	<Order OrderID="order53242">
+		<OrderDate>6/19/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>6/21/2017</ShippedDate>
+		<OrderCharge>27.05</OrderCharge>
+	</Order>
+	<Order OrderID="order53243">
+		<OrderDate>6/19/2017</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>6/22/2017</ShippedDate>
+		<OrderCharge>114.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53244">
+		<OrderDate>6/20/2017</OrderDate>
+		<CustomerID>cust198-98</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>6/21/2017</ShippedDate>
+		<OrderCharge>143.24</OrderCharge>
+	</Order>
+	<Order OrderID="order53245">
+		<OrderDate>6/20/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>6/23/2017</ShippedDate>
+		<OrderCharge>145.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53246">
+		<OrderDate>6/20/2017</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>6/22/2017</ShippedDate>
+		<OrderCharge>66.66</OrderCharge>
+	</Order>
+	<Order OrderID="order53247">
+		<OrderDate>6/21/2017</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>6/23/2017</ShippedDate>
+		<OrderCharge>92.1</OrderCharge>
+	</Order>
+	<Order OrderID="order53248">
+		<OrderDate>6/22/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>6/26/2017</ShippedDate>
+		<OrderCharge>105.79</OrderCharge>
+	</Order>
+	<Order OrderID="order53249">
+		<OrderDate>6/23/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>6/28/2017</ShippedDate>
+		<OrderCharge>83.14</OrderCharge>
+	</Order>
+	<Order OrderID="order53250">
+		<OrderDate>6/23/2017</OrderDate>
+		<CustomerID>cust666-89</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>6/28/2017</ShippedDate>
+		<OrderCharge>142.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53251">
+		<OrderDate>6/26/2017</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>6/28/2017</ShippedDate>
+		<OrderCharge>47.88</OrderCharge>
+	</Order>
+	<Order OrderID="order53252">
+		<OrderDate>6/28/2017</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>6/29/2017</ShippedDate>
+		<OrderCharge>99.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53253">
+		<OrderDate>6/28/2017</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>6/29/2017</ShippedDate>
+		<OrderCharge>102.53</OrderCharge>
+	</Order>
+	<Order OrderID="order53254">
+		<OrderDate>6/29/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>6/30/2017</ShippedDate>
+		<OrderCharge>35.32</OrderCharge>
+	</Order>
+	<Order OrderID="order53255">
+		<OrderDate>6/30/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>7/3/2017</ShippedDate>
+		<OrderCharge>123.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53256">
+		<OrderDate>6/30/2017</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>7/3/2017</ShippedDate>
+		<OrderCharge>119.92</OrderCharge>
+	</Order>
+	<Order OrderID="order53257">
+		<OrderDate>6/30/2017</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>7/3/2017</ShippedDate>
+		<OrderCharge>54.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53258">
+		<OrderDate>6/30/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>7/3/2017</ShippedDate>
+		<OrderCharge>74.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53259">
+		<OrderDate>7/3/2017</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>7/7/2017</ShippedDate>
+		<OrderCharge>120.55</OrderCharge>
+	</Order>
+	<Order OrderID="order53260">
+		<OrderDate>7/3/2017</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>7/7/2017</ShippedDate>
+		<OrderCharge>63.26</OrderCharge>
+	</Order>
+	<Order OrderID="order53261">
+		<OrderDate>7/3/2017</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>7/7/2017</ShippedDate>
+		<OrderCharge>79.81</OrderCharge>
+	</Order>
+	<Order OrderID="order53262">
+		<OrderDate>7/3/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>7/5/2017</ShippedDate>
+		<OrderCharge>62.01</OrderCharge>
+	</Order>
+	<Order OrderID="order53263">
+		<OrderDate>7/5/2017</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>7/7/2017</ShippedDate>
+		<OrderCharge>113.12</OrderCharge>
+	</Order>
+	<Order OrderID="order53264">
+		<OrderDate>7/5/2017</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>7/6/2017</ShippedDate>
+		<OrderCharge>150.16</OrderCharge>
+	</Order>
+	<Order OrderID="order53265">
+		<OrderDate>7/6/2017</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>7/10/2017</ShippedDate>
+		<OrderCharge>85.33</OrderCharge>
+	</Order>
+	<Order OrderID="order53266">
+		<OrderDate>7/6/2017</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>7/11/2017</ShippedDate>
+		<OrderCharge>124.3</OrderCharge>
+	</Order>
+	<Order OrderID="order53267">
+		<OrderDate>7/6/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>7/7/2017</ShippedDate>
+		<OrderCharge>63.46</OrderCharge>
+	</Order>
+	<Order OrderID="order53268">
+		<OrderDate>7/7/2017</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>7/12/2017</ShippedDate>
+		<OrderCharge>30.64</OrderCharge>
+	</Order>
+	<Order OrderID="order53269">
+		<OrderDate>7/7/2017</OrderDate>
+		<CustomerID>cust389-81</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>7/11/2017</ShippedDate>
+		<OrderCharge>42.23</OrderCharge>
+	</Order>
+	<Order OrderID="order53270">
+		<OrderDate>7/10/2017</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>7/11/2017</ShippedDate>
+		<OrderCharge>79.84</OrderCharge>
+	</Order>
+	<Order OrderID="order53271">
+		<OrderDate>7/11/2017</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>7/12/2017</ShippedDate>
+		<OrderCharge>109.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53272">
+		<OrderDate>7/11/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>7/13/2017</ShippedDate>
+		<OrderCharge>99.4</OrderCharge>
+	</Order>
+	<Order OrderID="order53273">
+		<OrderDate>7/12/2017</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>7/14/2017</ShippedDate>
+		<OrderCharge>110.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53274">
+		<OrderDate>7/14/2017</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>7/17/2017</ShippedDate>
+		<OrderCharge>130.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53275">
+		<OrderDate>7/17/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>7/20/2017</ShippedDate>
+		<OrderCharge>64.39</OrderCharge>
+	</Order>
+	<Order OrderID="order53276">
+		<OrderDate>7/18/2017</OrderDate>
+		<CustomerID>cust389-81</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>7/21/2017</ShippedDate>
+		<OrderCharge>52.67</OrderCharge>
+	</Order>
+	<Order OrderID="order53277">
+		<OrderDate>7/19/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>7/21/2017</ShippedDate>
+		<OrderCharge>135.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53278">
+		<OrderDate>7/20/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>7/21/2017</ShippedDate>
+		<OrderCharge>142.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53279">
+		<OrderDate>7/21/2017</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>7/26/2017</ShippedDate>
+		<OrderCharge>94.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53280">
+		<OrderDate>7/24/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>7/27/2017</ShippedDate>
+		<OrderCharge>71.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53281">
+		<OrderDate>7/24/2017</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>7/26/2017</ShippedDate>
+		<OrderCharge>144.1</OrderCharge>
+	</Order>
+	<Order OrderID="order53282">
+		<OrderDate>7/25/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>7/27/2017</ShippedDate>
+		<OrderCharge>51.88</OrderCharge>
+	</Order>
+	<Order OrderID="order53283">
+		<OrderDate>7/26/2017</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>7/28/2017</ShippedDate>
+		<OrderCharge>132.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53284">
+		<OrderDate>7/26/2017</OrderDate>
+		<CustomerID>cust990-42</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>7/31/2017</ShippedDate>
+		<OrderCharge>92.5</OrderCharge>
+	</Order>
+	<Order OrderID="order53285">
+		<OrderDate>7/28/2017</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>7/31/2017</ShippedDate>
+		<OrderCharge>48.56</OrderCharge>
+	</Order>
+	<Order OrderID="order53286">
+		<OrderDate>7/28/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>8/2/2017</ShippedDate>
+		<OrderCharge>30.45</OrderCharge>
+	</Order>
+	<Order OrderID="order53287">
+		<OrderDate>7/31/2017</OrderDate>
+		<CustomerID>cust338-83</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>8/3/2017</ShippedDate>
+		<OrderCharge>37.71</OrderCharge>
+	</Order>
+	<Order OrderID="order53288">
+		<OrderDate>7/31/2017</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>8/3/2017</ShippedDate>
+		<OrderCharge>124</OrderCharge>
+	</Order>
+	<Order OrderID="order53289">
+		<OrderDate>7/31/2017</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>8/1/2017</ShippedDate>
+		<OrderCharge>53.18</OrderCharge>
+	</Order>
+	<Order OrderID="order53290">
+		<OrderDate>7/31/2017</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>8/1/2017</ShippedDate>
+		<OrderCharge>45.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53291">
+		<OrderDate>8/1/2017</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>8/3/2017</ShippedDate>
+		<OrderCharge>112.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53292">
+		<OrderDate>8/1/2017</OrderDate>
+		<CustomerID>cust308-31</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>8/2/2017</ShippedDate>
+		<OrderCharge>81.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53293">
+		<OrderDate>8/2/2017</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>8/4/2017</ShippedDate>
+		<OrderCharge>129.03</OrderCharge>
+	</Order>
+	<Order OrderID="order53294">
+		<OrderDate>8/3/2017</OrderDate>
+		<CustomerID>cust198-98</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>8/4/2017</ShippedDate>
+		<OrderCharge>122.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53295">
+		<OrderDate>8/4/2017</OrderDate>
+		<CustomerID>cust666-89</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>8/9/2017</ShippedDate>
+		<OrderCharge>67.33</OrderCharge>
+	</Order>
+	<Order OrderID="order53296">
+		<OrderDate>8/7/2017</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>8/10/2017</ShippedDate>
+		<OrderCharge>65.1</OrderCharge>
+	</Order>
+	<Order OrderID="order53297">
+		<OrderDate>8/8/2017</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>8/9/2017</ShippedDate>
+		<OrderCharge>49.93</OrderCharge>
+	</Order>
+	<Order OrderID="order53298">
+		<OrderDate>8/9/2017</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>8/10/2017</ShippedDate>
+		<OrderCharge>57.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53299">
+		<OrderDate>8/10/2017</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>8/15/2017</ShippedDate>
+		<OrderCharge>42.54</OrderCharge>
+	</Order>
+	<Order OrderID="order53300">
+		<OrderDate>8/11/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>8/14/2017</ShippedDate>
+		<OrderCharge>61.76</OrderCharge>
+	</Order>
+	<Order OrderID="order53301">
+		<OrderDate>8/15/2017</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>8/18/2017</ShippedDate>
+		<OrderCharge>119.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53302">
+		<OrderDate>8/15/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>8/18/2017</ShippedDate>
+		<OrderCharge>58.21</OrderCharge>
+	</Order>
+	<Order OrderID="order53303">
+		<OrderDate>8/16/2017</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>8/17/2017</ShippedDate>
+		<OrderCharge>40.19</OrderCharge>
+	</Order>
+	<Order OrderID="order53304">
+		<OrderDate>8/17/2017</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>8/22/2017</ShippedDate>
+		<OrderCharge>91.53</OrderCharge>
+	</Order>
+	<Order OrderID="order53305">
+		<OrderDate>8/18/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>8/22/2017</ShippedDate>
+		<OrderCharge>107.2</OrderCharge>
+	</Order>
+	<Order OrderID="order53306">
+		<OrderDate>8/21/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>8/22/2017</ShippedDate>
+		<OrderCharge>93.8</OrderCharge>
+	</Order>
+	<Order OrderID="order53307">
+		<OrderDate>8/21/2017</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>8/22/2017</ShippedDate>
+		<OrderCharge>128.17</OrderCharge>
+	</Order>
+	<Order OrderID="order53308">
+		<OrderDate>8/22/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>8/24/2017</ShippedDate>
+		<OrderCharge>78.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53309">
+		<OrderDate>8/22/2017</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>8/25/2017</ShippedDate>
+		<OrderCharge>65.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53310">
+		<OrderDate>8/23/2017</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>8/24/2017</ShippedDate>
+		<OrderCharge>57.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53311">
+		<OrderDate>8/24/2017</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>8/29/2017</ShippedDate>
+		<OrderCharge>129.58</OrderCharge>
+	</Order>
+	<Order OrderID="order53312">
+		<OrderDate>8/25/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>8/28/2017</ShippedDate>
+		<OrderCharge>45.18</OrderCharge>
+	</Order>
+	<Order OrderID="order53313">
+		<OrderDate>8/25/2017</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>8/30/2017</ShippedDate>
+		<OrderCharge>130.55</OrderCharge>
+	</Order>
+	<Order OrderID="order53314">
+		<OrderDate>8/28/2017</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>8/31/2017</ShippedDate>
+		<OrderCharge>150.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53315">
+		<OrderDate>8/29/2017</OrderDate>
+		<CustomerID>cust389-81</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>8/30/2017</ShippedDate>
+		<OrderCharge>102.67</OrderCharge>
+	</Order>
+	<Order OrderID="order53316">
+		<OrderDate>8/30/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>9/5/2017</ShippedDate>
+		<OrderCharge>128.91</OrderCharge>
+	</Order>
+	<Order OrderID="order53317">
+		<OrderDate>8/30/2017</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>9/1/2017</ShippedDate>
+		<OrderCharge>112.81</OrderCharge>
+	</Order>
+	<Order OrderID="order53318">
+		<OrderDate>8/30/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>9/5/2017</ShippedDate>
+		<OrderCharge>136.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53319">
+		<OrderDate>8/30/2017</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>9/1/2017</ShippedDate>
+		<OrderCharge>140.61</OrderCharge>
+	</Order>
+	<Order OrderID="order53320">
+		<OrderDate>8/31/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/5/2017</ShippedDate>
+		<OrderCharge>47.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53321">
+		<OrderDate>9/1/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>9/6/2017</ShippedDate>
+		<OrderCharge>150.43</OrderCharge>
+	</Order>
+	<Order OrderID="order53322">
+		<OrderDate>9/5/2017</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>9/8/2017</ShippedDate>
+		<OrderCharge>64.42</OrderCharge>
+	</Order>
+	<Order OrderID="order53323">
+		<OrderDate>9/6/2017</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>9/8/2017</ShippedDate>
+		<OrderCharge>34.65</OrderCharge>
+	</Order>
+	<Order OrderID="order53324">
+		<OrderDate>9/7/2017</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>9/12/2017</ShippedDate>
+		<OrderCharge>99.85</OrderCharge>
+	</Order>
+	<Order OrderID="order53325">
+		<OrderDate>9/7/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>9/8/2017</ShippedDate>
+		<OrderCharge>57.93</OrderCharge>
+	</Order>
+	<Order OrderID="order53326">
+		<OrderDate>9/8/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>9/11/2017</ShippedDate>
+		<OrderCharge>96.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53327">
+		<OrderDate>9/11/2017</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>9/14/2017</ShippedDate>
+		<OrderCharge>112.16</OrderCharge>
+	</Order>
+	<Order OrderID="order53328">
+		<OrderDate>9/11/2017</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>9/13/2017</ShippedDate>
+		<OrderCharge>120.45</OrderCharge>
+	</Order>
+	<Order OrderID="order53329">
+		<OrderDate>9/11/2017</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>9/13/2017</ShippedDate>
+		<OrderCharge>70.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53330">
+		<OrderDate>9/11/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/14/2017</ShippedDate>
+		<OrderCharge>134.83</OrderCharge>
+	</Order>
+	<Order OrderID="order53331">
+		<OrderDate>9/11/2017</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>9/13/2017</ShippedDate>
+		<OrderCharge>61.68</OrderCharge>
+	</Order>
+	<Order OrderID="order53332">
+		<OrderDate>9/12/2017</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/13/2017</ShippedDate>
+		<OrderCharge>89.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53333">
+		<OrderDate>9/12/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>9/14/2017</ShippedDate>
+		<OrderCharge>116.52</OrderCharge>
+	</Order>
+	<Order OrderID="order53334">
+		<OrderDate>9/13/2017</OrderDate>
+		<CustomerID>cust198-98</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/15/2017</ShippedDate>
+		<OrderCharge>100.35</OrderCharge>
+	</Order>
+	<Order OrderID="order53335">
+		<OrderDate>9/14/2017</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/18/2017</ShippedDate>
+		<OrderCharge>90.95</OrderCharge>
+	</Order>
+	<Order OrderID="order53336">
+		<OrderDate>9/14/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>9/18/2017</ShippedDate>
+		<OrderCharge>138.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53337">
+		<OrderDate>9/15/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>9/20/2017</ShippedDate>
+		<OrderCharge>76.82</OrderCharge>
+	</Order>
+	<Order OrderID="order53338">
+		<OrderDate>9/15/2017</OrderDate>
+		<CustomerID>cust338-83</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>9/19/2017</ShippedDate>
+		<OrderCharge>104.63</OrderCharge>
+	</Order>
+	<Order OrderID="order53339">
+		<OrderDate>9/18/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>9/20/2017</ShippedDate>
+		<OrderCharge>89.62</OrderCharge>
+	</Order>
+	<Order OrderID="order53340">
+		<OrderDate>9/19/2017</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>9/22/2017</ShippedDate>
+		<OrderCharge>86.67</OrderCharge>
+	</Order>
+	<Order OrderID="order53341">
+		<OrderDate>9/21/2017</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>9/22/2017</ShippedDate>
+		<OrderCharge>135.99</OrderCharge>
+	</Order>
+	<Order OrderID="order53342">
+		<OrderDate>9/21/2017</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>9/26/2017</ShippedDate>
+		<OrderCharge>104.72</OrderCharge>
+	</Order>
+	<Order OrderID="order53343">
+		<OrderDate>9/25/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>9/28/2017</ShippedDate>
+		<OrderCharge>59.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53344">
+		<OrderDate>9/25/2017</OrderDate>
+		<CustomerID>cust745-89</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>9/28/2017</ShippedDate>
+		<OrderCharge>56.14</OrderCharge>
+	</Order>
+	<Order OrderID="order53345">
+		<OrderDate>9/26/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>9/28/2017</ShippedDate>
+		<OrderCharge>134.62</OrderCharge>
+	</Order>
+	<Order OrderID="order53346">
+		<OrderDate>9/26/2017</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>9/28/2017</ShippedDate>
+		<OrderCharge>146.87</OrderCharge>
+	</Order>
+	<Order OrderID="order53347">
+		<OrderDate>9/27/2017</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>9/28/2017</ShippedDate>
+		<OrderCharge>26.11</OrderCharge>
+	</Order>
+	<Order OrderID="order53348">
+		<OrderDate>9/28/2017</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>10/2/2017</ShippedDate>
+		<OrderCharge>103.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53349">
+		<OrderDate>9/28/2017</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/3/2017</ShippedDate>
+		<OrderCharge>34.73</OrderCharge>
+	</Order>
+	<Order OrderID="order53350">
+		<OrderDate>9/29/2017</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>10/3/2017</ShippedDate>
+		<OrderCharge>38.53</OrderCharge>
+	</Order>
+	<Order OrderID="order53351">
+		<OrderDate>10/2/2017</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>10/3/2017</ShippedDate>
+		<OrderCharge>146.43</OrderCharge>
+	</Order>
+	<Order OrderID="order53352">
+		<OrderDate>10/4/2017</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>10/5/2017</ShippedDate>
+		<OrderCharge>146.45</OrderCharge>
+	</Order>
+	<Order OrderID="order53353">
+		<OrderDate>10/5/2017</OrderDate>
+		<CustomerID>cust198-98</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>10/6/2017</ShippedDate>
+		<OrderCharge>141.91</OrderCharge>
+	</Order>
+	<Order OrderID="order53354">
+		<OrderDate>10/5/2017</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>10/10/2017</ShippedDate>
+		<OrderCharge>45.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53355">
+		<OrderDate>10/6/2017</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/11/2017</ShippedDate>
+		<OrderCharge>66.55</OrderCharge>
+	</Order>
+	<Order OrderID="order53356">
+		<OrderDate>10/9/2017</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/10/2017</ShippedDate>
+		<OrderCharge>137.87</OrderCharge>
+	</Order>
+	<Order OrderID="order53357">
+		<OrderDate>10/11/2017</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/16/2017</ShippedDate>
+		<OrderCharge>62.86</OrderCharge>
+	</Order>
+	<Order OrderID="order53358">
+		<OrderDate>10/12/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>10/13/2017</ShippedDate>
+		<OrderCharge>63.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53359">
+		<OrderDate>10/13/2017</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/17/2017</ShippedDate>
+		<OrderCharge>100.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53360">
+		<OrderDate>10/16/2017</OrderDate>
+		<CustomerID>cust338-83</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>10/18/2017</ShippedDate>
+		<OrderCharge>116.99</OrderCharge>
+	</Order>
+	<Order OrderID="order53361">
+		<OrderDate>10/16/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/17/2017</ShippedDate>
+		<OrderCharge>102.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53362">
+		<OrderDate>10/17/2017</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/20/2017</ShippedDate>
+		<OrderCharge>145.21</OrderCharge>
+	</Order>
+	<Order OrderID="order53363">
+		<OrderDate>10/17/2017</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>10/19/2017</ShippedDate>
+		<OrderCharge>150.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53364">
+		<OrderDate>10/17/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>10/19/2017</ShippedDate>
+		<OrderCharge>126.1</OrderCharge>
+	</Order>
+	<Order OrderID="order53365">
+		<OrderDate>10/17/2017</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>10/20/2017</ShippedDate>
+		<OrderCharge>27.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53366">
+		<OrderDate>10/18/2017</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>10/23/2017</ShippedDate>
+		<OrderCharge>39.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53367">
+		<OrderDate>10/18/2017</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>10/23/2017</ShippedDate>
+		<OrderCharge>69.15</OrderCharge>
+	</Order>
+	<Order OrderID="order53368">
+		<OrderDate>10/20/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>10/23/2017</ShippedDate>
+		<OrderCharge>111.73</OrderCharge>
+	</Order>
+	<Order OrderID="order53369">
+		<OrderDate>10/23/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>10/26/2017</ShippedDate>
+		<OrderCharge>82.26</OrderCharge>
+	</Order>
+	<Order OrderID="order53370">
+		<OrderDate>10/23/2017</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>10/25/2017</ShippedDate>
+		<OrderCharge>78.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53371">
+		<OrderDate>10/23/2017</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>10/24/2017</ShippedDate>
+		<OrderCharge>79.58</OrderCharge>
+	</Order>
+	<Order OrderID="order53372">
+		<OrderDate>10/23/2017</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/26/2017</ShippedDate>
+		<OrderCharge>95.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53373">
+		<OrderDate>10/25/2017</OrderDate>
+		<CustomerID>cust990-42</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/30/2017</ShippedDate>
+		<OrderCharge>120.63</OrderCharge>
+	</Order>
+	<Order OrderID="order53374">
+		<OrderDate>10/25/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>10/27/2017</ShippedDate>
+		<OrderCharge>35.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53375">
+		<OrderDate>10/26/2017</OrderDate>
+		<CustomerID>cust666-89</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>10/30/2017</ShippedDate>
+		<OrderCharge>93.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53376">
+		<OrderDate>10/26/2017</OrderDate>
+		<CustomerID>cust338-83</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>10/27/2017</ShippedDate>
+		<OrderCharge>133.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53377">
+		<OrderDate>10/27/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>10/30/2017</ShippedDate>
+		<OrderCharge>119.87</OrderCharge>
+	</Order>
+	<Order OrderID="order53378">
+		<OrderDate>10/30/2017</OrderDate>
+		<CustomerID>cust198-98</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>11/1/2017</ShippedDate>
+		<OrderCharge>35.35</OrderCharge>
+	</Order>
+	<Order OrderID="order53379">
+		<OrderDate>10/30/2017</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>10/31/2017</ShippedDate>
+		<OrderCharge>140.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53380">
+		<OrderDate>11/1/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>11/6/2017</ShippedDate>
+		<OrderCharge>150.35</OrderCharge>
+	</Order>
+	<Order OrderID="order53381">
+		<OrderDate>11/1/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>11/3/2017</ShippedDate>
+		<OrderCharge>91.96</OrderCharge>
+	</Order>
+	<Order OrderID="order53382">
+		<OrderDate>11/1/2017</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>11/3/2017</ShippedDate>
+		<OrderCharge>133.54</OrderCharge>
+	</Order>
+	<Order OrderID="order53383">
+		<OrderDate>11/2/2017</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>11/6/2017</ShippedDate>
+		<OrderCharge>142.92</OrderCharge>
+	</Order>
+	<Order OrderID="order53384">
+		<OrderDate>11/3/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>11/6/2017</ShippedDate>
+		<OrderCharge>84.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53385">
+		<OrderDate>11/6/2017</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>11/7/2017</ShippedDate>
+		<OrderCharge>37.73</OrderCharge>
+	</Order>
+	<Order OrderID="order53386">
+		<OrderDate>11/7/2017</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>11/10/2017</ShippedDate>
+		<OrderCharge>113.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53387">
+		<OrderDate>11/8/2017</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>11/10/2017</ShippedDate>
+		<OrderCharge>54.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53388">
+		<OrderDate>11/8/2017</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>11/9/2017</ShippedDate>
+		<OrderCharge>72.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53389">
+		<OrderDate>11/8/2017</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>11/10/2017</ShippedDate>
+		<OrderCharge>54</OrderCharge>
+	</Order>
+	<Order OrderID="order53390">
+		<OrderDate>11/9/2017</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>11/10/2017</ShippedDate>
+		<OrderCharge>119.44</OrderCharge>
+	</Order>
+	<Order OrderID="order53391">
+		<OrderDate>11/10/2017</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>11/13/2017</ShippedDate>
+		<OrderCharge>78.48</OrderCharge>
+	</Order>
+	<Order OrderID="order53392">
+		<OrderDate>11/10/2017</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>11/14/2017</ShippedDate>
+		<OrderCharge>66.3</OrderCharge>
+	</Order>
+	<Order OrderID="order53393">
+		<OrderDate>11/13/2017</OrderDate>
+		<CustomerID>cust389-81</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>11/15/2017</ShippedDate>
+		<OrderCharge>109.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53394">
+		<OrderDate>11/14/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>11/16/2017</ShippedDate>
+		<OrderCharge>45.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53395">
+		<OrderDate>11/14/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>11/15/2017</ShippedDate>
+		<OrderCharge>83.06</OrderCharge>
+	</Order>
+	<Order OrderID="order53396">
+		<OrderDate>11/14/2017</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>11/16/2017</ShippedDate>
+		<OrderCharge>143.05</OrderCharge>
+	</Order>
+	<Order OrderID="order53397">
+		<OrderDate>11/14/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>11/16/2017</ShippedDate>
+		<OrderCharge>144.57</OrderCharge>
+	</Order>
+	<Order OrderID="order53398">
+		<OrderDate>11/16/2017</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>11/21/2017</ShippedDate>
+		<OrderCharge>143.95</OrderCharge>
+	</Order>
+	<Order OrderID="order53399">
+		<OrderDate>11/16/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>11/17/2017</ShippedDate>
+		<OrderCharge>58.86</OrderCharge>
+	</Order>
+	<Order OrderID="order53400">
+		<OrderDate>11/16/2017</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>11/20/2017</ShippedDate>
+		<OrderCharge>132.75</OrderCharge>
+	</Order>
+	<Order OrderID="order53401">
+		<OrderDate>11/20/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>11/24/2017</ShippedDate>
+		<OrderCharge>145.07</OrderCharge>
+	</Order>
+	<Order OrderID="order53402">
+		<OrderDate>11/21/2017</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>11/24/2017</ShippedDate>
+		<OrderCharge>64.82</OrderCharge>
+	</Order>
+	<Order OrderID="order53403">
+		<OrderDate>11/22/2017</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>11/27/2017</ShippedDate>
+		<OrderCharge>83.12</OrderCharge>
+	</Order>
+	<Order OrderID="order53404">
+		<OrderDate>11/24/2017</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>11/29/2017</ShippedDate>
+		<OrderCharge>125.1</OrderCharge>
+	</Order>
+	<Order OrderID="order53405">
+		<OrderDate>11/28/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>11/29/2017</ShippedDate>
+		<OrderCharge>114.83</OrderCharge>
+	</Order>
+	<Order OrderID="order53406">
+		<OrderDate>11/28/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>12/1/2017</ShippedDate>
+		<OrderCharge>33.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53407">
+		<OrderDate>11/29/2017</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>11/30/2017</ShippedDate>
+		<OrderCharge>122.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53408">
+		<OrderDate>11/30/2017</OrderDate>
+		<CustomerID>cust308-31</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>12/4/2017</ShippedDate>
+		<OrderCharge>72.16</OrderCharge>
+	</Order>
+	<Order OrderID="order53409">
+		<OrderDate>12/1/2017</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>12/4/2017</ShippedDate>
+		<OrderCharge>124.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53410">
+		<OrderDate>12/1/2017</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>12/4/2017</ShippedDate>
+		<OrderCharge>38.9</OrderCharge>
+	</Order>
+	<Order OrderID="order53411">
+		<OrderDate>12/4/2017</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>12/6/2017</ShippedDate>
+		<OrderCharge>49.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53412">
+		<OrderDate>12/5/2017</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>12/7/2017</ShippedDate>
+		<OrderCharge>140.29</OrderCharge>
+	</Order>
+	<Order OrderID="order53413">
+		<OrderDate>12/5/2017</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>12/7/2017</ShippedDate>
+		<OrderCharge>147.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53414">
+		<OrderDate>12/6/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>12/11/2017</ShippedDate>
+		<OrderCharge>73.17</OrderCharge>
+	</Order>
+	<Order OrderID="order53415">
+		<OrderDate>12/7/2017</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>12/12/2017</ShippedDate>
+		<OrderCharge>132.44</OrderCharge>
+	</Order>
+	<Order OrderID="order53416">
+		<OrderDate>12/8/2017</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>12/11/2017</ShippedDate>
+		<OrderCharge>26.96</OrderCharge>
+	</Order>
+	<Order OrderID="order53417">
+		<OrderDate>12/11/2017</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>12/14/2017</ShippedDate>
+		<OrderCharge>27.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53418">
+		<OrderDate>12/12/2017</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>12/15/2017</ShippedDate>
+		<OrderCharge>131.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53419">
+		<OrderDate>12/13/2017</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>12/14/2017</ShippedDate>
+		<OrderCharge>73.82</OrderCharge>
+	</Order>
+	<Order OrderID="order53420">
+		<OrderDate>12/13/2017</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>12/14/2017</ShippedDate>
+		<OrderCharge>30.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53421">
+		<OrderDate>12/13/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>12/14/2017</ShippedDate>
+		<OrderCharge>67.67</OrderCharge>
+	</Order>
+	<Order OrderID="order53422">
+		<OrderDate>12/14/2017</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>12/18/2017</ShippedDate>
+		<OrderCharge>82.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53423">
+		<OrderDate>12/14/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>12/19/2017</ShippedDate>
+		<OrderCharge>46.07</OrderCharge>
+	</Order>
+	<Order OrderID="order53424">
+		<OrderDate>12/15/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>12/18/2017</ShippedDate>
+		<OrderCharge>102.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53425">
+		<OrderDate>12/15/2017</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>12/19/2017</ShippedDate>
+		<OrderCharge>142.18</OrderCharge>
+	</Order>
+	<Order OrderID="order53426">
+		<OrderDate>12/15/2017</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>12/19/2017</ShippedDate>
+		<OrderCharge>55.92</OrderCharge>
+	</Order>
+	<Order OrderID="order53427">
+		<OrderDate>12/18/2017</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>12/19/2017</ShippedDate>
+		<OrderCharge>81.85</OrderCharge>
+	</Order>
+	<Order OrderID="order53428">
+		<OrderDate>12/18/2017</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>12/20/2017</ShippedDate>
+		<OrderCharge>131.28</OrderCharge>
+	</Order>
+	<Order OrderID="order53429">
+		<OrderDate>12/19/2017</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>12/20/2017</ShippedDate>
+		<OrderCharge>75.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53430">
+		<OrderDate>12/19/2017</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>12/21/2017</ShippedDate>
+		<OrderCharge>42.1</OrderCharge>
+	</Order>
+	<Order OrderID="order53431">
+		<OrderDate>12/19/2017</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>12/22/2017</ShippedDate>
+		<OrderCharge>149.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53432">
+		<OrderDate>12/20/2017</OrderDate>
+		<CustomerID>cust508-22</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>12/26/2017</ShippedDate>
+		<OrderCharge>144.72</OrderCharge>
+	</Order>
+	<Order OrderID="order53433">
+		<OrderDate>12/20/2017</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>12/22/2017</ShippedDate>
+		<OrderCharge>132.07</OrderCharge>
+	</Order>
+	<Order OrderID="order53434">
+		<OrderDate>12/21/2017</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>12/27/2017</ShippedDate>
+		<OrderCharge>61.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53435">
+		<OrderDate>12/21/2017</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>12/27/2017</ShippedDate>
+		<OrderCharge>31.1</OrderCharge>
+	</Order>
+	<Order OrderID="order53436">
+		<OrderDate>12/21/2017</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>12/27/2017</ShippedDate>
+		<OrderCharge>53.69</OrderCharge>
+	</Order>
+	<Order OrderID="order53437">
+		<OrderDate>12/22/2017</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>12/26/2017</ShippedDate>
+		<OrderCharge>102.62</OrderCharge>
+	</Order>
+	<Order OrderID="order53438">
+		<OrderDate>12/26/2017</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>12/28/2017</ShippedDate>
+		<OrderCharge>112.37</OrderCharge>
+	</Order>
+	<Order OrderID="order53439">
+		<OrderDate>12/26/2017</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>12/28/2017</ShippedDate>
+		<OrderCharge>132.24</OrderCharge>
+	</Order>
+	<Order OrderID="order53440">
+		<OrderDate>12/27/2017</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>12/28/2017</ShippedDate>
+		<OrderCharge>76.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53441">
+		<OrderDate>12/28/2017</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>12/29/2017</ShippedDate>
+		<OrderCharge>61.5</OrderCharge>
+	</Order>
+	<Order OrderID="order53442">
+		<OrderDate>12/29/2017</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>1/4/2018</ShippedDate>
+		<OrderCharge>44.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53443">
+		<OrderDate>1/2/2018</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>1/5/2018</ShippedDate>
+		<OrderCharge>100.68</OrderCharge>
+	</Order>
+	<Order OrderID="order53444">
+		<OrderDate>1/4/2018</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>1/8/2018</ShippedDate>
+		<OrderCharge>128.37</OrderCharge>
+	</Order>
+	<Order OrderID="order53445">
+		<OrderDate>1/5/2018</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>1/8/2018</ShippedDate>
+		<OrderCharge>92.42</OrderCharge>
+	</Order>
+	<Order OrderID="order53446">
+		<OrderDate>1/8/2018</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>1/10/2018</ShippedDate>
+		<OrderCharge>112.55</OrderCharge>
+	</Order>
+	<Order OrderID="order53447">
+		<OrderDate>1/9/2018</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>1/11/2018</ShippedDate>
+		<OrderCharge>30.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53448">
+		<OrderDate>1/10/2018</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>1/11/2018</ShippedDate>
+		<OrderCharge>130.25</OrderCharge>
+	</Order>
+	<Order OrderID="order53449">
+		<OrderDate>1/12/2018</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>1/17/2018</ShippedDate>
+		<OrderCharge>52.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53450">
+		<OrderDate>1/16/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>1/17/2018</ShippedDate>
+		<OrderCharge>70.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53451">
+		<OrderDate>1/16/2018</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>1/17/2018</ShippedDate>
+		<OrderCharge>128.39</OrderCharge>
+	</Order>
+	<Order OrderID="order53452">
+		<OrderDate>1/16/2018</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>1/18/2018</ShippedDate>
+		<OrderCharge>85.5</OrderCharge>
+	</Order>
+	<Order OrderID="order53453">
+		<OrderDate>1/16/2018</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>1/17/2018</ShippedDate>
+		<OrderCharge>89.07</OrderCharge>
+	</Order>
+	<Order OrderID="order53454">
+		<OrderDate>1/18/2018</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>1/23/2018</ShippedDate>
+		<OrderCharge>40.79</OrderCharge>
+	</Order>
+	<Order OrderID="order53455">
+		<OrderDate>1/18/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>1/19/2018</ShippedDate>
+		<OrderCharge>110.99</OrderCharge>
+	</Order>
+	<Order OrderID="order53456">
+		<OrderDate>1/19/2018</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>1/24/2018</ShippedDate>
+		<OrderCharge>39.62</OrderCharge>
+	</Order>
+	<Order OrderID="order53457">
+		<OrderDate>1/19/2018</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>1/24/2018</ShippedDate>
+		<OrderCharge>124.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53458">
+		<OrderDate>1/19/2018</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>1/24/2018</ShippedDate>
+		<OrderCharge>44.69</OrderCharge>
+	</Order>
+	<Order OrderID="order53459">
+		<OrderDate>1/22/2018</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>1/24/2018</ShippedDate>
+		<OrderCharge>134.82</OrderCharge>
+	</Order>
+	<Order OrderID="order53460">
+		<OrderDate>1/22/2018</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>1/24/2018</ShippedDate>
+		<OrderCharge>84.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53461">
+		<OrderDate>1/24/2018</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>1/29/2018</ShippedDate>
+		<OrderCharge>105.29</OrderCharge>
+	</Order>
+	<Order OrderID="order53462">
+		<OrderDate>1/25/2018</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>1/30/2018</ShippedDate>
+		<OrderCharge>64.76</OrderCharge>
+	</Order>
+	<Order OrderID="order53463">
+		<OrderDate>1/26/2018</OrderDate>
+		<CustomerID>cust990-42</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>1/29/2018</ShippedDate>
+		<OrderCharge>106.87</OrderCharge>
+	</Order>
+	<Order OrderID="order53464">
+		<OrderDate>1/26/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>1/31/2018</ShippedDate>
+		<OrderCharge>51.23</OrderCharge>
+	</Order>
+	<Order OrderID="order53465">
+		<OrderDate>1/30/2018</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>2/2/2018</ShippedDate>
+		<OrderCharge>66.91</OrderCharge>
+	</Order>
+	<Order OrderID="order53466">
+		<OrderDate>1/30/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>1/31/2018</ShippedDate>
+		<OrderCharge>79.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53467">
+		<OrderDate>1/31/2018</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>2/1/2018</ShippedDate>
+		<OrderCharge>130.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53468">
+		<OrderDate>2/1/2018</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>2/2/2018</ShippedDate>
+		<OrderCharge>91.03</OrderCharge>
+	</Order>
+	<Order OrderID="order53469">
+		<OrderDate>2/2/2018</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>2/6/2018</ShippedDate>
+		<OrderCharge>148.63</OrderCharge>
+	</Order>
+	<Order OrderID="order53470">
+		<OrderDate>2/5/2018</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>2/6/2018</ShippedDate>
+		<OrderCharge>78.21</OrderCharge>
+	</Order>
+	<Order OrderID="order53471">
+		<OrderDate>2/5/2018</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>2/7/2018</ShippedDate>
+		<OrderCharge>126.57</OrderCharge>
+	</Order>
+	<Order OrderID="order53472">
+		<OrderDate>2/6/2018</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>2/7/2018</ShippedDate>
+		<OrderCharge>34.35</OrderCharge>
+	</Order>
+	<Order OrderID="order53473">
+		<OrderDate>2/6/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>2/9/2018</ShippedDate>
+		<OrderCharge>143.3</OrderCharge>
+	</Order>
+	<Order OrderID="order53474">
+		<OrderDate>2/7/2018</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>2/9/2018</ShippedDate>
+		<OrderCharge>43.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53475">
+		<OrderDate>2/8/2018</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>2/9/2018</ShippedDate>
+		<OrderCharge>44.68</OrderCharge>
+	</Order>
+	<Order OrderID="order53476">
+		<OrderDate>2/9/2018</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>2/13/2018</ShippedDate>
+		<OrderCharge>66.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53477">
+		<OrderDate>2/12/2018</OrderDate>
+		<CustomerID>cust745-89</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>2/14/2018</ShippedDate>
+		<OrderCharge>35.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53478">
+		<OrderDate>2/14/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>2/19/2018</ShippedDate>
+		<OrderCharge>49.83</OrderCharge>
+	</Order>
+	<Order OrderID="order53479">
+		<OrderDate>2/14/2018</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>2/16/2018</ShippedDate>
+		<OrderCharge>134.71</OrderCharge>
+	</Order>
+	<Order OrderID="order53480">
+		<OrderDate>2/15/2018</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>2/19/2018</ShippedDate>
+		<OrderCharge>124.52</OrderCharge>
+	</Order>
+	<Order OrderID="order53481">
+		<OrderDate>2/16/2018</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>2/21/2018</ShippedDate>
+		<OrderCharge>123.64</OrderCharge>
+	</Order>
+	<Order OrderID="order53482">
+		<OrderDate>2/19/2018</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>2/22/2018</ShippedDate>
+		<OrderCharge>45.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53483">
+		<OrderDate>2/19/2018</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>2/20/2018</ShippedDate>
+		<OrderCharge>94.56</OrderCharge>
+	</Order>
+	<Order OrderID="order53484">
+		<OrderDate>2/19/2018</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>2/20/2018</ShippedDate>
+		<OrderCharge>63.48</OrderCharge>
+	</Order>
+	<Order OrderID="order53485">
+		<OrderDate>2/20/2018</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>2/23/2018</ShippedDate>
+		<OrderCharge>124.96</OrderCharge>
+	</Order>
+	<Order OrderID="order53486">
+		<OrderDate>2/21/2018</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>2/23/2018</ShippedDate>
+		<OrderCharge>56.76</OrderCharge>
+	</Order>
+	<Order OrderID="order53487">
+		<OrderDate>2/22/2018</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>2/27/2018</ShippedDate>
+		<OrderCharge>75.03</OrderCharge>
+	</Order>
+	<Order OrderID="order53488">
+		<OrderDate>2/26/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>2/27/2018</ShippedDate>
+		<OrderCharge>58.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53489">
+		<OrderDate>2/28/2018</OrderDate>
+		<CustomerID>cust308-31</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>3/5/2018</ShippedDate>
+		<OrderCharge>118.55</OrderCharge>
+	</Order>
+	<Order OrderID="order53490">
+		<OrderDate>3/2/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>3/7/2018</ShippedDate>
+		<OrderCharge>31.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53491">
+		<OrderDate>3/6/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>3/8/2018</ShippedDate>
+		<OrderCharge>134.4</OrderCharge>
+	</Order>
+	<Order OrderID="order53492">
+		<OrderDate>3/6/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>3/9/2018</ShippedDate>
+		<OrderCharge>29.76</OrderCharge>
+	</Order>
+	<Order OrderID="order53493">
+		<OrderDate>3/7/2018</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>3/12/2018</ShippedDate>
+		<OrderCharge>94.01</OrderCharge>
+	</Order>
+	<Order OrderID="order53494">
+		<OrderDate>3/7/2018</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>3/12/2018</ShippedDate>
+		<OrderCharge>141.58</OrderCharge>
+	</Order>
+	<Order OrderID="order53495">
+		<OrderDate>3/8/2018</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>3/12/2018</ShippedDate>
+		<OrderCharge>127.55</OrderCharge>
+	</Order>
+	<Order OrderID="order53496">
+		<OrderDate>3/8/2018</OrderDate>
+		<CustomerID>cust666-89</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>3/9/2018</ShippedDate>
+		<OrderCharge>78.8</OrderCharge>
+	</Order>
+	<Order OrderID="order53497">
+		<OrderDate>3/9/2018</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>3/12/2018</ShippedDate>
+		<OrderCharge>126.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53498">
+		<OrderDate>3/9/2018</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>3/12/2018</ShippedDate>
+		<OrderCharge>141.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53499">
+		<OrderDate>3/12/2018</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>3/15/2018</ShippedDate>
+		<OrderCharge>56.64</OrderCharge>
+	</Order>
+	<Order OrderID="order53500">
+		<OrderDate>3/13/2018</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>3/15/2018</ShippedDate>
+		<OrderCharge>97.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53501">
+		<OrderDate>3/15/2018</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>3/16/2018</ShippedDate>
+		<OrderCharge>80.46</OrderCharge>
+	</Order>
+	<Order OrderID="order53502">
+		<OrderDate>3/15/2018</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>3/20/2018</ShippedDate>
+		<OrderCharge>42.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53503">
+		<OrderDate>3/16/2018</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>3/20/2018</ShippedDate>
+		<OrderCharge>35.26</OrderCharge>
+	</Order>
+	<Order OrderID="order53504">
+		<OrderDate>3/19/2018</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>3/20/2018</ShippedDate>
+		<OrderCharge>93.4</OrderCharge>
+	</Order>
+	<Order OrderID="order53505">
+		<OrderDate>3/21/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>3/26/2018</ShippedDate>
+		<OrderCharge>84.92</OrderCharge>
+	</Order>
+	<Order OrderID="order53506">
+		<OrderDate>3/23/2018</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>3/26/2018</ShippedDate>
+		<OrderCharge>85.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53507">
+		<OrderDate>3/26/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>3/28/2018</ShippedDate>
+		<OrderCharge>72.43</OrderCharge>
+	</Order>
+	<Order OrderID="order53508">
+		<OrderDate>3/27/2018</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>3/28/2018</ShippedDate>
+		<OrderCharge>89.06</OrderCharge>
+	</Order>
+	<Order OrderID="order53509">
+		<OrderDate>3/27/2018</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>3/29/2018</ShippedDate>
+		<OrderCharge>57.29</OrderCharge>
+	</Order>
+	<Order OrderID="order53510">
+		<OrderDate>3/29/2018</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>3/30/2018</ShippedDate>
+		<OrderCharge>35.85</OrderCharge>
+	</Order>
+	<Order OrderID="order53511">
+		<OrderDate>3/29/2018</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>3/30/2018</ShippedDate>
+		<OrderCharge>26.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53512">
+		<OrderDate>3/30/2018</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>4/2/2018</ShippedDate>
+		<OrderCharge>56.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53513">
+		<OrderDate>4/2/2018</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>4/4/2018</ShippedDate>
+		<OrderCharge>45.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53514">
+		<OrderDate>4/3/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>4/5/2018</ShippedDate>
+		<OrderCharge>65.6</OrderCharge>
+	</Order>
+	<Order OrderID="order53515">
+		<OrderDate>4/4/2018</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/6/2018</ShippedDate>
+		<OrderCharge>106.97</OrderCharge>
+	</Order>
+	<Order OrderID="order53516">
+		<OrderDate>4/4/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>4/5/2018</ShippedDate>
+		<OrderCharge>87.17</OrderCharge>
+	</Order>
+	<Order OrderID="order53517">
+		<OrderDate>4/5/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>4/6/2018</ShippedDate>
+		<OrderCharge>56.9</OrderCharge>
+	</Order>
+	<Order OrderID="order53518">
+		<OrderDate>4/5/2018</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/9/2018</ShippedDate>
+		<OrderCharge>133.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53519">
+		<OrderDate>4/6/2018</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/9/2018</ShippedDate>
+		<OrderCharge>98.3</OrderCharge>
+	</Order>
+	<Order OrderID="order53520">
+		<OrderDate>4/9/2018</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>4/11/2018</ShippedDate>
+		<OrderCharge>102.83</OrderCharge>
+	</Order>
+	<Order OrderID="order53521">
+		<OrderDate>4/10/2018</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>4/12/2018</ShippedDate>
+		<OrderCharge>58.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53522">
+		<OrderDate>4/11/2018</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>4/16/2018</ShippedDate>
+		<OrderCharge>136.91</OrderCharge>
+	</Order>
+	<Order OrderID="order53523">
+		<OrderDate>4/12/2018</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>4/16/2018</ShippedDate>
+		<OrderCharge>68.98</OrderCharge>
+	</Order>
+	<Order OrderID="order53524">
+		<OrderDate>4/12/2018</OrderDate>
+		<CustomerID>cust666-89</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>4/17/2018</ShippedDate>
+		<OrderCharge>41.55</OrderCharge>
+	</Order>
+	<Order OrderID="order53525">
+		<OrderDate>4/12/2018</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>4/16/2018</ShippedDate>
+		<OrderCharge>75.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53526">
+		<OrderDate>4/13/2018</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>4/16/2018</ShippedDate>
+		<OrderCharge>137.49</OrderCharge>
+	</Order>
+	<Order OrderID="order53527">
+		<OrderDate>4/13/2018</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>4/16/2018</ShippedDate>
+		<OrderCharge>29.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53528">
+		<OrderDate>4/13/2018</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>4/17/2018</ShippedDate>
+		<OrderCharge>143.45</OrderCharge>
+	</Order>
+	<Order OrderID="order53529">
+		<OrderDate>4/16/2018</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>4/19/2018</ShippedDate>
+		<OrderCharge>139.2</OrderCharge>
+	</Order>
+	<Order OrderID="order53530">
+		<OrderDate>4/16/2018</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>4/18/2018</ShippedDate>
+		<OrderCharge>125.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53531">
+		<OrderDate>4/18/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>4/19/2018</ShippedDate>
+		<OrderCharge>132.06</OrderCharge>
+	</Order>
+	<Order OrderID="order53532">
+		<OrderDate>4/19/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>4/24/2018</ShippedDate>
+		<OrderCharge>137.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53533">
+		<OrderDate>4/19/2018</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>4/20/2018</ShippedDate>
+		<OrderCharge>37.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53534">
+		<OrderDate>4/20/2018</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>4/23/2018</ShippedDate>
+		<OrderCharge>30.25</OrderCharge>
+	</Order>
+	<Order OrderID="order53535">
+		<OrderDate>4/20/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>4/25/2018</ShippedDate>
+		<OrderCharge>132.88</OrderCharge>
+	</Order>
+	<Order OrderID="order53536">
+		<OrderDate>4/20/2018</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>4/24/2018</ShippedDate>
+		<OrderCharge>39.35</OrderCharge>
+	</Order>
+	<Order OrderID="order53537">
+		<OrderDate>4/20/2018</OrderDate>
+		<CustomerID>cust666-89</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>4/25/2018</ShippedDate>
+		<OrderCharge>128.86</OrderCharge>
+	</Order>
+	<Order OrderID="order53538">
+		<OrderDate>4/23/2018</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>4/26/2018</ShippedDate>
+		<OrderCharge>80.23</OrderCharge>
+	</Order>
+	<Order OrderID="order53539">
+		<OrderDate>4/24/2018</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>4/27/2018</ShippedDate>
+		<OrderCharge>32.12</OrderCharge>
+	</Order>
+	<Order OrderID="order53540">
+		<OrderDate>4/24/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>4/25/2018</ShippedDate>
+		<OrderCharge>72.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53541">
+		<OrderDate>4/25/2018</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>4/27/2018</ShippedDate>
+		<OrderCharge>112.16</OrderCharge>
+	</Order>
+	<Order OrderID="order53542">
+		<OrderDate>4/25/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>4/26/2018</ShippedDate>
+		<OrderCharge>39.4</OrderCharge>
+	</Order>
+	<Order OrderID="order53543">
+		<OrderDate>4/26/2018</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>4/27/2018</ShippedDate>
+		<OrderCharge>39.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53544">
+		<OrderDate>4/27/2018</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>4/30/2018</ShippedDate>
+		<OrderCharge>135.4</OrderCharge>
+	</Order>
+	<Order OrderID="order53545">
+		<OrderDate>4/30/2018</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>5/1/2018</ShippedDate>
+		<OrderCharge>90.85</OrderCharge>
+	</Order>
+	<Order OrderID="order53546">
+		<OrderDate>5/1/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>5/3/2018</ShippedDate>
+		<OrderCharge>63.42</OrderCharge>
+	</Order>
+	<Order OrderID="order53547">
+		<OrderDate>5/1/2018</OrderDate>
+		<CustomerID>cust126-22</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>5/2/2018</ShippedDate>
+		<OrderCharge>52.75</OrderCharge>
+	</Order>
+	<Order OrderID="order53548">
+		<OrderDate>5/3/2018</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>5/4/2018</ShippedDate>
+		<OrderCharge>144.23</OrderCharge>
+	</Order>
+	<Order OrderID="order53549">
+		<OrderDate>5/3/2018</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>5/7/2018</ShippedDate>
+		<OrderCharge>104.22</OrderCharge>
+	</Order>
+	<Order OrderID="order53550">
+		<OrderDate>5/3/2018</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>5/7/2018</ShippedDate>
+		<OrderCharge>58.41</OrderCharge>
+	</Order>
+	<Order OrderID="order53551">
+		<OrderDate>5/3/2018</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>5/7/2018</ShippedDate>
+		<OrderCharge>109.92</OrderCharge>
+	</Order>
+	<Order OrderID="order53552">
+		<OrderDate>5/4/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>5/8/2018</ShippedDate>
+		<OrderCharge>134.68</OrderCharge>
+	</Order>
+	<Order OrderID="order53553">
+		<OrderDate>5/7/2018</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>5/10/2018</ShippedDate>
+		<OrderCharge>142.16</OrderCharge>
+	</Order>
+	<Order OrderID="order53554">
+		<OrderDate>5/7/2018</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>5/10/2018</ShippedDate>
+		<OrderCharge>95.53</OrderCharge>
+	</Order>
+	<Order OrderID="order53555">
+		<OrderDate>5/9/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>5/11/2018</ShippedDate>
+		<OrderCharge>48.53</OrderCharge>
+	</Order>
+	<Order OrderID="order53556">
+		<OrderDate>5/9/2018</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>5/11/2018</ShippedDate>
+		<OrderCharge>34.61</OrderCharge>
+	</Order>
+	<Order OrderID="order53557">
+		<OrderDate>5/10/2018</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>5/11/2018</ShippedDate>
+		<OrderCharge>78.71</OrderCharge>
+	</Order>
+	<Order OrderID="order53558">
+		<OrderDate>5/11/2018</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>5/16/2018</ShippedDate>
+		<OrderCharge>58.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53559">
+		<OrderDate>5/11/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>5/14/2018</ShippedDate>
+		<OrderCharge>60.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53560">
+		<OrderDate>5/14/2018</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>5/16/2018</ShippedDate>
+		<OrderCharge>144.82</OrderCharge>
+	</Order>
+	<Order OrderID="order53561">
+		<OrderDate>5/14/2018</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>5/15/2018</ShippedDate>
+		<OrderCharge>68.04</OrderCharge>
+	</Order>
+	<Order OrderID="order53562">
+		<OrderDate>5/16/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>5/17/2018</ShippedDate>
+		<OrderCharge>149.92</OrderCharge>
+	</Order>
+	<Order OrderID="order53563">
+		<OrderDate>5/17/2018</OrderDate>
+		<CustomerID>cust269-16</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>5/21/2018</ShippedDate>
+		<OrderCharge>35.18</OrderCharge>
+	</Order>
+	<Order OrderID="order53564">
+		<OrderDate>5/18/2018</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>5/22/2018</ShippedDate>
+		<OrderCharge>113.46</OrderCharge>
+	</Order>
+	<Order OrderID="order53565">
+		<OrderDate>5/18/2018</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>5/23/2018</ShippedDate>
+		<OrderCharge>76.14</OrderCharge>
+	</Order>
+	<Order OrderID="order53566">
+		<OrderDate>5/18/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>5/22/2018</ShippedDate>
+		<OrderCharge>122.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53567">
+		<OrderDate>5/18/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>5/21/2018</ShippedDate>
+		<OrderCharge>143.48</OrderCharge>
+	</Order>
+	<Order OrderID="order53568">
+		<OrderDate>5/22/2018</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>5/24/2018</ShippedDate>
+		<OrderCharge>73.32</OrderCharge>
+	</Order>
+	<Order OrderID="order53569">
+		<OrderDate>5/23/2018</OrderDate>
+		<CustomerID>cust211-28</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>5/28/2018</ShippedDate>
+		<OrderCharge>96.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53570">
+		<OrderDate>5/24/2018</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>5/29/2018</ShippedDate>
+		<OrderCharge>42.58</OrderCharge>
+	</Order>
+	<Order OrderID="order53571">
+		<OrderDate>5/28/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>5/29/2018</ShippedDate>
+		<OrderCharge>88.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53572">
+		<OrderDate>5/30/2018</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>6/1/2018</ShippedDate>
+		<OrderCharge>47.57</OrderCharge>
+	</Order>
+	<Order OrderID="order53573">
+		<OrderDate>6/1/2018</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>6/6/2018</ShippedDate>
+		<OrderCharge>136.65</OrderCharge>
+	</Order>
+	<Order OrderID="order53574">
+		<OrderDate>6/1/2018</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>6/4/2018</ShippedDate>
+		<OrderCharge>122.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53575">
+		<OrderDate>6/4/2018</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>6/7/2018</ShippedDate>
+		<OrderCharge>47.65</OrderCharge>
+	</Order>
+	<Order OrderID="order53576">
+		<OrderDate>6/5/2018</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>6/8/2018</ShippedDate>
+		<OrderCharge>92.23</OrderCharge>
+	</Order>
+	<Order OrderID="order53577">
+		<OrderDate>6/6/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>6/8/2018</ShippedDate>
+		<OrderCharge>137.76</OrderCharge>
+	</Order>
+	<Order OrderID="order53578">
+		<OrderDate>6/7/2018</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>6/11/2018</ShippedDate>
+		<OrderCharge>34.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53579">
+		<OrderDate>6/8/2018</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>6/11/2018</ShippedDate>
+		<OrderCharge>121.01</OrderCharge>
+	</Order>
+	<Order OrderID="order53580">
+		<OrderDate>6/8/2018</OrderDate>
+		<CustomerID>cust990-42</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>6/11/2018</ShippedDate>
+		<OrderCharge>113.79</OrderCharge>
+	</Order>
+	<Order OrderID="order53581">
+		<OrderDate>6/8/2018</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>6/12/2018</ShippedDate>
+		<OrderCharge>32.81</OrderCharge>
+	</Order>
+	<Order OrderID="order53582">
+		<OrderDate>6/12/2018</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>6/13/2018</ShippedDate>
+		<OrderCharge>126.28</OrderCharge>
+	</Order>
+	<Order OrderID="order53583">
+		<OrderDate>6/14/2018</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>6/19/2018</ShippedDate>
+		<OrderCharge>37.56</OrderCharge>
+	</Order>
+	<Order OrderID="order53584">
+		<OrderDate>6/15/2018</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>6/18/2018</ShippedDate>
+		<OrderCharge>39.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53585">
+		<OrderDate>6/19/2018</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>6/20/2018</ShippedDate>
+		<OrderCharge>140.65</OrderCharge>
+	</Order>
+	<Order OrderID="order53586">
+		<OrderDate>6/19/2018</OrderDate>
+		<CustomerID>cust338-83</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>6/21/2018</ShippedDate>
+		<OrderCharge>99.04</OrderCharge>
+	</Order>
+	<Order OrderID="order53587">
+		<OrderDate>6/19/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>6/20/2018</ShippedDate>
+		<OrderCharge>62.35</OrderCharge>
+	</Order>
+	<Order OrderID="order53588">
+		<OrderDate>6/19/2018</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>6/20/2018</ShippedDate>
+		<OrderCharge>67.93</OrderCharge>
+	</Order>
+	<Order OrderID="order53589">
+		<OrderDate>6/19/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>6/21/2018</ShippedDate>
+		<OrderCharge>77.89</OrderCharge>
+	</Order>
+	<Order OrderID="order53590">
+		<OrderDate>6/19/2018</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>6/21/2018</ShippedDate>
+		<OrderCharge>26.5</OrderCharge>
+	</Order>
+	<Order OrderID="order53591">
+		<OrderDate>6/20/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>6/21/2018</ShippedDate>
+		<OrderCharge>146.24</OrderCharge>
+	</Order>
+	<Order OrderID="order53592">
+		<OrderDate>6/20/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>6/25/2018</ShippedDate>
+		<OrderCharge>46.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53593">
+		<OrderDate>6/22/2018</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>6/26/2018</ShippedDate>
+		<OrderCharge>69.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53594">
+		<OrderDate>6/26/2018</OrderDate>
+		<CustomerID>cust508-22</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>6/27/2018</ShippedDate>
+		<OrderCharge>142.15</OrderCharge>
+	</Order>
+	<Order OrderID="order53595">
+		<OrderDate>6/27/2018</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>6/29/2018</ShippedDate>
+		<OrderCharge>146.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53596">
+		<OrderDate>6/28/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>7/2/2018</ShippedDate>
+		<OrderCharge>52.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53597">
+		<OrderDate>6/28/2018</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>7/2/2018</ShippedDate>
+		<OrderCharge>56.72</OrderCharge>
+	</Order>
+	<Order OrderID="order53598">
+		<OrderDate>6/28/2018</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>7/3/2018</ShippedDate>
+		<OrderCharge>70.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53599">
+		<OrderDate>6/28/2018</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>7/3/2018</ShippedDate>
+		<OrderCharge>60.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53600">
+		<OrderDate>6/29/2018</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>7/4/2018</ShippedDate>
+		<OrderCharge>136.29</OrderCharge>
+	</Order>
+	<Order OrderID="order53601">
+		<OrderDate>6/29/2018</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>7/4/2018</ShippedDate>
+		<OrderCharge>55.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53602">
+		<OrderDate>6/29/2018</OrderDate>
+		<CustomerID>cust508-22</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>7/2/2018</ShippedDate>
+		<OrderCharge>145.32</OrderCharge>
+	</Order>
+	<Order OrderID="order53603">
+		<OrderDate>7/3/2018</OrderDate>
+		<CustomerID>cust990-42</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>7/5/2018</ShippedDate>
+		<OrderCharge>30.22</OrderCharge>
+	</Order>
+	<Order OrderID="order53604">
+		<OrderDate>7/5/2018</OrderDate>
+		<CustomerID>cust990-42</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>7/6/2018</ShippedDate>
+		<OrderCharge>126.07</OrderCharge>
+	</Order>
+	<Order OrderID="order53605">
+		<OrderDate>7/5/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>7/10/2018</ShippedDate>
+		<OrderCharge>123</OrderCharge>
+	</Order>
+	<Order OrderID="order53606">
+		<OrderDate>7/6/2018</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>7/9/2018</ShippedDate>
+		<OrderCharge>127.19</OrderCharge>
+	</Order>
+	<Order OrderID="order53607">
+		<OrderDate>7/9/2018</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>7/11/2018</ShippedDate>
+		<OrderCharge>52.46</OrderCharge>
+	</Order>
+	<Order OrderID="order53608">
+		<OrderDate>7/9/2018</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>7/11/2018</ShippedDate>
+		<OrderCharge>66.18</OrderCharge>
+	</Order>
+	<Order OrderID="order53609">
+		<OrderDate>7/10/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>7/12/2018</ShippedDate>
+		<OrderCharge>43.47</OrderCharge>
+	</Order>
+	<Order OrderID="order53610">
+		<OrderDate>7/10/2018</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>7/13/2018</ShippedDate>
+		<OrderCharge>37.23</OrderCharge>
+	</Order>
+	<Order OrderID="order53611">
+		<OrderDate>7/12/2018</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>7/17/2018</ShippedDate>
+		<OrderCharge>97.56</OrderCharge>
+	</Order>
+	<Order OrderID="order53612">
+		<OrderDate>7/12/2018</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>7/17/2018</ShippedDate>
+		<OrderCharge>120.46</OrderCharge>
+	</Order>
+	<Order OrderID="order53613">
+		<OrderDate>7/16/2018</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>7/17/2018</ShippedDate>
+		<OrderCharge>118.92</OrderCharge>
+	</Order>
+	<Order OrderID="order53614">
+		<OrderDate>7/17/2018</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>7/18/2018</ShippedDate>
+		<OrderCharge>37.52</OrderCharge>
+	</Order>
+	<Order OrderID="order53615">
+		<OrderDate>7/18/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>7/20/2018</ShippedDate>
+		<OrderCharge>27.31</OrderCharge>
+	</Order>
+	<Order OrderID="order53616">
+		<OrderDate>7/18/2018</OrderDate>
+		<CustomerID>cust745-89</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>7/23/2018</ShippedDate>
+		<OrderCharge>77.4</OrderCharge>
+	</Order>
+	<Order OrderID="order53617">
+		<OrderDate>7/19/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>7/20/2018</ShippedDate>
+		<OrderCharge>103.15</OrderCharge>
+	</Order>
+	<Order OrderID="order53618">
+		<OrderDate>7/20/2018</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>7/24/2018</ShippedDate>
+		<OrderCharge>150.2</OrderCharge>
+	</Order>
+	<Order OrderID="order53619">
+		<OrderDate>7/20/2018</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>7/23/2018</ShippedDate>
+		<OrderCharge>55.66</OrderCharge>
+	</Order>
+	<Order OrderID="order53620">
+		<OrderDate>7/20/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>7/25/2018</ShippedDate>
+		<OrderCharge>37.81</OrderCharge>
+	</Order>
+	<Order OrderID="order53621">
+		<OrderDate>7/20/2018</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>7/23/2018</ShippedDate>
+		<OrderCharge>145.24</OrderCharge>
+	</Order>
+	<Order OrderID="order53622">
+		<OrderDate>7/24/2018</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>7/25/2018</ShippedDate>
+		<OrderCharge>137.68</OrderCharge>
+	</Order>
+	<Order OrderID="order53623">
+		<OrderDate>7/25/2018</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>7/26/2018</ShippedDate>
+		<OrderCharge>147.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53624">
+		<OrderDate>7/26/2018</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>7/30/2018</ShippedDate>
+		<OrderCharge>66.69</OrderCharge>
+	</Order>
+	<Order OrderID="order53625">
+		<OrderDate>7/27/2018</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>7/31/2018</ShippedDate>
+		<OrderCharge>47.95</OrderCharge>
+	</Order>
+	<Order OrderID="order53626">
+		<OrderDate>7/31/2018</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>8/1/2018</ShippedDate>
+		<OrderCharge>100.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53627">
+		<OrderDate>8/1/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>8/2/2018</ShippedDate>
+		<OrderCharge>33.99</OrderCharge>
+	</Order>
+	<Order OrderID="order53628">
+		<OrderDate>8/2/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>8/7/2018</ShippedDate>
+		<OrderCharge>111.96</OrderCharge>
+	</Order>
+	<Order OrderID="order53629">
+		<OrderDate>8/3/2018</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>8/6/2018</ShippedDate>
+		<OrderCharge>103.46</OrderCharge>
+	</Order>
+	<Order OrderID="order53630">
+		<OrderDate>8/6/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>8/7/2018</ShippedDate>
+		<OrderCharge>107.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53631">
+		<OrderDate>8/6/2018</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>8/7/2018</ShippedDate>
+		<OrderCharge>128.93</OrderCharge>
+	</Order>
+	<Order OrderID="order53632">
+		<OrderDate>8/6/2018</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>8/9/2018</ShippedDate>
+		<OrderCharge>124.24</OrderCharge>
+	</Order>
+	<Order OrderID="order53633">
+		<OrderDate>8/7/2018</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>8/9/2018</ShippedDate>
+		<OrderCharge>55.78</OrderCharge>
+	</Order>
+	<Order OrderID="order53634">
+		<OrderDate>8/8/2018</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>8/13/2018</ShippedDate>
+		<OrderCharge>71.37</OrderCharge>
+	</Order>
+	<Order OrderID="order53635">
+		<OrderDate>8/9/2018</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>8/14/2018</ShippedDate>
+		<OrderCharge>119.96</OrderCharge>
+	</Order>
+	<Order OrderID="order53636">
+		<OrderDate>8/9/2018</OrderDate>
+		<CustomerID>cust338-83</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>8/13/2018</ShippedDate>
+		<OrderCharge>76.22</OrderCharge>
+	</Order>
+	<Order OrderID="order53637">
+		<OrderDate>8/10/2018</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>8/13/2018</ShippedDate>
+		<OrderCharge>61.87</OrderCharge>
+	</Order>
+	<Order OrderID="order53638">
+		<OrderDate>8/10/2018</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>8/13/2018</ShippedDate>
+		<OrderCharge>139.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53639">
+		<OrderDate>8/13/2018</OrderDate>
+		<CustomerID>cust546-40</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>8/16/2018</ShippedDate>
+		<OrderCharge>136.9</OrderCharge>
+	</Order>
+	<Order OrderID="order53640">
+		<OrderDate>8/15/2018</OrderDate>
+		<CustomerID>cust822-41</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>8/16/2018</ShippedDate>
+		<OrderCharge>63.81</OrderCharge>
+	</Order>
+	<Order OrderID="order53641">
+		<OrderDate>8/17/2018</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>8/22/2018</ShippedDate>
+		<OrderCharge>74.63</OrderCharge>
+	</Order>
+	<Order OrderID="order53642">
+		<OrderDate>8/20/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>8/23/2018</ShippedDate>
+		<OrderCharge>119.73</OrderCharge>
+	</Order>
+	<Order OrderID="order53643">
+		<OrderDate>8/20/2018</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>8/22/2018</ShippedDate>
+		<OrderCharge>139.3</OrderCharge>
+	</Order>
+	<Order OrderID="order53644">
+		<OrderDate>8/20/2018</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>8/23/2018</ShippedDate>
+		<OrderCharge>130.21</OrderCharge>
+	</Order>
+	<Order OrderID="order53645">
+		<OrderDate>8/20/2018</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>8/23/2018</ShippedDate>
+		<OrderCharge>109.43</OrderCharge>
+	</Order>
+	<Order OrderID="order53646">
+		<OrderDate>8/21/2018</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>8/24/2018</ShippedDate>
+		<OrderCharge>38.9</OrderCharge>
+	</Order>
+	<Order OrderID="order53647">
+		<OrderDate>8/22/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>8/24/2018</ShippedDate>
+		<OrderCharge>107.69</OrderCharge>
+	</Order>
+	<Order OrderID="order53648">
+		<OrderDate>8/23/2018</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>8/24/2018</ShippedDate>
+		<OrderCharge>81.9</OrderCharge>
+	</Order>
+	<Order OrderID="order53649">
+		<OrderDate>8/24/2018</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>8/27/2018</ShippedDate>
+		<OrderCharge>61.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53650">
+		<OrderDate>8/24/2018</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>8/27/2018</ShippedDate>
+		<OrderCharge>67.97</OrderCharge>
+	</Order>
+	<Order OrderID="order53651">
+		<OrderDate>8/27/2018</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>8/29/2018</ShippedDate>
+		<OrderCharge>64.65</OrderCharge>
+	</Order>
+	<Order OrderID="order53652">
+		<OrderDate>8/27/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>8/30/2018</ShippedDate>
+		<OrderCharge>46.01</OrderCharge>
+	</Order>
+	<Order OrderID="order53653">
+		<OrderDate>8/27/2018</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>8/28/2018</ShippedDate>
+		<OrderCharge>78.63</OrderCharge>
+	</Order>
+	<Order OrderID="order53654">
+		<OrderDate>8/28/2018</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>8/29/2018</ShippedDate>
+		<OrderCharge>82.74</OrderCharge>
+	</Order>
+	<Order OrderID="order53655">
+		<OrderDate>8/30/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>9/3/2018</ShippedDate>
+		<OrderCharge>146.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53656">
+		<OrderDate>8/31/2018</OrderDate>
+		<CustomerID>cust670-68</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>9/3/2018</ShippedDate>
+		<OrderCharge>112.37</OrderCharge>
+	</Order>
+	<Order OrderID="order53657">
+		<OrderDate>8/31/2018</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>9/5/2018</ShippedDate>
+		<OrderCharge>119.55</OrderCharge>
+	</Order>
+	<Order OrderID="order53658">
+		<OrderDate>8/31/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/4/2018</ShippedDate>
+		<OrderCharge>72.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53659">
+		<OrderDate>8/31/2018</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/5/2018</ShippedDate>
+		<OrderCharge>69.39</OrderCharge>
+	</Order>
+	<Order OrderID="order53660">
+		<OrderDate>9/3/2018</OrderDate>
+		<CustomerID>cust720-87</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>9/4/2018</ShippedDate>
+		<OrderCharge>141.82</OrderCharge>
+	</Order>
+	<Order OrderID="order53661">
+		<OrderDate>9/4/2018</OrderDate>
+		<CustomerID>cust689-17</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/7/2018</ShippedDate>
+		<OrderCharge>53.12</OrderCharge>
+	</Order>
+	<Order OrderID="order53662">
+		<OrderDate>9/4/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>9/6/2018</ShippedDate>
+		<OrderCharge>70.2</OrderCharge>
+	</Order>
+	<Order OrderID="order53663">
+		<OrderDate>9/4/2018</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/6/2018</ShippedDate>
+		<OrderCharge>121.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53664">
+		<OrderDate>9/4/2018</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>9/5/2018</ShippedDate>
+		<OrderCharge>112.34</OrderCharge>
+	</Order>
+	<Order OrderID="order53665">
+		<OrderDate>9/4/2018</OrderDate>
+		<CustomerID>cust177-34</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/7/2018</ShippedDate>
+		<OrderCharge>92.75</OrderCharge>
+	</Order>
+	<Order OrderID="order53666">
+		<OrderDate>9/5/2018</OrderDate>
+		<CustomerID>cust441-70</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>9/7/2018</ShippedDate>
+		<OrderCharge>33.83</OrderCharge>
+	</Order>
+	<Order OrderID="order53667">
+		<OrderDate>9/5/2018</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>9/7/2018</ShippedDate>
+		<OrderCharge>43.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53668">
+		<OrderDate>9/6/2018</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>9/11/2018</ShippedDate>
+		<OrderCharge>138.66</OrderCharge>
+	</Order>
+	<Order OrderID="order53669">
+		<OrderDate>9/6/2018</OrderDate>
+		<CustomerID>cust640-79</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>9/10/2018</ShippedDate>
+		<OrderCharge>148.77</OrderCharge>
+	</Order>
+	<Order OrderID="order53670">
+		<OrderDate>9/7/2018</OrderDate>
+		<CustomerID>cust666-89</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>9/12/2018</ShippedDate>
+		<OrderCharge>83.9</OrderCharge>
+	</Order>
+	<Order OrderID="order53671">
+		<OrderDate>9/11/2018</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>9/12/2018</ShippedDate>
+		<OrderCharge>35.35</OrderCharge>
+	</Order>
+	<Order OrderID="order53672">
+		<OrderDate>9/11/2018</OrderDate>
+		<CustomerID>cust131-60</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>9/14/2018</ShippedDate>
+		<OrderCharge>139.62</OrderCharge>
+	</Order>
+	<Order OrderID="order53673">
+		<OrderDate>9/13/2018</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/14/2018</ShippedDate>
+		<OrderCharge>114.52</OrderCharge>
+	</Order>
+	<Order OrderID="order53674">
+		<OrderDate>9/13/2018</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>9/18/2018</ShippedDate>
+		<OrderCharge>31.06</OrderCharge>
+	</Order>
+	<Order OrderID="order53675">
+		<OrderDate>9/13/2018</OrderDate>
+		<CustomerID>cust883-60</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>9/14/2018</ShippedDate>
+		<OrderCharge>79.33</OrderCharge>
+	</Order>
+	<Order OrderID="order53676">
+		<OrderDate>9/13/2018</OrderDate>
+		<CustomerID>cust516-44</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>9/17/2018</ShippedDate>
+		<OrderCharge>51.83</OrderCharge>
+	</Order>
+	<Order OrderID="order53677">
+		<OrderDate>9/17/2018</OrderDate>
+		<CustomerID>cust850-94</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>9/20/2018</ShippedDate>
+		<OrderCharge>141.73</OrderCharge>
+	</Order>
+	<Order OrderID="order53678">
+		<OrderDate>9/18/2018</OrderDate>
+		<CustomerID>cust514-13</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>9/21/2018</ShippedDate>
+		<OrderCharge>74.44</OrderCharge>
+	</Order>
+	<Order OrderID="order53679">
+		<OrderDate>9/19/2018</OrderDate>
+		<CustomerID>cust990-42</CustomerID>
+		<SalesRepID>rep38</SalesRepID>
+		<ShippedDate>9/20/2018</ShippedDate>
+		<OrderCharge>41.86</OrderCharge>
+	</Order>
+	<Order OrderID="order53680">
+		<OrderDate>9/20/2018</OrderDate>
+		<CustomerID>cust131-64</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>9/25/2018</ShippedDate>
+		<OrderCharge>79.38</OrderCharge>
+	</Order>
+	<Order OrderID="order53681">
+		<OrderDate>9/24/2018</OrderDate>
+		<CustomerID>cust806-90</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>9/27/2018</ShippedDate>
+		<OrderCharge>48.43</OrderCharge>
+	</Order>
+	<Order OrderID="order53682">
+		<OrderDate>9/24/2018</OrderDate>
+		<CustomerID>cust316-14</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>9/25/2018</ShippedDate>
+		<OrderCharge>96.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53683">
+		<OrderDate>9/26/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>10/1/2018</ShippedDate>
+		<OrderCharge>125.94</OrderCharge>
+	</Order>
+	<Order OrderID="order53684">
+		<OrderDate>9/26/2018</OrderDate>
+		<CustomerID>cust280-55</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>10/1/2018</ShippedDate>
+		<OrderCharge>118.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53685">
+		<OrderDate>9/26/2018</OrderDate>
+		<CustomerID>cust927-54</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>9/28/2018</ShippedDate>
+		<OrderCharge>138.66</OrderCharge>
+	</Order>
+	<Order OrderID="order53686">
+		<OrderDate>9/26/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>10/1/2018</ShippedDate>
+		<OrderCharge>127.91</OrderCharge>
+	</Order>
+	<Order OrderID="order53687">
+		<OrderDate>9/27/2018</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>9/28/2018</ShippedDate>
+		<OrderCharge>94.48</OrderCharge>
+	</Order>
+	<Order OrderID="order53688">
+		<OrderDate>9/28/2018</OrderDate>
+		<CustomerID>cust308-31</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/1/2018</ShippedDate>
+		<OrderCharge>94.54</OrderCharge>
+	</Order>
+	<Order OrderID="order53689">
+		<OrderDate>10/1/2018</OrderDate>
+		<CustomerID>cust491-80</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/2/2018</ShippedDate>
+		<OrderCharge>32.51</OrderCharge>
+	</Order>
+	<Order OrderID="order53690">
+		<OrderDate>10/2/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>10/4/2018</ShippedDate>
+		<OrderCharge>128.28</OrderCharge>
+	</Order>
+	<Order OrderID="order53691">
+		<OrderDate>10/3/2018</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>10/5/2018</ShippedDate>
+		<OrderCharge>136.7</OrderCharge>
+	</Order>
+	<Order OrderID="order53692">
+		<OrderDate>10/4/2018</OrderDate>
+		<CustomerID>cust864-85</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>10/9/2018</ShippedDate>
+		<OrderCharge>85.89</OrderCharge>
+	</Order>
+	<Order OrderID="order53693">
+		<OrderDate>10/5/2018</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/9/2018</ShippedDate>
+		<OrderCharge>27.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53694">
+		<OrderDate>10/5/2018</OrderDate>
+		<CustomerID>cust582-36</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/10/2018</ShippedDate>
+		<OrderCharge>122.62</OrderCharge>
+	</Order>
+	<Order OrderID="order53695">
+		<OrderDate>10/5/2018</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/10/2018</ShippedDate>
+		<OrderCharge>38.13</OrderCharge>
+	</Order>
+	<Order OrderID="order53696">
+		<OrderDate>10/5/2018</OrderDate>
+		<CustomerID>cust128-39</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/9/2018</ShippedDate>
+		<OrderCharge>41.56</OrderCharge>
+	</Order>
+	<Order OrderID="order53697">
+		<OrderDate>10/8/2018</OrderDate>
+		<CustomerID>cust508-22</CustomerID>
+		<SalesRepID>rep33</SalesRepID>
+		<ShippedDate>10/9/2018</ShippedDate>
+		<OrderCharge>93.16</OrderCharge>
+	</Order>
+	<Order OrderID="order53698">
+		<OrderDate>10/8/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep29</SalesRepID>
+		<ShippedDate>10/9/2018</ShippedDate>
+		<OrderCharge>128.1</OrderCharge>
+	</Order>
+	<Order OrderID="order53699">
+		<OrderDate>10/10/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>10/11/2018</ShippedDate>
+		<OrderCharge>141.96</OrderCharge>
+	</Order>
+	<Order OrderID="order53700">
+		<OrderDate>10/11/2018</OrderDate>
+		<CustomerID>cust198-98</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>10/16/2018</ShippedDate>
+		<OrderCharge>147.17</OrderCharge>
+	</Order>
+	<Order OrderID="order53701">
+		<OrderDate>10/12/2018</OrderDate>
+		<CustomerID>cust388-24</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/16/2018</ShippedDate>
+		<OrderCharge>47.23</OrderCharge>
+	</Order>
+	<Order OrderID="order53702">
+		<OrderDate>10/12/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>10/15/2018</ShippedDate>
+		<OrderCharge>104.84</OrderCharge>
+	</Order>
+	<Order OrderID="order53703">
+		<OrderDate>10/16/2018</OrderDate>
+		<CustomerID>cust662-23</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/18/2018</ShippedDate>
+		<OrderCharge>69.66</OrderCharge>
+	</Order>
+	<Order OrderID="order53704">
+		<OrderDate>10/16/2018</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/19/2018</ShippedDate>
+		<OrderCharge>48.48</OrderCharge>
+	</Order>
+	<Order OrderID="order53705">
+		<OrderDate>10/17/2018</OrderDate>
+		<CustomerID>cust308-31</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>10/22/2018</ShippedDate>
+		<OrderCharge>54.19</OrderCharge>
+	</Order>
+	<Order OrderID="order53706">
+		<OrderDate>10/18/2018</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep31</SalesRepID>
+		<ShippedDate>10/22/2018</ShippedDate>
+		<OrderCharge>84.87</OrderCharge>
+	</Order>
+	<Order OrderID="order53707">
+		<OrderDate>10/19/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>10/23/2018</ShippedDate>
+		<OrderCharge>99.64</OrderCharge>
+	</Order>
+	<Order OrderID="order53708">
+		<OrderDate>10/22/2018</OrderDate>
+		<CustomerID>cust294-13</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>10/23/2018</ShippedDate>
+		<OrderCharge>92.02</OrderCharge>
+	</Order>
+	<Order OrderID="order53709">
+		<OrderDate>10/23/2018</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>10/25/2018</ShippedDate>
+		<OrderCharge>30.45</OrderCharge>
+	</Order>
+	<Order OrderID="order53710">
+		<OrderDate>10/23/2018</OrderDate>
+		<CustomerID>cust263-72</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>10/24/2018</ShippedDate>
+		<OrderCharge>100.88</OrderCharge>
+	</Order>
+	<Order OrderID="order53711">
+		<OrderDate>10/25/2018</OrderDate>
+		<CustomerID>cust126-33</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>10/29/2018</ShippedDate>
+		<OrderCharge>89.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53712">
+		<OrderDate>10/26/2018</OrderDate>
+		<CustomerID>cust807-88</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>10/30/2018</ShippedDate>
+		<OrderCharge>80.72</OrderCharge>
+	</Order>
+	<Order OrderID="order53713">
+		<OrderDate>10/29/2018</OrderDate>
+		<CustomerID>cust861-75</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>10/31/2018</ShippedDate>
+		<OrderCharge>61.16</OrderCharge>
+	</Order>
+	<Order OrderID="order53714">
+		<OrderDate>10/30/2018</OrderDate>
+		<CustomerID>cust634-63</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>11/1/2018</ShippedDate>
+		<OrderCharge>67.01</OrderCharge>
+	</Order>
+	<Order OrderID="order53715">
+		<OrderDate>11/1/2018</OrderDate>
+		<CustomerID>cust827-36</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>11/5/2018</ShippedDate>
+		<OrderCharge>117.01</OrderCharge>
+	</Order>
+	<Order OrderID="order53716">
+		<OrderDate>11/2/2018</OrderDate>
+		<CustomerID>cust473-29</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>11/5/2018</ShippedDate>
+		<OrderCharge>103.36</OrderCharge>
+	</Order>
+	<Order OrderID="order53717">
+		<OrderDate>11/2/2018</OrderDate>
+		<CustomerID>cust946-66</CustomerID>
+		<SalesRepID>rep32</SalesRepID>
+		<ShippedDate>11/5/2018</ShippedDate>
+		<OrderCharge>70.09</OrderCharge>
+	</Order>
+	<Order OrderID="order53718">
+		<OrderDate>11/5/2018</OrderDate>
+		<CustomerID>cust412-87</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>11/8/2018</ShippedDate>
+		<OrderCharge>39.37</OrderCharge>
+	</Order>
+	<Order OrderID="order53719">
+		<OrderDate>11/5/2018</OrderDate>
+		<CustomerID>cust389-81</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>11/7/2018</ShippedDate>
+		<OrderCharge>96.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53720">
+		<OrderDate>11/6/2018</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>11/8/2018</ShippedDate>
+		<OrderCharge>109.69</OrderCharge>
+	</Order>
+	<Order OrderID="order53721">
+		<OrderDate>11/7/2018</OrderDate>
+		<CustomerID>cust579-66</CustomerID>
+		<SalesRepID>rep25</SalesRepID>
+		<ShippedDate>11/8/2018</ShippedDate>
+		<OrderCharge>40.86</OrderCharge>
+	</Order>
+	<Order OrderID="order53722">
+		<OrderDate>11/7/2018</OrderDate>
+		<CustomerID>cust283-47</CustomerID>
+		<SalesRepID>rep15</SalesRepID>
+		<ShippedDate>11/12/2018</ShippedDate>
+		<OrderCharge>123.27</OrderCharge>
+	</Order>
+	<Order OrderID="order53723">
+		<OrderDate>11/8/2018</OrderDate>
+		<CustomerID>cust721-40</CustomerID>
+		<SalesRepID>rep11</SalesRepID>
+		<ShippedDate>11/12/2018</ShippedDate>
+		<OrderCharge>45.53</OrderCharge>
+	</Order>
+	<Order OrderID="order53724">
+		<OrderDate>11/9/2018</OrderDate>
+		<CustomerID>cust953-67</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>11/14/2018</ShippedDate>
+		<OrderCharge>72.88</OrderCharge>
+	</Order>
+	<Order OrderID="order53725">
+		<OrderDate>11/12/2018</OrderDate>
+		<CustomerID>cust430-42</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>11/14/2018</ShippedDate>
+		<OrderCharge>135.59</OrderCharge>
+	</Order>
+	<Order OrderID="order53726">
+		<OrderDate>11/12/2018</OrderDate>
+		<CustomerID>cust863-11</CustomerID>
+		<SalesRepID>rep17</SalesRepID>
+		<ShippedDate>11/14/2018</ShippedDate>
+		<OrderCharge>25.2</OrderCharge>
+	</Order>
+	<Order OrderID="order53727">
+		<OrderDate>11/14/2018</OrderDate>
+		<CustomerID>cust112-69</CustomerID>
+		<SalesRepID>rep21</SalesRepID>
+		<ShippedDate>11/15/2018</ShippedDate>
+		<OrderCharge>63.89</OrderCharge>
+	</Order>
+	<Order OrderID="order53728">
+		<OrderDate>11/16/2018</OrderDate>
+		<CustomerID>cust194-76</CustomerID>
+		<SalesRepID>rep28</SalesRepID>
+		<ShippedDate>11/21/2018</ShippedDate>
+		<OrderCharge>134.33</OrderCharge>
+	</Order>
+	<Order OrderID="order53729">
+		<OrderDate>11/19/2018</OrderDate>
+		<CustomerID>cust338-83</CustomerID>
+		<SalesRepID>rep24</SalesRepID>
+		<ShippedDate>11/22/2018</ShippedDate>
+		<OrderCharge>120.08</OrderCharge>
+	</Order>
+</Orders>
