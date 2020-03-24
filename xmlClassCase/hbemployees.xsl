@@ -42,7 +42,24 @@
                   <xsl:sort select="department"/>
                </xsl:for-each>
                
-
+               <table class="employeeList">
+                  <caption><xsl:value-of select="department"/></caption>
+                  <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Salary</th>
+                        <th>Phone</th>
+                        <th>Gender</th>
+                        <th>Marital Status</th>
+                        <th>Work Status</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     
+                  </tbody>
+               </table>
+               
              </div>
          </body>
 
