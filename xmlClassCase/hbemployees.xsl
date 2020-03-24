@@ -38,13 +38,9 @@
                </header>
 
                <h1>Employee Report</h1>
+               
                <xsl:for-each select="//employee[generate-id()=generate-id(key('departments', department)[1])]">
-                  <xsl:sort select="department"/>
-                  
-                  <xsl:apply-templates select="key('departments', department)">
-                     <xsl:sort select="salary" order="descending"/>
-                  </xsl:apply-templates> 
-                  
+                  <xsl:sort select="department"/>                
                </xsl:for-each>
                
                <table class="employeeList">
@@ -61,6 +57,10 @@
                      </tr>
                   </thead>
                   <tbody>
+                     
+                     <xsl:apply-templates select="key('departments', department)">
+                        <xsl:sort select="salary" order="descending"/>
+                     </xsl:apply-templates>
                                      
                   </tbody>
                </table>
@@ -72,14 +72,15 @@
    </xsl:template>
    
    <xsl:template match="employee">
+       
       <tr>
          <td><xsl:value-of select="name"/></td>
          <td><xsl:value-of select="position"/></td>
-         <td><xsl:value-of select="format-number(salary, '$#,#0.00')"/></td>
+         <td><xsl:value-of select="format-number(salary, '$#,##0.00')"/></td>
          <td><xsl:value-of select="phone"/></td>
          <td><xsl:value-of select="gender"/></td>
          <td><xsl:value-of select="maritalStatus"/></td>
-         <td><xsl:value-of select="workingStatus"/></td>
+         <td><xsl:value-of select="workStatus"/></td>
       </tr>
    </xsl:template>
 
